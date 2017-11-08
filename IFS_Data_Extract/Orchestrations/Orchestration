@@ -1,0 +1,1694 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<process currentId="90" name="Orchestration" persistenceEnabled="true" selectedActivityId="13" serialize="false" targetNamespace="http://www.approuter.com/schemas/2004/01/maestro/process/" xmlns="http://www.approuter.com/schemas/2004/01/maestro/process/" xmlns:bpel-ext="http://www.approuter.com/schemas/2003/1/bpel-ext/" xmlns:bpws="http://www.approuter.com/schemas/2004/01/maestro/process/" xmlns:fn="http://www.w3.org/2002/11/xquery-functions" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"><schemas><schemaDescription activityId="5" counter-for-extra-xml-schema="0" schemaId="Schema_4_mapOutputsTask_in_Execute_Query_5"><![CDATA[<xs:schema elementFormDefault="unqualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema"><xs:element name="rows" type="RowsType"/><xs:complexType name="RowsType"><xs:sequence><xs:element name="row" type="ColSetType" minOccurs="1" maxOccurs="unbounded"/></xs:sequence></xs:complexType><xs:complexType name="ColSetType"><xs:sequence><xs:element name="CUSTOMER_NO" type="xs:string" nillable="true"><xs:annotation><xs:appinfo><app:node-app-info xmlns:app="http://www.approuter.com/schemas/2007/Mapping/AppInfo"><app:node-name>CUSTOMER_NO</app:node-name><app:node-description>Column Name</app:node-description></app:node-app-info></xs:appinfo></xs:annotation></xs:element><xs:element name="INVOICE_ID" type="xs:string" nillable="true"><xs:annotation><xs:appinfo><app:node-app-info xmlns:app="http://www.approuter.com/schemas/2007/Mapping/AppInfo"><app:node-name>INVOICE_ID</app:node-name><app:node-description>Column Name</app:node-description></app:node-app-info></xs:appinfo></xs:annotation></xs:element><xs:element name="ITEM_ID" type="xs:string" nillable="true"><xs:annotation><xs:appinfo><app:node-app-info xmlns:app="http://www.approuter.com/schemas/2007/Mapping/AppInfo"><app:node-name>ITEM_ID</app:node-name><app:node-description>Column Name</app:node-description></app:node-app-info></xs:appinfo></xs:annotation></xs:element><xs:element name="INVOICEDATE" type="xs:dateTime" nillable="true"><xs:annotation><xs:appinfo><app:node-app-info xmlns:app="http://www.approuter.com/schemas/2007/Mapping/AppInfo"><app:node-name>INVOICEDATE</app:node-name><app:node-description>Column Name</app:node-description></app:node-app-info></xs:appinfo></xs:annotation></xs:element><xs:element name="SALESMAN_CODE" type="xs:string" nillable="true"><xs:annotation><xs:appinfo><app:node-app-info xmlns:app="http://www.approuter.com/schemas/2007/Mapping/AppInfo"><app:node-name>SALESMAN_CODE</app:node-name><app:node-description>Column Name</app:node-description></app:node-app-info></xs:appinfo></xs:annotation></xs:element><xs:element name="REGION_CODE" type="xs:string" nillable="true"><xs:annotation><xs:appinfo><app:node-app-info xmlns:app="http://www.approuter.com/schemas/2007/Mapping/AppInfo"><app:node-name>REGION_CODE</app:node-name><app:node-description>Column Name</app:node-description></app:node-app-info></xs:appinfo></xs:annotation></xs:element><xs:element name="PART_PRODUCT_FAMILY" type="xs:string" nillable="true"><xs:annotation><xs:appinfo><app:node-app-info xmlns:app="http://www.approuter.com/schemas/2007/Mapping/AppInfo"><app:node-name>PART_PRODUCT_FAMILY</app:node-name><app:node-description>Column Name</app:node-description></app:node-app-info></xs:appinfo></xs:annotation></xs:element><xs:element name="PART_PRODUCT_CODE" type="xs:string" nillable="true"><xs:annotation><xs:appinfo><app:node-app-info xmlns:app="http://www.approuter.com/schemas/2007/Mapping/AppInfo"><app:node-name>PART_PRODUCT_CODE</app:node-name><app:node-description>Column Name</app:node-description></app:node-app-info></xs:appinfo></xs:annotation></xs:element><xs:element name="ALLAMOUNTS" type="xs:decimal" nillable="true"><xs:annotation><xs:appinfo><app:node-app-info xmlns:app="http://www.approuter.com/schemas/2007/Mapping/AppInfo"><app:node-name>ALLAMOUNTS</app:node-name><app:node-description>Column Name</app:node-description></app:node-app-info></xs:appinfo></xs:annotation></xs:element><xs:element name="INVOICED_QTY" type="xs:decimal" nillable="true"><xs:annotation><xs:appinfo><app:node-app-info xmlns:app="http://www.approuter.com/schemas/2007/Mapping/AppInfo"><app:node-name>INVOICED_QTY</app:node-name><app:node-description>Column Name</app:node-description></app:node-app-info></xs:appinfo></xs:annotation></xs:element><xs:element name="CORPORATE_FORM" type="xs:string" nillable="true"><xs:annotation><xs:appinfo><app:node-app-info xmlns:app="http://www.approuter.com/schemas/2007/Mapping/AppInfo"><app:node-name>CORPORATE_FORM</app:node-name><app:node-description>Column Name</app:node-description></app:node-app-info></xs:appinfo></xs:annotation></xs:element><xs:element name="CATALOG_NO" type="xs:string" nillable="true"><xs:annotation><xs:appinfo><app:node-app-info xmlns:app="http://www.approuter.com/schemas/2007/Mapping/AppInfo"><app:node-name>CATALOG_NO</app:node-name><app:node-description>Column Name</app:node-description></app:node-app-info></xs:appinfo></xs:annotation></xs:element><xs:element name="CUSTOMER_NAME" type="xs:string" nillable="true"><xs:annotation><xs:appinfo><app:node-app-info xmlns:app="http://www.approuter.com/schemas/2007/Mapping/AppInfo"><app:node-name>CUSTOMER_NAME</app:node-name><app:node-description>Column Name</app:node-description></app:node-app-info></xs:appinfo></xs:annotation></xs:element><xs:element name="LIST_PRICE" type="xs:decimal" nillable="true"><xs:annotation><xs:appinfo><app:node-app-info xmlns:app="http://www.approuter.com/schemas/2007/Mapping/AppInfo"><app:node-name>LIST_PRICE</app:node-name><app:node-description>Column Name</app:node-description></app:node-app-info></xs:appinfo></xs:annotation></xs:element><xs:element name="CUST_GRP" type="xs:string" nillable="true"><xs:annotation><xs:appinfo><app:node-app-info xmlns:app="http://www.approuter.com/schemas/2007/Mapping/AppInfo"><app:node-name>CUST_GRP</app:node-name><app:node-description>Column Name</app:node-description></app:node-app-info></xs:appinfo></xs:annotation></xs:element><xs:element name="NAME" type="xs:string" nillable="true"><xs:annotation><xs:appinfo><app:node-app-info xmlns:app="http://www.approuter.com/schemas/2007/Mapping/AppInfo"><app:node-name>NAME</app:node-name><app:node-description>Column Name</app:node-description></app:node-app-info></xs:appinfo></xs:annotation></xs:element><xs:element name="TYPE_DESIGNATION" type="xs:string" nillable="true"><xs:annotation><xs:appinfo><app:node-app-info xmlns:app="http://www.approuter.com/schemas/2007/Mapping/AppInfo"><app:node-name>TYPE_DESIGNATION</app:node-name><app:node-description>Column Name</app:node-description></app:node-app-info></xs:appinfo></xs:annotation></xs:element><xs:element name="SITE" type="xs:string" nillable="true"><xs:annotation><xs:appinfo><app:node-app-info xmlns:app="http://www.approuter.com/schemas/2007/Mapping/AppInfo"><app:node-name>SITE</app:node-name><app:node-description>Column Name</app:node-description></app:node-app-info></xs:appinfo></xs:annotation></xs:element><xs:element name="MARKET_CODE" type="xs:string" nillable="true"><xs:annotation><xs:appinfo><app:node-app-info xmlns:app="http://www.approuter.com/schemas/2007/Mapping/AppInfo"><app:node-name>MARKET_CODE</app:node-name><app:node-description>Column Name</app:node-description></app:node-app-info></xs:appinfo></xs:annotation></xs:element><xs:element name="ASSOCIATION_NO" type="xs:string" nillable="true"><xs:annotation><xs:appinfo><app:node-app-info xmlns:app="http://www.approuter.com/schemas/2007/Mapping/AppInfo"><app:node-name>ASSOCIATION_NO</app:node-name><app:node-description>Column Name</app:node-description></app:node-app-info></xs:appinfo></xs:annotation></xs:element><xs:element name="RMA_NO" type="xs:decimal" nillable="true"><xs:annotation><xs:appinfo><app:node-app-info xmlns:app="http://www.approuter.com/schemas/2007/Mapping/AppInfo"><app:node-name>RMA_NO</app:node-name><app:node-description>Column Name</app:node-description></app:node-app-info></xs:appinfo></xs:annotation></xs:element><xs:element name="ORDER_NO" type="xs:string" nillable="true"><xs:annotation><xs:appinfo><app:node-app-info xmlns:app="http://www.approuter.com/schemas/2007/Mapping/AppInfo"><app:node-name>ORDER_NO</app:node-name><app:node-description>Column Name</app:node-description></app:node-app-info></xs:appinfo></xs:annotation></xs:element><xs:element name="DELIVSTATE" type="xs:string" nillable="true"><xs:annotation><xs:appinfo><app:node-app-info xmlns:app="http://www.approuter.com/schemas/2007/Mapping/AppInfo"><app:node-name>DELIVSTATE</app:node-name><app:node-description>Column Name</app:node-description></app:node-app-info></xs:appinfo></xs:annotation></xs:element><xs:element name="DELIVZIP" type="xs:string" nillable="true"><xs:annotation><xs:appinfo><app:node-app-info xmlns:app="http://www.approuter.com/schemas/2007/Mapping/AppInfo"><app:node-name>DELIVZIP</app:node-name><app:node-description>Column Name</app:node-description></app:node-app-info></xs:appinfo></xs:annotation></xs:element><xs:element name="INVENTORYVALUEUS" type="xs:decimal" nillable="true"><xs:annotation><xs:appinfo><app:node-app-info xmlns:app="http://www.approuter.com/schemas/2007/Mapping/AppInfo"><app:node-name>INVENTORYVALUEUS</app:node-name><app:node-description>Column Name</app:node-description></app:node-app-info></xs:appinfo></xs:annotation></xs:element><xs:element name="SECOND_COMMODITY" type="xs:string" nillable="true"><xs:annotation><xs:appinfo><app:node-app-info xmlns:app="http://www.approuter.com/schemas/2007/Mapping/AppInfo"><app:node-name>SECOND_COMMODITY</app:node-name><app:node-description>Column Name</app:node-description></app:node-app-info></xs:appinfo></xs:annotation></xs:element><xs:element name="SOURCE" type="xs:string" nillable="true"><xs:annotation><xs:appinfo><app:node-app-info xmlns:app="http://www.approuter.com/schemas/2007/Mapping/AppInfo"><app:node-name>SOURCE</app:node-name><app:node-description>Column Name</app:node-description></app:node-app-info></xs:appinfo></xs:annotation></xs:element><xs:element name="TRUELOCALAMT" type="xs:decimal" nillable="true"><xs:annotation><xs:appinfo><app:node-app-info xmlns:app="http://www.approuter.com/schemas/2007/Mapping/AppInfo"><app:node-name>TRUELOCALAMT</app:node-name><app:node-description>Column Name</app:node-description></app:node-app-info></xs:appinfo></xs:annotation></xs:element><xs:element name="DELIVCOUNTRY" type="xs:string" nillable="true"><xs:annotation><xs:appinfo><app:node-app-info xmlns:app="http://www.approuter.com/schemas/2007/Mapping/AppInfo"><app:node-name>DELIVCOUNTRY</app:node-name><app:node-description>Column Name</app:node-description></app:node-app-info></xs:appinfo></xs:annotation></xs:element><xs:element name="COMMISSION_RECEIVER" type="xs:string" nillable="true"><xs:annotation><xs:appinfo><app:node-app-info xmlns:app="http://www.approuter.com/schemas/2007/Mapping/AppInfo"><app:node-name>COMMISSION_RECEIVER</app:node-name><app:node-description>Column Name</app:node-description></app:node-app-info></xs:appinfo></xs:annotation></xs:element><xs:element name="CUSTNAME" type="xs:string" nillable="true"><xs:annotation><xs:appinfo><app:node-app-info xmlns:app="http://www.approuter.com/schemas/2007/Mapping/AppInfo"><app:node-name>CUSTNAME</app:node-name><app:node-description>Column Name</app:node-description></app:node-app-info></xs:appinfo></xs:annotation></xs:element><xs:element name="INVOICEQTR" type="xs:string" nillable="true"><xs:annotation><xs:appinfo><app:node-app-info xmlns:app="http://www.approuter.com/schemas/2007/Mapping/AppInfo"><app:node-name>INVOICEQTR</app:node-name><app:node-description>Column Name</app:node-description></app:node-app-info></xs:appinfo></xs:annotation></xs:element><xs:element name="CATALOG_DESC" type="xs:string" nillable="true"><xs:annotation><xs:appinfo><app:node-app-info xmlns:app="http://www.approuter.com/schemas/2007/Mapping/AppInfo"><app:node-name>CATALOG_DESC</app:node-name><app:node-description>Column Name</app:node-description></app:node-app-info></xs:appinfo></xs:annotation></xs:element><xs:element name="FIRSTORDERDATE" type="xs:dateTime" nillable="true"><xs:annotation><xs:appinfo><app:node-app-info xmlns:app="http://www.approuter.com/schemas/2007/Mapping/AppInfo"><app:node-name>FIRSTORDERDATE</app:node-name><app:node-description>Column Name</app:node-description></app:node-app-info></xs:appinfo></xs:annotation></xs:element><xs:element name="FIRSTORDERDATESCG" type="xs:dateTime" nillable="true"><xs:annotation><xs:appinfo><app:node-app-info xmlns:app="http://www.approuter.com/schemas/2007/Mapping/AppInfo"><app:node-name>FIRSTORDERDATESCG</app:node-name><app:node-description>Column Name</app:node-description></app:node-app-info></xs:appinfo></xs:annotation></xs:element></xs:sequence></xs:complexType></xs:schema>]]></schemaDescription><schemaDescription activityId="65" counter-for-extra-xml-schema="0" schemaId="archive-entries-parameter.xsd-65"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema targetNamespace="http://www.approuter.com/schemas/2004/1/module/archive/compress/"
+    xmlns:arch="http://www.approuter.com/schemas/2004/1/module/archive/compress/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    elementFormDefault="qualified">
+    <xsd:complexType name="archiveEntriesDetails">
+        <xsd:sequence>
+            <xsd:element name="entry" type="arch:archiveEntryType" minOccurs="1" maxOccurs="unbounded"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:simpleType name="nameType">
+        <xsd:restriction base="xsd:string">
+            <xsd:pattern value="([^:\*\?|&quot;])*"></xsd:pattern>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:complexType name="archiveEntryType">
+        <xsd:sequence>
+            <xsd:element name="name" type="arch:nameType"/>
+            <xsd:element name="datetime" type="xsd:dateTime" minOccurs="0"/>
+            <xsd:element name="isdirectory" type="xsd:boolean" minOccurs="0"/>
+            <xsd:element name="content" type="xsd:base64Binary" minOccurs="0"/>
+            <xsd:element name="size" type="xsd:long" minOccurs="0"/>
+            <xsd:element name="userid" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="groupid" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="permissions" type="xsd:string" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:element name="archiveEntries" type="arch:archiveEntriesDetails"/>
+</xsd:schema>
+]]></schemaDescription><schemaDescription activityId="5" counter-for-extra-xml-schema="0" schemaId="Schema_4_mapInputsTask_in_Execute_Query_5"><![CDATA[<xs:schema elementFormDefault="unqualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema"><xs:element name="parameters" type="ParametersType"/><xs:complexType name="ParametersType"><xs:sequence><xs:element name="YEAR" type="xs:string" nillable="true"><xs:annotation><xs:appinfo><app:node-app-info xmlns:app="http://www.approuter.com/schemas/2007/Mapping/AppInfo"><app:node-name>YEAR</app:node-name><app:node-description>Column Name</app:node-description></app:node-app-info></xs:appinfo></xs:annotation></xs:element></xs:sequence></xs:complexType></xs:schema>]]></schemaDescription><schemaDescription activityId="9" counter-for-extra-xml-schema="0" schemaId="ftp-put-parameter-encoding.xsd-9"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema
+    targetNamespace="http://www.approuter.com/schemas/2003/1/castirontypes"
+    xmlns:tns="http://www.approuter.com/schemas/2003/1/castirontypes"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    elementFormDefault="qualified">
+    <xsd:element name="encoding" type="xsd:string"/>
+</xsd:schema>
+]]></schemaDescription><schemaDescription activityId="13" counter-for-extra-xml-schema="0" schemaId="email-smtp-input-mailheader-parameter.xsd-13"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+            elementFormDefault="qualified">
+
+    <xsd:complexType name="Mime">
+        <xsd:sequence>
+           <xsd:element name="mimeVersion" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="contentType" type="ContentType" minOccurs="0"/>
+            <xsd:element name="contentTransferEncoding" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="otherMimeHeaders" type="ExtraHeaders" minOccurs="0" maxOccurs="1"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+
+    <xsd:complexType name="ContentType">
+        <xsd:sequence>
+            <xsd:element name="mainType" type="xsd:string"/>
+            <xsd:element name="subType" type="xsd:string"/>
+            <xsd:element name="charset" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+            <xsd:element name="attribute" type="HeaderItem" minOccurs="0" maxOccurs="unbounded"/>
+         </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="ExtraHeaders">
+        <xsd:sequence>
+                <xsd:element name="headerItem" type="HeaderItem" minOccurs="1" maxOccurs="unbounded"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="HeaderItem">
+        <xsd:sequence>
+            <xsd:element name="name" type="xsd:string"/>
+            <xsd:element name="value" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="MailHeaderType">
+        <xsd:sequence>
+            <xsd:element name="from" type="xsd:string"/>
+            <xsd:element name="to" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+            <xsd:element name="cc" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+            <xsd:element name="bcc" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+            <xsd:element name="subject" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+            <xsd:element name="mimeHeader" type="Mime" minOccurs="0" maxOccurs="1"/>
+            <xsd:element name="otherHeaders" type="ExtraHeaders" minOccurs="0" maxOccurs="1"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:element name="mailheader" type="MailHeaderType"/>
+</xsd:schema>
+]]></schemaDescription><schemaDescription activityId="13" counter-for-extra-xml-schema="0" schemaId="email-smtp-input-body-parameter.xsd-13"><![CDATA[<xsd:schema
+    targetNamespace="http://www.approuter.com/schemas/2003/1/castirontypes"
+    xmlns:tns="http://www.approuter.com/schemas/2003/1/castirontypes"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    elementFormDefault="qualified">
+
+    <xsd:element name="body" type="xsd:string"/>
+</xsd:schema>
+]]></schemaDescription><schemaDescription activityId="" counter-for-extra-xml-schema="0" schemaId="loopcounter_1"><![CDATA[<xsd:schema targetNamespace="http://www.approuter.com/schemas/2003/1/castirontypes" xmlns:tns="http://www.approuter.com/schemas/2003/1/castirontypes" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xsd="http://www.w3.org/2001/XMLSchema"> <xsd:element name="loopcounter_1" type="xsd:int"/> </xsd:schema>]]></schemaDescription><schemaDescription activityId="8" counter-for-extra-xml-schema="0" schemaId="data-param-binary.xsd-8"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema
+    targetNamespace="http://www.approuter.com/schemas/2003/1/castirontypes"
+    xmlns:tns="http://www.approuter.com/schemas/2003/1/castirontypes"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    elementFormDefault="qualified">
+   <xsd:element name="Data" type="xsd:base64Binary"/>
+</xsd:schema>
+]]></schemaDescription><schemaDescription activityId="24" counter-for-extra-xml-schema="0" schemaId="Schema_4_mapOutputsTask_in_Execute_Query_24"><![CDATA[<xs:schema elementFormDefault="unqualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema"><xs:element name="rows" type="RowsType"/><xs:complexType name="RowsType"><xs:sequence><xs:element name="row" type="ColSetType" minOccurs="1" maxOccurs="unbounded"/></xs:sequence></xs:complexType><xs:complexType name="ColSetType"><xs:sequence><xs:element name="YEAR" type="xs:decimal" nillable="true"><xs:annotation><xs:appinfo><app:node-app-info xmlns:app="http://www.approuter.com/schemas/2007/Mapping/AppInfo"><app:node-name>YEAR</app:node-name><app:node-description>Column Name</app:node-description></app:node-app-info></xs:appinfo></xs:annotation></xs:element></xs:sequence></xs:complexType></xs:schema>]]></schemaDescription><schemaDescription activityId="24" counter-for-extra-xml-schema="0" schemaId="Schema_4_mapInputsTask_in_Execute_Query_24"><![CDATA[<xs:schema elementFormDefault="unqualified" attributeFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema"><xs:element name="parameters" type="ParametersType"/><xs:complexType name="ParametersType"><xs:sequence/></xs:complexType></xs:schema>]]></schemaDescription><schemaDescription activityId="" counter-for-extra-xml-schema="0" schemaId="Data"><![CDATA[<xsd:schema targetNamespace="http://www.approuter.com/schemas/2003/1/castirontypes" xmlns:tns="http://www.approuter.com/schemas/2003/1/castirontypes" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xsd="http://www.w3.org/2001/XMLSchema"> <xsd:element name="Data" type="xsd:string"/> </xsd:schema>]]></schemaDescription><schemaDescription activityId="13" counter-for-extra-xml-schema="0" schemaId="smtpConnectionParam.xsd-13"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema  xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+            elementFormDefault="qualified">
+
+    <xsd:complexType name="EmailConnParameterDetails">
+        <xsd:sequence>
+            <xsd:element name="host" type="xsd:string"/>
+            <xsd:element name="port" type="xsd:string"/>
+            <xsd:element name="username" type="xsd:string"
+                minOccurs="0" maxOccurs="1"/>
+            <xsd:element name="password" type="xsd:string"
+                minOccurs="0" maxOccurs="1"/>           
+        </xsd:sequence>
+        <xsd:attribute name="timeout" type="xsd:string" default="300" /> 
+    </xsd:complexType>
+
+   <xsd:element name="emailConnection" type="EmailConnParameterDetails"/>
+</xsd:schema>
+]]></schemaDescription><schemaDescription activityId="83" counter-for-extra-xml-schema="0" schemaId="http-receive-output-parameter-header.xsd-83"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+
+    elementFormDefault="qualified">
+
+    <xsd:complexType name="HeaderItemType">
+        <xsd:sequence>
+            <xsd:element name="name" type="xsd:string"/>
+            <xsd:element name="value" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="Headers">
+        <xsd:sequence>
+            <xsd:element name="headerItem" type="HeaderItemType" minOccurs="0" maxOccurs="unbounded"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    
+    <xsd:complexType name="HttpHeaderType">
+        <xsd:sequence>
+            <xsd:element name="uri" type="xsd:string"/>
+            <xsd:element name="method" type="xsd:string"/>
+            <xsd:element name="otherHeaders" type="Headers" minOccurs="0"
+                maxOccurs="1"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    
+    <xsd:element name="httpheaders" type="HttpHeaderType"/>
+</xsd:schema>
+]]></schemaDescription><schemaDescription activityId="83" counter-for-extra-xml-schema="0" schemaId="http-receive-output-parameter-body-string.xsd-83"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema
+    targetNamespace="http://www.approuter.com/schemas/2003/1/castirontypes"
+    xmlns:tns="http://www.approuter.com/schemas/2003/1/castirontypes"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    elementFormDefault="qualified">
+    <xsd:element name="body" type="xsd:string"/>
+</xsd:schema>
+]]></schemaDescription><schemaDescription activityId="9" counter-for-extra-xml-schema="0" schemaId="ftp-put-parameter-filename.xsd-9"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema
+    targetNamespace="http://www.approuter.com/schemas/2003/1/castirontypes"
+    xmlns:tns="http://www.approuter.com/schemas/2003/1/castirontypes"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    elementFormDefault="qualified">
+    <xsd:element name="filename" type="xsd:string"/>
+</xsd:schema>
+]]></schemaDescription><schemaDescription activityId="9" counter-for-extra-xml-schema="0" schemaId="ftp-put-parameter-binary.xsd-9"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema
+    targetNamespace="http://www.approuter.com/schemas/2003/1/castirontypes"
+    xmlns:tns="http://www.approuter.com/schemas/2003/1/castirontypes"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    elementFormDefault="qualified">
+    <xsd:element name="data" type="xsd:base64Binary"/>
+</xsd:schema>
+]]></schemaDescription><schemaDescription activityId="9" counter-for-extra-xml-schema="0" schemaId="ftp-put-parameter-overwrite.xsd-9"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema
+    targetNamespace="http://www.approuter.com/schemas/2003/1/castirontypes"
+    xmlns:tns="http://www.approuter.com/schemas/2003/1/castirontypes"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    elementFormDefault="qualified">
+    <xsd:element name="overwrite" type="xsd:string"/>
+</xsd:schema>
+]]></schemaDescription><schemaDescription counter-for-extra-xml-schema="0" isRepositoryLocation="true" repository-url="appnet-guid://4B047FCDF4B065EF593599BED6B0C542" schemaId="appnet-guid://4B047FCDF4B065EF593599BED6B0C542"/><schemaDescription activityId="65" counter-for-extra-xml-schema="0" schemaId="archive-parameter.xsd-65"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema
+    targetNamespace="http://www.approuter.com/schemas/2003/1/castirontypes"
+    xmlns:tns="http://www.approuter.com/schemas/2003/1/castirontypes"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    elementFormDefault="qualified">
+  <xsd:element name="archive" type="xsd:base64Binary"/>
+</xsd:schema>
+]]></schemaDescription><schemaDescription activityId="8" counter-for-extra-xml-schema="0" schemaId="data-encoding-placeholder-param.xsd-8"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema
+   targetNamespace="http://www.approuter.com/schemas/2003/1/castirontypes"
+    xmlns:tns="http://www.approuter.com/schemas/2003/1/castirontypes"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    elementFormDefault="qualified">
+   <xsd:element name="Xml" type="xsd:anyType"/>
+   <xsd:element name="Encoding" type="xsd:string"/>
+</xsd:schema>
+]]></schemaDescription><schemaDescription activityId="9" counter-for-extra-xml-schema="0" schemaId="ftp-put-parameter-directory.xsd-9"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema
+    targetNamespace="http://www.approuter.com/schemas/2003/1/castirontypes"
+    xmlns:tns="http://www.approuter.com/schemas/2003/1/castirontypes"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    elementFormDefault="qualified">
+    <xsd:element name="directory" type="xsd:string"/>
+</xsd:schema>
+]]></schemaDescription><schemaDescription activityId="2" counter-for-extra-xml-schema="0" schemaId="orchestration_internal_variableJobInfo"><![CDATA[<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            xmlns:tns="http://www.approuter.com/schemas/2005/1/orchestration/jobinfo"
+            targetNamespace="http://www.approuter.com/schemas/2005/1/orchestration/jobinfo" elementFormDefault="qualified">
+    <xsd:element name="JobInfo" type="tns:JobInfoType"/>
+    <xsd:complexType name="JobInfoType">
+        <xsd:sequence>
+           <xsd:element name="jobId" type="xsd:string"/>
+           <xsd:element name="jobStartTime" type="xsd:dateTime"/>
+           <xsd:element name="projectName" type="xsd:string"/>
+           <xsd:element name="configurationName" type="xsd:string"/>
+           <xsd:element name="orchestrationName" type="xsd:string"/>
+           <xsd:element name="routerHostName" type="xsd:string"/>
+        </xsd:sequence>
+     </xsd:complexType>
+</xsd:schema>]]></schemaDescription><schemaDescription activityId="" counter-for-extra-xml-schema="0" schemaId="archive"><![CDATA[<xsd:schema targetNamespace="http://www.approuter.com/schemas/2003/1/castirontypes" xmlns:tns="http://www.approuter.com/schemas/2003/1/castirontypes" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xsd="http://www.w3.org/2001/XMLSchema"> <xsd:element name="archive" type="xsd:base64Binary"/> </xsd:schema>]]></schemaDescription><schemaDescription activityId="9" counter-for-extra-xml-schema="0" schemaId="FtpConnectionParameter.xsd-9"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema targetNamespace="http://www.approuter.com/schemas/2004/1/module/ftp/connectionparameter/"
+    xmlns:ihftp="http://www.approuter.com/schemas/2004/1/module/ftp/connectionparameter/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:ih="http://www.approuter.com/schema/extension" elementFormDefault="qualified">
+    <xsd:simpleType name="NonEmptyString">
+        <xsd:restriction base="xsd:string">
+            <xsd:minLength value="1"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:complexType name="FtpConnectionParamDetails">
+        <xsd:sequence>
+            <xsd:element name="host" type="xsd:string"/>
+            <xsd:element name="port" type="xsd:string"/>
+            <xsd:element name="username" type="ihftp:NonEmptyString"/>
+            <xsd:element name="password" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+        </xsd:sequence>
+            <xsd:attribute name="timeout" type="xsd:int" default="300" use="optional"/>
+            <xsd:attribute name="certificateName" type="xsd:string" default="Factory Supplied Identity" /> 
+            <xsd:attribute name="isActive" type="xsd:boolean" default="false"/>
+    </xsd:complexType>
+    <xsd:element name="connection" type="ihftp:FtpConnectionParamDetails"/>
+</xsd:schema>
+]]></schemaDescription></schemas><dependecies><dependency id="13" projectNodeGuid="appnet-guid://72D416BE9F1CDF28020D3DB08245171D" type="activity"/><dependency id="5" projectNodeGuid="appnet-guid://204291A7B33B6D29BF6FA572588968DE" type="activity"/><dependency id="8" projectNodeGuid="appnet-guid://4B047FCDF4B065EF593599BED6B0C542" type="activity"/><dependency id="24" projectNodeGuid="appnet-guid://204291A7B33B6D29BF6FA572588968DE" type="activity"/><dependency id="9" projectNodeGuid="appnet-guid://AB3B9A432FAF27053E87C7873A306E0D" type="activity"/><dependency id="83" projectNodeGuid="appnet-guid://22CE22B68EF4557CE40D8AA3951520E7" type="activity"/></dependecies><variables selectedVariableName="archive"><variable assignable="false" bpel-ext:location="orchestration_internal_variableJobInfo" bpel-ext:locationType="2" bpel-ext:originalRootNode="" bpel-ext:rootNode="JobInfo" bpel-ext:rootNodeNS="http://www.approuter.com/schemas/2005/1/orchestration/jobinfo" canBeSubstitutedFromUI="true" internal="true" name="JobInfo" readOnly="true" typeEditable="false"><description>The orchestration creates this variable for every job. You can neither rename it nor delete it.</description></variable><variable assignable="true" bpel-ext:location="Schema_4_mapOutputsTask_in_Execute_Query_5" bpel-ext:locationType="2" bpel-ext:originalRootNode="rows" bpel-ext:rootNode="rows" canBeSubstitutedFromUI="true" internal="false" name="rows" readOnly="false" typeEditable="true"><description>Variable Description</description></variable><variable assignable="true" bpel-ext:activityId="8" bpel-ext:location="Data" bpel-ext:locationType="2" bpel-ext:originalRootNode="Data" bpel-ext:originalRootNodeNS="http://www.approuter.com/schemas/2003/1/castirontypes" bpel-ext:rootNode="Data" bpel-ext:rootNodeNS="http://www.approuter.com/schemas/2003/1/castirontypes" canBeSubstitutedFromUI="true" internal="false" isPrimitiveType="true" messageType="Data" name="Data" primitiveType="string" readOnly="false" typeEditable="true"><description>Variable Description</description></variable><variable assignable="true" bpel-ext:location="loopcounter_1" bpel-ext:locationType="2" bpel-ext:originalRootNode="loopcounter_1" bpel-ext:rootNode="loopcounter_1" canBeSubstitutedFromUI="true" internal="false" isPrimitiveType="true" name="loopcounter_1" primitiveType="int" readOnly="false" typeEditable="false"><description>Variable Description</description></variable><variable assignable="false" bpel-ext:location="Schema_4_mapOutputsTask_in_Execute_Query_24" bpel-ext:locationType="2" bpel-ext:originalRootNode="rows" bpel-ext:rootNode="row" bpel-ext:sourcexpath="/rows/row" canBeSubstitutedFromUI="true" internal="false" name="loopvalue_1" readOnly="false" typeEditable="true"><description>Variable Description</description></variable><variable assignable="true" bpel-ext:location="Schema_4_mapOutputsTask_in_Execute_Query_24" bpel-ext:locationType="2" bpel-ext:originalRootNode="rows" bpel-ext:rootNode="rows" canBeSubstitutedFromUI="true" internal="false" name="rows_1" readOnly="false" typeEditable="true"><description>Variable Description</description></variable><variable assignable="true" bpel-ext:activityId="65" bpel-ext:location="archive" bpel-ext:locationType="2" bpel-ext:originalRootNode="archive" bpel-ext:originalRootNodeNS="http://www.approuter.com/schemas/2003/1/castirontypes" bpel-ext:rootNode="archive" bpel-ext:rootNodeNS="http://www.approuter.com/schemas/2003/1/castirontypes" canBeSubstitutedFromUI="true" internal="false" isPrimitiveType="true" messageType="archive" name="archive" primitiveType="base64Binary" readOnly="false" typeEditable="true"><description>Variable Description</description></variable></variables><comments/><sequence activityId="2" comments="" configurationId="flow_sequence_id_1" description="Start Activity" expanded="true" name="Start"><start activityId="83" activityName="" comments="" configurationId="http_receiverequest_id" description="This activity listens for a request on the selected HTTP endpoint." expanded="true" moduleName="http://www.approuter.com/module/http/" name="Receive Request" partnerLink=""><outputMapSpecConfig><mapSpec context="orchestration" optionalParameterVisible="false" version="1.0" xmlns="http://www.approuter.com/schemas/2003/1/transformation/" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><specInfo><source activityId="83" canBeSubstitutedFromUI="true" displayName="httpheaders" isParameter="true" location="http-receive-output-parameter-header.xsd-83" locationType="2" logicalName="srcDoc1" messageType="httpheaders" optionalParameter="false" originalRootNodeName="httpheaders" rootNodeName="httpheaders"/><source activityId="83" canBeSubstitutedFromUI="true" displayName="body" isParameter="true" location="http-receive-output-parameter-body-string.xsd-83" locationType="2" logicalName="srcDoc2" messageType="body" namespace="http://www.approuter.com/schemas/2003/1/castirontypes" optionalParameter="false" originalRootNodeName="body" originalRootNodeNameNS="http://www.approuter.com/schemas/2003/1/castirontypes" rootNodeName="body"/></specInfo><doMapping/></mapSpec></outputMapSpecConfig><tasksConfig><com.approuter.studio.connectors.task.TaskList><![CDATA[
+  ]]><tasks><![CDATA[
+    ]]><com.approuter.studio.connectors.task.SummaryTask><![CDATA[
+      ]]><key><![CDATA[summaryTask]]></key><![CDATA[
+      ]]><children/><![CDATA[
+      ]]><model><![CDATA[
+        ]]><map><![CDATA[
+          ]]><entry><![CDATA[
+            ]]><string><![CDATA[selected]]></string><![CDATA[
+            ]]><string><![CDATA[false]]></string><![CDATA[
+          ]]></entry><![CDATA[
+        ]]></map><![CDATA[
+      ]]></model><![CDATA[
+      ]]><listeners/><![CDATA[
+    ]]></com.approuter.studio.connectors.task.SummaryTask><![CDATA[
+    ]]><com.approuter.studio.connectors.http.tasks.HTTPEndpointTask><![CDATA[
+      ]]><key><![CDATA[endpointTask]]></key><![CDATA[
+      ]]><children/><![CDATA[
+      ]]><model><![CDATA[
+        ]]><map><![CDATA[
+          ]]><entry><![CDATA[
+            ]]><string><![CDATA[selected]]></string><![CDATA[
+            ]]><string><![CDATA[false]]></string><![CDATA[
+          ]]></entry><![CDATA[
+          ]]><entry><![CDATA[
+            ]]><string><![CDATA[endpoint]]></string><![CDATA[
+            ]]><string><![CDATA[appnet-guid://22CE22B68EF4557CE40D8AA3951520E7]]></string><![CDATA[
+          ]]></entry><![CDATA[
+        ]]></map><![CDATA[
+      ]]></model><![CDATA[
+      ]]><listeners><![CDATA[
+        ]]><com.approuter.studio.connectors.http.tasks.HTTPRecieveRequstTask><![CDATA[
+          ]]><key><![CDATA[setupWorkflowTask]]></key><![CDATA[
+          ]]><children/><![CDATA[
+          ]]><model><![CDATA[
+            ]]><map><![CDATA[
+              ]]><entry><![CDATA[
+                ]]><string><![CDATA[http_receive_requiresreply]]></string><![CDATA[
+                ]]><boolean><![CDATA[false]]></boolean><![CDATA[
+              ]]></entry><![CDATA[
+              ]]><entry><![CDATA[
+                ]]><string><![CDATA[selected]]></string><![CDATA[
+                ]]><string><![CDATA[true]]></string><![CDATA[
+              ]]></entry><![CDATA[
+              ]]><entry><![CDATA[
+                ]]><string><![CDATA[http_compresion]]></string><![CDATA[
+                ]]><boolean><![CDATA[false]]></boolean><![CDATA[
+              ]]></entry><![CDATA[
+              ]]><entry><![CDATA[
+                ]]><string><![CDATA[http_need_reply]]></string><![CDATA[
+                ]]><boolean><![CDATA[false]]></boolean><![CDATA[
+              ]]></entry><![CDATA[
+              ]]><entry><![CDATA[
+                ]]><string><![CDATA[http_receive_binary]]></string><![CDATA[
+                ]]><boolean><![CDATA[false]]></boolean><![CDATA[
+              ]]></entry><![CDATA[
+              ]]><entry><![CDATA[
+                ]]><string><![CDATA[http_receive_path]]></string><![CDATA[
+                ]]><string/><![CDATA[
+              ]]></entry><![CDATA[
+              ]]><entry><![CDATA[
+                ]]><string><![CDATA[http_receive_extrapath]]></string><![CDATA[
+                ]]><string><![CDATA[/export]]></string><![CDATA[
+              ]]></entry><![CDATA[
+            ]]></map><![CDATA[
+          ]]></model><![CDATA[
+          ]]><listeners><![CDATA[
+            ]]><com.approuter.studio.connectors.task.MapTask><![CDATA[
+              ]]><key><![CDATA[mapOutputsTask]]></key><![CDATA[
+              ]]><children/><![CDATA[
+              ]]><model><![CDATA[
+                ]]><map><![CDATA[
+                  ]]><entry><![CDATA[
+                    ]]><string><![CDATA[selected]]></string><![CDATA[
+                    ]]><string><![CDATA[false]]></string><![CDATA[
+                  ]]></entry><![CDATA[
+                ]]></map><![CDATA[
+              ]]></model><![CDATA[
+              ]]><listeners/><![CDATA[
+            ]]></com.approuter.studio.connectors.task.MapTask><![CDATA[
+          ]]></listeners><![CDATA[
+        ]]></com.approuter.studio.connectors.http.tasks.HTTPRecieveRequstTask><![CDATA[
+      ]]></listeners><![CDATA[
+    ]]></com.approuter.studio.connectors.http.tasks.HTTPEndpointTask><![CDATA[
+    ]]><com.approuter.studio.connectors.http.tasks.HTTPRecieveRequstTask reference="../com.approuter.studio.connectors.http.tasks.HTTPEndpointTask/listeners/com.approuter.studio.connectors.http.tasks.HTTPRecieveRequstTask"/><![CDATA[
+    ]]><com.approuter.studio.connectors.task.MapTask reference="../com.approuter.studio.connectors.http.tasks.HTTPEndpointTask/listeners/com.approuter.studio.connectors.http.tasks.HTTPRecieveRequstTask/listeners/com.approuter.studio.connectors.task.MapTask"/><![CDATA[
+  ]]></tasks><![CDATA[
+  ]]><valid><![CDATA[false]]></valid><![CDATA[
+]]></com.approuter.studio.connectors.task.TaskList></tasksConfig></start><invoke activityId="24" activityName="" comments="" configurationId="db_parameterizedQuery_id" description="This activity gets rows of data from the selected database endpoint based on a given SQL select query" expanded="true" moduleName="http://www.approuter.com/module/database/" name="Execute Query" partnerLink=""><inputMapSpecConfig><mapSpec context="orchestration" optionalParameterVisible="false" version="1.0" xmlns="http://www.approuter.com/schemas/2003/1/transformation/" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><specInfo><destination canBeSubstitutedFromUI="true" displayName="parameters" isParameter="true" location="Schema_4_mapInputsTask_in_Execute_Query_24" locationType="2" logicalName="dstDoc1" optionalParameter="false" originalRootNodeName="parameters" rootNodeName="parameters" varName="parameters"/></specInfo><doMapping/></mapSpec></inputMapSpecConfig><outputMapSpecConfig><mapSpec context="orchestration" optionalParameterVisible="false" version="1.0" xmlns="http://www.approuter.com/schemas/2003/1/transformation/" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><specInfo><source canBeSubstitutedFromUI="true" displayName="rows" isParameter="true" location="Schema_4_mapOutputsTask_in_Execute_Query_24" locationType="2" logicalName="srcDoc1" optionalParameter="false" originalRootNodeName="rows" rootNodeName="rows" varName="rows"/><destination canBeSubstitutedFromUI="true" displayName="rows_1" isParameter="false" location="Schema_4_mapOutputsTask_in_Execute_Query_24" locationType="2" logicalName="dstDoc1" optionalParameter="false" originalRootNodeName="rows" rootNodeName="rows" varName="rows_1"/></specInfo><doMapping><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/ihmap:instances"/><to docName="dstDoc1" path="/rows/row/ihmap:instances"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/YEAR/ihmap:nillable"/><to docName="dstDoc1" path="/rows/row/YEAR/ihmap:nillable"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/YEAR"/><to docName="dstDoc1" path="/rows/row/YEAR"/></do></rule></doMapping></mapSpec></outputMapSpecConfig><tasksConfig><com.approuter.studio.connectors.task.TaskList><![CDATA[
+  ]]><tasks><![CDATA[
+    ]]><com.approuter.studio.connectors.task.SummaryTask><![CDATA[
+      ]]><key><![CDATA[summaryTask]]></key><![CDATA[
+      ]]><children/><![CDATA[
+      ]]><model><![CDATA[
+        ]]><map><![CDATA[
+          ]]><entry><![CDATA[
+            ]]><string><![CDATA[selected]]></string><![CDATA[
+            ]]><string><![CDATA[false]]></string><![CDATA[
+          ]]></entry><![CDATA[
+        ]]></map><![CDATA[
+      ]]></model><![CDATA[
+      ]]><listeners/><![CDATA[
+    ]]></com.approuter.studio.connectors.task.SummaryTask><![CDATA[
+    ]]><com.approuter.studio.connectors.database.tasks.DBEndpointTask><![CDATA[
+      ]]><key><![CDATA[endpointTask]]></key><![CDATA[
+      ]]><children/><![CDATA[
+      ]]><model><![CDATA[
+        ]]><map><![CDATA[
+          ]]><entry><![CDATA[
+            ]]><string><![CDATA[selected]]></string><![CDATA[
+            ]]><string><![CDATA[false]]></string><![CDATA[
+          ]]></entry><![CDATA[
+          ]]><entry><![CDATA[
+            ]]><string><![CDATA[endpoint]]></string><![CDATA[
+            ]]><string><![CDATA[appnet-guid://204291A7B33B6D29BF6FA572588968DE]]></string><![CDATA[
+          ]]></entry><![CDATA[
+        ]]></map><![CDATA[
+      ]]></model><![CDATA[
+      ]]><listeners><![CDATA[
+        ]]><com.approuter.studio.connectors.task.ActivityRefTask><![CDATA[
+          ]]><key><![CDATA[setupWorkflowTask]]></key><![CDATA[
+          ]]><children><![CDATA[
+            ]]><com.approuter.studio.connectors.database.tasks.DBEnterQueryTask><![CDATA[
+              ]]><key><![CDATA[enterQueryTask]]></key><![CDATA[
+              ]]><children/><![CDATA[
+              ]]><model><![CDATA[
+                ]]><map><![CDATA[
+                  ]]><entry><![CDATA[
+                    ]]><string><![CDATA[validatePressed]]></string><![CDATA[
+                    ]]><boolean><![CDATA[true]]></boolean><![CDATA[
+                  ]]></entry><![CDATA[
+                  ]]><entry><![CDATA[
+                    ]]><string><![CDATA[SQL]]></string><![CDATA[
+                    ]]><string><![CDATA[SELECT DISTINCT EXTRACT(YEAR FROM INVOICEDATE) AS YEAR FROM KD_SALES_DATA_REQUEST ORDER BY YEAR]]></string><![CDATA[
+                  ]]></entry><![CDATA[
+                  ]]><entry><![CDATA[
+                    ]]><string><![CDATA[selected]]></string><![CDATA[
+                    ]]><string><![CDATA[true]]></string><![CDATA[
+                  ]]></entry><![CDATA[
+                  ]]><entry><![CDATA[
+                    ]]><string><![CDATA[encoding]]></string><![CDATA[
+                    ]]><string><![CDATA[ISO-8859-1]]></string><![CDATA[
+                  ]]></entry><![CDATA[
+                  ]]><entry><![CDATA[
+                    ]]><string><![CDATA[maxRows]]></string><![CDATA[
+                    ]]><string><![CDATA[0]]></string><![CDATA[
+                  ]]></entry><![CDATA[
+                  ]]><entry><![CDATA[
+                    ]]><string><![CDATA[validQuery]]></string><![CDATA[
+                    ]]><boolean><![CDATA[true]]></boolean><![CDATA[
+                  ]]></entry><![CDATA[
+                ]]></map><![CDATA[
+              ]]></model><![CDATA[
+              ]]><listeners><![CDATA[
+                ]]><com.approuter.studio.connectors.database.tasks.DBSetupInputsTask><![CDATA[
+                  ]]><key><![CDATA[setupInputTask]]></key><![CDATA[
+                  ]]><children/><![CDATA[
+                  ]]><model><![CDATA[
+                    ]]><map><![CDATA[
+                      ]]><entry><![CDATA[
+                        ]]><string><![CDATA[SQL]]></string><![CDATA[
+                        ]]><string><![CDATA[SELECT DISTINCT EXTRACT(YEAR FROM INVOICEDATE) AS YEAR FROM KD_SALES_DATA_REQUEST ORDER BY YEAR]]></string><![CDATA[
+                      ]]></entry><![CDATA[
+                      ]]><entry><![CDATA[
+                        ]]><string><![CDATA[selected]]></string><![CDATA[
+                        ]]><string><![CDATA[false]]></string><![CDATA[
+                      ]]></entry><![CDATA[
+                      ]]><entry><![CDATA[
+                        ]]><string><![CDATA[tableData]]></string><![CDATA[
+                        ]]><list/><![CDATA[
+                      ]]></entry><![CDATA[
+                      ]]><entry><![CDATA[
+                        ]]><string><![CDATA[encoding]]></string><![CDATA[
+                        ]]><string><![CDATA[ISO-8859-1]]></string><![CDATA[
+                      ]]></entry><![CDATA[
+                    ]]></map><![CDATA[
+                  ]]></model><![CDATA[
+                  ]]><listeners/><![CDATA[
+                ]]></com.approuter.studio.connectors.database.tasks.DBSetupInputsTask><![CDATA[
+                ]]><com.approuter.studio.connectors.database.tasks.DBSetupOutputsTask><![CDATA[
+                  ]]><key><![CDATA[setupOutputTask]]></key><![CDATA[
+                  ]]><children/><![CDATA[
+                  ]]><model><![CDATA[
+                    ]]><map><![CDATA[
+                      ]]><entry><![CDATA[
+                        ]]><string><![CDATA[SQL]]></string><![CDATA[
+                        ]]><string><![CDATA[SELECT DISTINCT EXTRACT(YEAR FROM INVOICEDATE) AS YEAR FROM KD_SALES_DATA_REQUEST ORDER BY YEAR]]></string><![CDATA[
+                      ]]></entry><![CDATA[
+                      ]]><entry><![CDATA[
+                        ]]><string><![CDATA[selected]]></string><![CDATA[
+                        ]]><string><![CDATA[false]]></string><![CDATA[
+                      ]]></entry><![CDATA[
+                      ]]><entry><![CDATA[
+                        ]]><string><![CDATA[tableData]]></string><![CDATA[
+                        ]]><list><![CDATA[
+                          ]]><com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                            ]]><schema/><![CDATA[
+                            ]]><name><![CDATA[YEAR]]></name><![CDATA[
+                            ]]><type><![CDATA[DECIMAL]]></type><![CDATA[
+                            ]]><encoding><![CDATA[ISO-8859-1]]></encoding><![CDATA[
+                            ]]><size><![CDATA[38]]></size><![CDATA[
+                            ]]><nullable><![CDATA[true]]></nullable><![CDATA[
+                            ]]><tableName/><![CDATA[
+                            ]]><xpath><![CDATA[YEAR]]></xpath><![CDATA[
+                          ]]></com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                        ]]></list><![CDATA[
+                      ]]></entry><![CDATA[
+                      ]]><entry><![CDATA[
+                        ]]><string><![CDATA[encoding]]></string><![CDATA[
+                        ]]><string><![CDATA[ISO-8859-1]]></string><![CDATA[
+                      ]]></entry><![CDATA[
+                    ]]></map><![CDATA[
+                  ]]></model><![CDATA[
+                  ]]><listeners/><![CDATA[
+                ]]></com.approuter.studio.connectors.database.tasks.DBSetupOutputsTask><![CDATA[
+              ]]></listeners><![CDATA[
+            ]]></com.approuter.studio.connectors.database.tasks.DBEnterQueryTask><![CDATA[
+            ]]><com.approuter.studio.connectors.database.tasks.DBSetupInputsTask reference="../com.approuter.studio.connectors.database.tasks.DBEnterQueryTask/listeners/com.approuter.studio.connectors.database.tasks.DBSetupInputsTask"/><![CDATA[
+            ]]><com.approuter.studio.connectors.database.tasks.DBSetupOutputsTask reference="../com.approuter.studio.connectors.database.tasks.DBEnterQueryTask/listeners/com.approuter.studio.connectors.database.tasks.DBSetupOutputsTask"/><![CDATA[
+            ]]><com.approuter.studio.connectors.task.ActivityRefTask><![CDATA[
+              ]]><key><![CDATA[retryTask]]></key><![CDATA[
+              ]]><children/><![CDATA[
+              ]]><model><![CDATA[
+                ]]><map><![CDATA[
+                  ]]><entry><![CDATA[
+                    ]]><string><![CDATA[maxRetries]]></string><![CDATA[
+                    ]]><int><![CDATA[5]]></int><![CDATA[
+                  ]]></entry><![CDATA[
+                  ]]><entry><![CDATA[
+                    ]]><string><![CDATA[selected]]></string><![CDATA[
+                    ]]><string><![CDATA[false]]></string><![CDATA[
+                  ]]></entry><![CDATA[
+                  ]]><entry><![CDATA[
+                    ]]><string><![CDATA[timeout]]></string><![CDATA[
+                    ]]><int><![CDATA[300]]></int><![CDATA[
+                  ]]></entry><![CDATA[
+                  ]]><entry><![CDATA[
+                    ]]><string><![CDATA[retryInterval]]></string><![CDATA[
+                    ]]><int><![CDATA[30]]></int><![CDATA[
+                  ]]></entry><![CDATA[
+                ]]></map><![CDATA[
+              ]]></model><![CDATA[
+              ]]><listeners/><![CDATA[
+            ]]></com.approuter.studio.connectors.task.ActivityRefTask><![CDATA[
+          ]]></children><![CDATA[
+          ]]><model><![CDATA[
+            ]]><map><![CDATA[
+              ]]><entry><![CDATA[
+                ]]><string><![CDATA[selected]]></string><![CDATA[
+                ]]><string><![CDATA[false]]></string><![CDATA[
+              ]]></entry><![CDATA[
+            ]]></map><![CDATA[
+          ]]></model><![CDATA[
+          ]]><listeners><![CDATA[
+            ]]><com.approuter.studio.connectors.database.tasks.DBQueryMapTask><![CDATA[
+              ]]><type><![CDATA[0]]></type><![CDATA[
+              ]]><inputParamName><![CDATA[parameters]]></inputParamName><![CDATA[
+              ]]><outputParamName><![CDATA[rows]]></outputParamName><![CDATA[
+              ]]><key><![CDATA[mapInputsTask]]></key><![CDATA[
+              ]]><children/><![CDATA[
+              ]]><model><![CDATA[
+                ]]><map><![CDATA[
+                  ]]><entry><![CDATA[
+                    ]]><string><![CDATA[schema]]></string><![CDATA[
+                    ]]><string><![CDATA[Schema_4_mapInputsTask_in_Execute_Query_24]]></string><![CDATA[
+                  ]]></entry><![CDATA[
+                  ]]><entry><![CDATA[
+                    ]]><string><![CDATA[selected]]></string><![CDATA[
+                    ]]><string><![CDATA[false]]></string><![CDATA[
+                  ]]></entry><![CDATA[
+                  ]]><entry><![CDATA[
+                    ]]><string><![CDATA[inputsRequired]]></string><![CDATA[
+                    ]]><boolean><![CDATA[false]]></boolean><![CDATA[
+                  ]]></entry><![CDATA[
+                ]]></map><![CDATA[
+              ]]></model><![CDATA[
+              ]]><listeners/><![CDATA[
+            ]]></com.approuter.studio.connectors.database.tasks.DBQueryMapTask><![CDATA[
+            ]]><com.approuter.studio.connectors.database.tasks.DBQueryMapTask><![CDATA[
+              ]]><type><![CDATA[1]]></type><![CDATA[
+              ]]><inputParamName><![CDATA[parameters]]></inputParamName><![CDATA[
+              ]]><outputParamName><![CDATA[rows]]></outputParamName><![CDATA[
+              ]]><key><![CDATA[mapOutputsTask]]></key><![CDATA[
+              ]]><children/><![CDATA[
+              ]]><model><![CDATA[
+                ]]><map><![CDATA[
+                  ]]><entry><![CDATA[
+                    ]]><string><![CDATA[schema]]></string><![CDATA[
+                    ]]><string><![CDATA[Schema_4_mapOutputsTask_in_Execute_Query_24]]></string><![CDATA[
+                  ]]></entry><![CDATA[
+                  ]]><entry><![CDATA[
+                    ]]><string><![CDATA[selected]]></string><![CDATA[
+                    ]]><string><![CDATA[false]]></string><![CDATA[
+                  ]]></entry><![CDATA[
+                  ]]><entry><![CDATA[
+                    ]]><string><![CDATA[inputsRequired]]></string><![CDATA[
+                    ]]><boolean><![CDATA[true]]></boolean><![CDATA[
+                  ]]></entry><![CDATA[
+                ]]></map><![CDATA[
+              ]]></model><![CDATA[
+              ]]><listeners/><![CDATA[
+            ]]></com.approuter.studio.connectors.database.tasks.DBQueryMapTask><![CDATA[
+          ]]></listeners><![CDATA[
+        ]]></com.approuter.studio.connectors.task.ActivityRefTask><![CDATA[
+      ]]></listeners><![CDATA[
+    ]]></com.approuter.studio.connectors.database.tasks.DBEndpointTask><![CDATA[
+    ]]><com.approuter.studio.connectors.task.ActivityRefTask reference="../com.approuter.studio.connectors.database.tasks.DBEndpointTask/listeners/com.approuter.studio.connectors.task.ActivityRefTask"/><![CDATA[
+    ]]><com.approuter.studio.connectors.database.tasks.DBQueryMapTask reference="../com.approuter.studio.connectors.database.tasks.DBEndpointTask/listeners/com.approuter.studio.connectors.task.ActivityRefTask/listeners/com.approuter.studio.connectors.database.tasks.DBQueryMapTask"/><![CDATA[
+    ]]><com.approuter.studio.connectors.database.tasks.DBQueryMapTask reference="../com.approuter.studio.connectors.database.tasks.DBEndpointTask/listeners/com.approuter.studio.connectors.task.ActivityRefTask/listeners/com.approuter.studio.connectors.database.tasks.DBQueryMapTask[2]"/><![CDATA[
+  ]]></tasks><![CDATA[
+  ]]><valid><![CDATA[false]]></valid><![CDATA[
+]]></com.approuter.studio.connectors.task.TaskList></tasksConfig></invoke><foreach activityId="14" comments="" configurationId="flow_for_each_id_1" description="ForEach Activity" expanded="true" inputVariable="rows_1" loopCounter="loopcounter_1" loopValue="loopvalue_1" name="For Each" query="/rows/row"><sequence activityId="91" comments="" configurationId="flow_sequence_id_1" description="Start Activity" expanded="true" name="sequence"><invoke activityId="5" activityName="" comments="" configurationId="db_parameterizedQuery_id" description="This activity gets rows of data from the selected database endpoint based on a given SQL select query" expanded="true" moduleName="http://www.approuter.com/module/database/" name="Execute Query" partnerLink=""><inputMapSpecConfig><mapSpec context="orchestration" optionalParameterVisible="false" version="1.0" xmlns="http://www.approuter.com/schemas/2003/1/transformation/" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><specInfo><source canBeSubstitutedFromUI="true" displayName="loopvalue_1" isParameter="false" location="Schema_4_mapOutputsTask_in_Execute_Query_24" locationType="2" logicalName="srcDoc1" optionalParameter="false" originalRootNodeName="rows" rootNodeName="row" varName="loopvalue_1" xpathToRootNode="/rows/row"/><destination canBeSubstitutedFromUI="true" displayName="parameters" isParameter="true" location="Schema_4_mapInputsTask_in_Execute_Query_5" locationType="2" logicalName="dstDoc1" optionalParameter="false" originalRootNodeName="parameters" rootNodeName="parameters" varName="parameters"/></specInfo><doMapping><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/row/YEAR/ihmap:nillable"/><to docName="dstDoc1" path="/parameters/YEAR/ihmap:nillable"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/row/YEAR"/><to docName="dstDoc1" path="/parameters/YEAR"/></do></rule></doMapping></mapSpec></inputMapSpecConfig><outputMapSpecConfig><mapSpec context="orchestration" optionalParameterVisible="false" version="1.0" xmlns="http://www.approuter.com/schemas/2003/1/transformation/" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><specInfo><source canBeSubstitutedFromUI="true" displayName="rows" isParameter="true" location="Schema_4_mapOutputsTask_in_Execute_Query_5" locationType="2" logicalName="srcDoc1" optionalParameter="false" originalRootNodeName="rows" rootNodeName="rows" varName="rows"/><destination canBeSubstitutedFromUI="true" displayName="rows" isParameter="false" location="Schema_4_mapOutputsTask_in_Execute_Query_5" locationType="2" logicalName="dstDoc1" optionalParameter="false" originalRootNodeName="rows" rootNodeName="rows" varName="rows"/></specInfo><doMapping><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/ihmap:instances"/><to docName="dstDoc1" path="/rows/row/ihmap:instances"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/CUSTOMER_NO/ihmap:nillable"/><to docName="dstDoc1" path="/rows/row/CUSTOMER_NO/ihmap:nillable"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/CUSTOMER_NO"/><to docName="dstDoc1" path="/rows/row/CUSTOMER_NO"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/INVOICE_ID/ihmap:nillable"/><to docName="dstDoc1" path="/rows/row/INVOICE_ID/ihmap:nillable"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/INVOICE_ID"/><to docName="dstDoc1" path="/rows/row/INVOICE_ID"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/ITEM_ID/ihmap:nillable"/><to docName="dstDoc1" path="/rows/row/ITEM_ID/ihmap:nillable"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/ITEM_ID"/><to docName="dstDoc1" path="/rows/row/ITEM_ID"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/INVOICEDATE/ihmap:nillable"/><to docName="dstDoc1" path="/rows/row/INVOICEDATE/ihmap:nillable"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/INVOICEDATE"/><to docName="dstDoc1" path="/rows/row/INVOICEDATE"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/SALESMAN_CODE/ihmap:nillable"/><to docName="dstDoc1" path="/rows/row/SALESMAN_CODE/ihmap:nillable"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/SALESMAN_CODE"/><to docName="dstDoc1" path="/rows/row/SALESMAN_CODE"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/REGION_CODE/ihmap:nillable"/><to docName="dstDoc1" path="/rows/row/REGION_CODE/ihmap:nillable"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/REGION_CODE"/><to docName="dstDoc1" path="/rows/row/REGION_CODE"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/PART_PRODUCT_FAMILY/ihmap:nillable"/><to docName="dstDoc1" path="/rows/row/PART_PRODUCT_FAMILY/ihmap:nillable"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/PART_PRODUCT_FAMILY"/><to docName="dstDoc1" path="/rows/row/PART_PRODUCT_FAMILY"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/PART_PRODUCT_CODE/ihmap:nillable"/><to docName="dstDoc1" path="/rows/row/PART_PRODUCT_CODE/ihmap:nillable"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/PART_PRODUCT_CODE"/><to docName="dstDoc1" path="/rows/row/PART_PRODUCT_CODE"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/ALLAMOUNTS/ihmap:nillable"/><to docName="dstDoc1" path="/rows/row/ALLAMOUNTS/ihmap:nillable"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/ALLAMOUNTS"/><to docName="dstDoc1" path="/rows/row/ALLAMOUNTS"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/INVOICED_QTY/ihmap:nillable"/><to docName="dstDoc1" path="/rows/row/INVOICED_QTY/ihmap:nillable"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/INVOICED_QTY"/><to docName="dstDoc1" path="/rows/row/INVOICED_QTY"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/CORPORATE_FORM/ihmap:nillable"/><to docName="dstDoc1" path="/rows/row/CORPORATE_FORM/ihmap:nillable"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/CORPORATE_FORM"/><to docName="dstDoc1" path="/rows/row/CORPORATE_FORM"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/CATALOG_NO/ihmap:nillable"/><to docName="dstDoc1" path="/rows/row/CATALOG_NO/ihmap:nillable"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/CATALOG_NO"/><to docName="dstDoc1" path="/rows/row/CATALOG_NO"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/CUSTOMER_NAME/ihmap:nillable"/><to docName="dstDoc1" path="/rows/row/CUSTOMER_NAME/ihmap:nillable"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/CUSTOMER_NAME"/><to docName="dstDoc1" path="/rows/row/CUSTOMER_NAME"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/LIST_PRICE/ihmap:nillable"/><to docName="dstDoc1" path="/rows/row/LIST_PRICE/ihmap:nillable"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/LIST_PRICE"/><to docName="dstDoc1" path="/rows/row/LIST_PRICE"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/CUST_GRP/ihmap:nillable"/><to docName="dstDoc1" path="/rows/row/CUST_GRP/ihmap:nillable"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/CUST_GRP"/><to docName="dstDoc1" path="/rows/row/CUST_GRP"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/NAME/ihmap:nillable"/><to docName="dstDoc1" path="/rows/row/NAME/ihmap:nillable"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/NAME"/><to docName="dstDoc1" path="/rows/row/NAME"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/TYPE_DESIGNATION/ihmap:nillable"/><to docName="dstDoc1" path="/rows/row/TYPE_DESIGNATION/ihmap:nillable"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/TYPE_DESIGNATION"/><to docName="dstDoc1" path="/rows/row/TYPE_DESIGNATION"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/SITE/ihmap:nillable"/><to docName="dstDoc1" path="/rows/row/SITE/ihmap:nillable"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/SITE"/><to docName="dstDoc1" path="/rows/row/SITE"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/MARKET_CODE/ihmap:nillable"/><to docName="dstDoc1" path="/rows/row/MARKET_CODE/ihmap:nillable"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/MARKET_CODE"/><to docName="dstDoc1" path="/rows/row/MARKET_CODE"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/ASSOCIATION_NO/ihmap:nillable"/><to docName="dstDoc1" path="/rows/row/ASSOCIATION_NO/ihmap:nillable"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/ASSOCIATION_NO"/><to docName="dstDoc1" path="/rows/row/ASSOCIATION_NO"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/RMA_NO/ihmap:nillable"/><to docName="dstDoc1" path="/rows/row/RMA_NO/ihmap:nillable"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/RMA_NO"/><to docName="dstDoc1" path="/rows/row/RMA_NO"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/ORDER_NO/ihmap:nillable"/><to docName="dstDoc1" path="/rows/row/ORDER_NO/ihmap:nillable"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/ORDER_NO"/><to docName="dstDoc1" path="/rows/row/ORDER_NO"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/DELIVSTATE/ihmap:nillable"/><to docName="dstDoc1" path="/rows/row/DELIVSTATE/ihmap:nillable"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/DELIVSTATE"/><to docName="dstDoc1" path="/rows/row/DELIVSTATE"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/DELIVZIP/ihmap:nillable"/><to docName="dstDoc1" path="/rows/row/DELIVZIP/ihmap:nillable"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/DELIVZIP"/><to docName="dstDoc1" path="/rows/row/DELIVZIP"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/INVENTORYVALUEUS/ihmap:nillable"/><to docName="dstDoc1" path="/rows/row/INVENTORYVALUEUS/ihmap:nillable"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/INVENTORYVALUEUS"/><to docName="dstDoc1" path="/rows/row/INVENTORYVALUEUS"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/SECOND_COMMODITY/ihmap:nillable"/><to docName="dstDoc1" path="/rows/row/SECOND_COMMODITY/ihmap:nillable"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/SECOND_COMMODITY"/><to docName="dstDoc1" path="/rows/row/SECOND_COMMODITY"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/SOURCE/ihmap:nillable"/><to docName="dstDoc1" path="/rows/row/SOURCE/ihmap:nillable"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/SOURCE"/><to docName="dstDoc1" path="/rows/row/SOURCE"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/TRUELOCALAMT/ihmap:nillable"/><to docName="dstDoc1" path="/rows/row/TRUELOCALAMT/ihmap:nillable"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/TRUELOCALAMT"/><to docName="dstDoc1" path="/rows/row/TRUELOCALAMT"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/DELIVCOUNTRY/ihmap:nillable"/><to docName="dstDoc1" path="/rows/row/DELIVCOUNTRY/ihmap:nillable"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/DELIVCOUNTRY"/><to docName="dstDoc1" path="/rows/row/DELIVCOUNTRY"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/COMMISSION_RECEIVER/ihmap:nillable"/><to docName="dstDoc1" path="/rows/row/COMMISSION_RECEIVER/ihmap:nillable"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/COMMISSION_RECEIVER"/><to docName="dstDoc1" path="/rows/row/COMMISSION_RECEIVER"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/INVOICEQTR/ihmap:nillable"/><to docName="dstDoc1" path="/rows/row/INVOICEQTR/ihmap:nillable"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/INVOICEQTR"/><to docName="dstDoc1" path="/rows/row/INVOICEQTR"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/CATALOG_DESC/ihmap:nillable"/><to docName="dstDoc1" path="/rows/row/CATALOG_DESC/ihmap:nillable"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/CATALOG_DESC"/><to docName="dstDoc1" path="/rows/row/CATALOG_DESC"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/FIRSTORDERDATE/ihmap:nillable"/><to docName="dstDoc1" path="/rows/row/FIRSTORDERDATE/ihmap:nillable"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/FIRSTORDERDATE"/><to docName="dstDoc1" path="/rows/row/FIRSTORDERDATE"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/FIRSTORDERDATESCG/ihmap:nillable"/><to docName="dstDoc1" path="/rows/row/FIRSTORDERDATESCG/ihmap:nillable"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/FIRSTORDERDATESCG"/><to docName="dstDoc1" path="/rows/row/FIRSTORDERDATESCG"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/CUSTNAME/ihmap:nillable"/><to docName="dstDoc1" path="/rows/row/CUSTNAME/ihmap:nillable"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/CUSTNAME"/><to docName="dstDoc1" path="/rows/row/CUSTNAME"/></do></rule></doMapping></mapSpec></outputMapSpecConfig><tasksConfig><com.approuter.studio.connectors.task.TaskList><![CDATA[
+  ]]><tasks><![CDATA[
+    ]]><com.approuter.studio.connectors.task.SummaryTask><![CDATA[
+      ]]><key><![CDATA[summaryTask]]></key><![CDATA[
+      ]]><children/><![CDATA[
+      ]]><model><![CDATA[
+        ]]><map><![CDATA[
+          ]]><entry><![CDATA[
+            ]]><string><![CDATA[selected]]></string><![CDATA[
+            ]]><string><![CDATA[false]]></string><![CDATA[
+          ]]></entry><![CDATA[
+        ]]></map><![CDATA[
+      ]]></model><![CDATA[
+      ]]><listeners/><![CDATA[
+    ]]></com.approuter.studio.connectors.task.SummaryTask><![CDATA[
+    ]]><com.approuter.studio.connectors.database.tasks.DBEndpointTask><![CDATA[
+      ]]><key><![CDATA[endpointTask]]></key><![CDATA[
+      ]]><children/><![CDATA[
+      ]]><model><![CDATA[
+        ]]><map><![CDATA[
+          ]]><entry><![CDATA[
+            ]]><string><![CDATA[selected]]></string><![CDATA[
+            ]]><string><![CDATA[false]]></string><![CDATA[
+          ]]></entry><![CDATA[
+          ]]><entry><![CDATA[
+            ]]><string><![CDATA[endpoint]]></string><![CDATA[
+            ]]><string><![CDATA[appnet-guid://204291A7B33B6D29BF6FA572588968DE]]></string><![CDATA[
+          ]]></entry><![CDATA[
+        ]]></map><![CDATA[
+      ]]></model><![CDATA[
+      ]]><listeners><![CDATA[
+        ]]><com.approuter.studio.connectors.task.ActivityRefTask><![CDATA[
+          ]]><key><![CDATA[setupWorkflowTask]]></key><![CDATA[
+          ]]><children><![CDATA[
+            ]]><com.approuter.studio.connectors.database.tasks.DBEnterQueryTask><![CDATA[
+              ]]><key><![CDATA[enterQueryTask]]></key><![CDATA[
+              ]]><children/><![CDATA[
+              ]]><model><![CDATA[
+                ]]><map><![CDATA[
+                  ]]><entry><![CDATA[
+                    ]]><string><![CDATA[validatePressed]]></string><![CDATA[
+                    ]]><boolean><![CDATA[true]]></boolean><![CDATA[
+                  ]]></entry><![CDATA[
+                  ]]><entry><![CDATA[
+                    ]]><string><![CDATA[selected]]></string><![CDATA[
+                    ]]><string><![CDATA[true]]></string><![CDATA[
+                  ]]></entry><![CDATA[
+                  ]]><entry><![CDATA[
+                    ]]><string><![CDATA[SQL]]></string><![CDATA[
+                    ]]><string><![CDATA[SELECT "KD_SALES_DATA"."CUSTOMER_NO",
+       "KD_SALES_DATA"."INVOICE_ID",
+       "KD_SALES_DATA"."ITEM_ID",
+       "KD_SALES_DATA"."INVOICEDATE",
+       "KD_SALES_DATA"."SALESMAN_CODE",
+       "KD_SALES_DATA"."REGION_CODE",
+       "KD_SALES_DATA"."PART_PRODUCT_FAMILY",
+       "KD_SALES_DATA"."PART_PRODUCT_CODE",
+       "KD_SALES_DATA"."ALLAMOUNTS",
+       "KD_SALES_DATA"."INVOICED_QTY",
+       "KD_SALES_DATA"."CORPORATE_FORM",
+       "KD_SALES_DATA"."CATALOG_NO",
+       "KD_SALES_DATA"."CUSTOMER_NAME",
+       "SALES_PART"."LIST_PRICE",
+       "KD_SALES_DATA"."CUST_GRP",
+       "PERSON_INFO"."NAME",
+       "KD_SALES_DATA"."TYPE_DESIGNATION",
+       "KD_SALES_DATA"."SITE",
+       "CUSTOMER_ORDER"."MARKET_CODE",
+       "KD_SALES_DATA"."ASSOCIATION_NO",
+       "KD_SALES_DATA"."RMA_NO",
+       "KD_SALES_DATA"."ORDER_NO",
+       "KD_SALES_DATA"."DELIVSTATE",
+       "KD_SALES_DATA"."DELIVZIP",
+       "KD_COST_VALUES"."INVENTORYVALUEUS",
+       "KD_SALES_DATA"."SECOND_COMMODITY",
+       "KD_SALES_DATA"."SOURCE",
+       "KD_SALES_DATA"."TRUELOCALAMT",
+       "KD_SALES_DATA"."DELIVCOUNTRY",
+       "KD_SALES_DATA"."COMMISSION_RECEIVER",
+       "CUSTOMER_INFO"."NAME" AS CUSTNAME,
+       "KD_SALES_DATA"."INVOICEQTR",
+       "SALES_PART"."CATALOG_DESC",
+       "KD_FIRST_PF_ORDER_DATE"."FIRSTORDERDATE",
+       "KD_FIRST_SCF_ORDER_DATE"."FIRSTORDERDATE" AS "FIRSTORDERDATESCG"
+  FROM (((((("IFSAPP"."KD_SALES_DATA_REQUEST" "KD_SALES_DATA" LEFT OUTER JOIN
+        "IFSAPP"."SALES_PART" "SALES_PART"
+        ON("KD_SALES_DATA"."CATALOG_NO" = "SALES_PART"."CATALOG_NO") AND
+        ("KD_SALES_DATA"."SITE" = "SALES_PART"."CONTRACT")) LEFT OUTER JOIN
+        "IFSAPP"."PERSON_INFO" "PERSON_INFO" ON
+        "KD_SALES_DATA"."SALESMAN_CODE" = "PERSON_INFO"."PERSON_ID") LEFT
+        OUTER JOIN "IFSAPP"."CUSTOMER_ORDER" "CUSTOMER_ORDER" ON
+        "KD_SALES_DATA"."ORDER_NO" = "CUSTOMER_ORDER"."ORDER_NO") LEFT
+        OUTER JOIN "IFSAPP"."KD_COST_VALUES" "KD_COST_VALUES" ON
+        "KD_SALES_DATA"."CATALOG_NO" = "KD_COST_VALUES"."PART_NO") LEFT
+        OUTER JOIN "IFSAPP"."CUSTOMER_INFO" "CUSTOMER_INFO" ON
+        "KD_SALES_DATA"."ASSOCIATION_NO" = "CUSTOMER_INFO"."CUSTOMER_ID")
+        INNER JOIN "IFSAPP"."KD_FIRST_PF_ORDER_DATE"
+        "KD_FIRST_PF_ORDER_DATE"
+        ON("KD_SALES_DATA"."CUSTOMER_NO" =
+           "KD_FIRST_PF_ORDER_DATE"."CUSTOMER_NO") AND
+        ("KD_SALES_DATA"."PART_PRODUCT_FAMILY" =
+        "KD_FIRST_PF_ORDER_DATE"."PART_PRODUCT_FAMILY"))
+  LEFT OUTER JOIN "IFSAPP"."KD_FIRST_SCF_ORDER_DATE" "KD_FIRST_SCF_ORDER_DATE"
+    ON ("KD_SALES_DATA"."CUSTOMER_NO" =
+       "KD_FIRST_SCF_ORDER_DATE"."CUSTOMER_NO")
+   AND ("KD_SALES_DATA"."SECOND_COMMODITY" =
+       "KD_FIRST_SCF_ORDER_DATE"."SECOND_COMMODITY")
+ WHERE EXTRACT (YEAR FROM "KD_SALES_DATA"."INVOICEDATE") = ?
+ ORDER BY "KD_SALES_DATA"."REGION_CODE",
+          "KD_SALES_DATA"."SALESMAN_CODE",
+          "KD_SALES_DATA"."CUSTOMER_NO",
+          "KD_SALES_DATA"."PART_PRODUCT_FAMILY",
+          "KD_SALES_DATA"."PART_PRODUCT_CODE",
+          "KD_SALES_DATA"."INVOICEDATE",
+          "KD_SALES_DATA"."INVOICE_ID",
+          "KD_SALES_DATA"."ITEM_ID"]]></string><![CDATA[
+                  ]]></entry><![CDATA[
+                  ]]><entry><![CDATA[
+                    ]]><string><![CDATA[maxRows]]></string><![CDATA[
+                    ]]><string><![CDATA[0]]></string><![CDATA[
+                  ]]></entry><![CDATA[
+                  ]]><entry><![CDATA[
+                    ]]><string><![CDATA[encoding]]></string><![CDATA[
+                    ]]><string><![CDATA[ISO-8859-1]]></string><![CDATA[
+                  ]]></entry><![CDATA[
+                  ]]><entry><![CDATA[
+                    ]]><string><![CDATA[validQuery]]></string><![CDATA[
+                    ]]><boolean><![CDATA[true]]></boolean><![CDATA[
+                  ]]></entry><![CDATA[
+                ]]></map><![CDATA[
+              ]]></model><![CDATA[
+              ]]><listeners><![CDATA[
+                ]]><com.approuter.studio.connectors.database.tasks.DBSetupInputsTask><![CDATA[
+                  ]]><key><![CDATA[setupInputTask]]></key><![CDATA[
+                  ]]><children/><![CDATA[
+                  ]]><model><![CDATA[
+                    ]]><map><![CDATA[
+                      ]]><entry><![CDATA[
+                        ]]><string><![CDATA[selected]]></string><![CDATA[
+                        ]]><string><![CDATA[false]]></string><![CDATA[
+                      ]]></entry><![CDATA[
+                      ]]><entry><![CDATA[
+                        ]]><string><![CDATA[SQL]]></string><![CDATA[
+                        ]]><string><![CDATA[SELECT "KD_SALES_DATA"."CUSTOMER_NO",
+       "KD_SALES_DATA"."INVOICE_ID",
+       "KD_SALES_DATA"."ITEM_ID",
+       "KD_SALES_DATA"."INVOICEDATE",
+       "KD_SALES_DATA"."SALESMAN_CODE",
+       "KD_SALES_DATA"."REGION_CODE",
+       "KD_SALES_DATA"."PART_PRODUCT_FAMILY",
+       "KD_SALES_DATA"."PART_PRODUCT_CODE",
+       "KD_SALES_DATA"."ALLAMOUNTS",
+       "KD_SALES_DATA"."INVOICED_QTY",
+       "KD_SALES_DATA"."CORPORATE_FORM",
+       "KD_SALES_DATA"."CATALOG_NO",
+       "KD_SALES_DATA"."CUSTOMER_NAME",
+       "SALES_PART"."LIST_PRICE",
+       "KD_SALES_DATA"."CUST_GRP",
+       "PERSON_INFO"."NAME",
+       "KD_SALES_DATA"."TYPE_DESIGNATION",
+       "KD_SALES_DATA"."SITE",
+       "CUSTOMER_ORDER"."MARKET_CODE",
+       "KD_SALES_DATA"."ASSOCIATION_NO",
+       "KD_SALES_DATA"."RMA_NO",
+       "KD_SALES_DATA"."ORDER_NO",
+       "KD_SALES_DATA"."DELIVSTATE",
+       "KD_SALES_DATA"."DELIVZIP",
+       "KD_COST_VALUES"."INVENTORYVALUEUS",
+       "KD_SALES_DATA"."SECOND_COMMODITY",
+       "KD_SALES_DATA"."SOURCE",
+       "KD_SALES_DATA"."TRUELOCALAMT",
+       "KD_SALES_DATA"."DELIVCOUNTRY",
+       "KD_SALES_DATA"."COMMISSION_RECEIVER",
+       "CUSTOMER_INFO"."NAME" AS CUSTNAME,
+       "KD_SALES_DATA"."INVOICEQTR",
+       "SALES_PART"."CATALOG_DESC",
+       "KD_FIRST_PF_ORDER_DATE"."FIRSTORDERDATE",
+       "KD_FIRST_SCF_ORDER_DATE"."FIRSTORDERDATE" AS "FIRSTORDERDATESCG"
+  FROM (((((("IFSAPP"."KD_SALES_DATA_REQUEST" "KD_SALES_DATA" LEFT OUTER JOIN
+        "IFSAPP"."SALES_PART" "SALES_PART"
+        ON("KD_SALES_DATA"."CATALOG_NO" = "SALES_PART"."CATALOG_NO") AND
+        ("KD_SALES_DATA"."SITE" = "SALES_PART"."CONTRACT")) LEFT OUTER JOIN
+        "IFSAPP"."PERSON_INFO" "PERSON_INFO" ON
+        "KD_SALES_DATA"."SALESMAN_CODE" = "PERSON_INFO"."PERSON_ID") LEFT
+        OUTER JOIN "IFSAPP"."CUSTOMER_ORDER" "CUSTOMER_ORDER" ON
+        "KD_SALES_DATA"."ORDER_NO" = "CUSTOMER_ORDER"."ORDER_NO") LEFT
+        OUTER JOIN "IFSAPP"."KD_COST_VALUES" "KD_COST_VALUES" ON
+        "KD_SALES_DATA"."CATALOG_NO" = "KD_COST_VALUES"."PART_NO") LEFT
+        OUTER JOIN "IFSAPP"."CUSTOMER_INFO" "CUSTOMER_INFO" ON
+        "KD_SALES_DATA"."ASSOCIATION_NO" = "CUSTOMER_INFO"."CUSTOMER_ID")
+        INNER JOIN "IFSAPP"."KD_FIRST_PF_ORDER_DATE"
+        "KD_FIRST_PF_ORDER_DATE"
+        ON("KD_SALES_DATA"."CUSTOMER_NO" =
+           "KD_FIRST_PF_ORDER_DATE"."CUSTOMER_NO") AND
+        ("KD_SALES_DATA"."PART_PRODUCT_FAMILY" =
+        "KD_FIRST_PF_ORDER_DATE"."PART_PRODUCT_FAMILY"))
+  LEFT OUTER JOIN "IFSAPP"."KD_FIRST_SCF_ORDER_DATE" "KD_FIRST_SCF_ORDER_DATE"
+    ON ("KD_SALES_DATA"."CUSTOMER_NO" =
+       "KD_FIRST_SCF_ORDER_DATE"."CUSTOMER_NO")
+   AND ("KD_SALES_DATA"."SECOND_COMMODITY" =
+       "KD_FIRST_SCF_ORDER_DATE"."SECOND_COMMODITY")
+ WHERE EXTRACT (YEAR FROM "KD_SALES_DATA"."INVOICEDATE") = ?
+ ORDER BY "KD_SALES_DATA"."REGION_CODE",
+          "KD_SALES_DATA"."SALESMAN_CODE",
+          "KD_SALES_DATA"."CUSTOMER_NO",
+          "KD_SALES_DATA"."PART_PRODUCT_FAMILY",
+          "KD_SALES_DATA"."PART_PRODUCT_CODE",
+          "KD_SALES_DATA"."INVOICEDATE",
+          "KD_SALES_DATA"."INVOICE_ID",
+          "KD_SALES_DATA"."ITEM_ID"]]></string><![CDATA[
+                      ]]></entry><![CDATA[
+                      ]]><entry><![CDATA[
+                        ]]><string><![CDATA[tableData]]></string><![CDATA[
+                        ]]><list><![CDATA[
+                          ]]><com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                            ]]><schema/><![CDATA[
+                            ]]><name><![CDATA[YEAR]]></name><![CDATA[
+                            ]]><type><![CDATA[CHAR]]></type><![CDATA[
+                            ]]><encoding><![CDATA[ISO-8859-1]]></encoding><![CDATA[
+                            ]]><size><![CDATA[1024]]></size><![CDATA[
+                            ]]><nullable><![CDATA[true]]></nullable><![CDATA[
+                            ]]><tableName/><![CDATA[
+                            ]]><xpath><![CDATA[________IFSAPP_._KD_SALES_DATA_REQUEST_._INVOICEDATE__]]></xpath><![CDATA[
+                          ]]></com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                        ]]></list><![CDATA[
+                      ]]></entry><![CDATA[
+                      ]]><entry><![CDATA[
+                        ]]><string><![CDATA[encoding]]></string><![CDATA[
+                        ]]><string><![CDATA[ISO-8859-1]]></string><![CDATA[
+                      ]]></entry><![CDATA[
+                    ]]></map><![CDATA[
+                  ]]></model><![CDATA[
+                  ]]><listeners/><![CDATA[
+                ]]></com.approuter.studio.connectors.database.tasks.DBSetupInputsTask><![CDATA[
+                ]]><com.approuter.studio.connectors.database.tasks.DBSetupOutputsTask><![CDATA[
+                  ]]><key><![CDATA[setupOutputTask]]></key><![CDATA[
+                  ]]><children/><![CDATA[
+                  ]]><model><![CDATA[
+                    ]]><map><![CDATA[
+                      ]]><entry><![CDATA[
+                        ]]><string><![CDATA[selected]]></string><![CDATA[
+                        ]]><string><![CDATA[false]]></string><![CDATA[
+                      ]]></entry><![CDATA[
+                      ]]><entry><![CDATA[
+                        ]]><string><![CDATA[SQL]]></string><![CDATA[
+                        ]]><string><![CDATA[SELECT "KD_SALES_DATA"."CUSTOMER_NO",
+       "KD_SALES_DATA"."INVOICE_ID",
+       "KD_SALES_DATA"."ITEM_ID",
+       "KD_SALES_DATA"."INVOICEDATE",
+       "KD_SALES_DATA"."SALESMAN_CODE",
+       "KD_SALES_DATA"."REGION_CODE",
+       "KD_SALES_DATA"."PART_PRODUCT_FAMILY",
+       "KD_SALES_DATA"."PART_PRODUCT_CODE",
+       "KD_SALES_DATA"."ALLAMOUNTS",
+       "KD_SALES_DATA"."INVOICED_QTY",
+       "KD_SALES_DATA"."CORPORATE_FORM",
+       "KD_SALES_DATA"."CATALOG_NO",
+       "KD_SALES_DATA"."CUSTOMER_NAME",
+       "SALES_PART"."LIST_PRICE",
+       "KD_SALES_DATA"."CUST_GRP",
+       "PERSON_INFO"."NAME",
+       "KD_SALES_DATA"."TYPE_DESIGNATION",
+       "KD_SALES_DATA"."SITE",
+       "CUSTOMER_ORDER"."MARKET_CODE",
+       "KD_SALES_DATA"."ASSOCIATION_NO",
+       "KD_SALES_DATA"."RMA_NO",
+       "KD_SALES_DATA"."ORDER_NO",
+       "KD_SALES_DATA"."DELIVSTATE",
+       "KD_SALES_DATA"."DELIVZIP",
+       "KD_COST_VALUES"."INVENTORYVALUEUS",
+       "KD_SALES_DATA"."SECOND_COMMODITY",
+       "KD_SALES_DATA"."SOURCE",
+       "KD_SALES_DATA"."TRUELOCALAMT",
+       "KD_SALES_DATA"."DELIVCOUNTRY",
+       "KD_SALES_DATA"."COMMISSION_RECEIVER",
+       "CUSTOMER_INFO"."NAME" AS CUSTNAME,
+       "KD_SALES_DATA"."INVOICEQTR",
+       "SALES_PART"."CATALOG_DESC",
+       "KD_FIRST_PF_ORDER_DATE"."FIRSTORDERDATE",
+       "KD_FIRST_SCF_ORDER_DATE"."FIRSTORDERDATE" AS "FIRSTORDERDATESCG"
+  FROM (((((("IFSAPP"."KD_SALES_DATA_REQUEST" "KD_SALES_DATA" LEFT OUTER JOIN
+        "IFSAPP"."SALES_PART" "SALES_PART"
+        ON("KD_SALES_DATA"."CATALOG_NO" = "SALES_PART"."CATALOG_NO") AND
+        ("KD_SALES_DATA"."SITE" = "SALES_PART"."CONTRACT")) LEFT OUTER JOIN
+        "IFSAPP"."PERSON_INFO" "PERSON_INFO" ON
+        "KD_SALES_DATA"."SALESMAN_CODE" = "PERSON_INFO"."PERSON_ID") LEFT
+        OUTER JOIN "IFSAPP"."CUSTOMER_ORDER" "CUSTOMER_ORDER" ON
+        "KD_SALES_DATA"."ORDER_NO" = "CUSTOMER_ORDER"."ORDER_NO") LEFT
+        OUTER JOIN "IFSAPP"."KD_COST_VALUES" "KD_COST_VALUES" ON
+        "KD_SALES_DATA"."CATALOG_NO" = "KD_COST_VALUES"."PART_NO") LEFT
+        OUTER JOIN "IFSAPP"."CUSTOMER_INFO" "CUSTOMER_INFO" ON
+        "KD_SALES_DATA"."ASSOCIATION_NO" = "CUSTOMER_INFO"."CUSTOMER_ID")
+        INNER JOIN "IFSAPP"."KD_FIRST_PF_ORDER_DATE"
+        "KD_FIRST_PF_ORDER_DATE"
+        ON("KD_SALES_DATA"."CUSTOMER_NO" =
+           "KD_FIRST_PF_ORDER_DATE"."CUSTOMER_NO") AND
+        ("KD_SALES_DATA"."PART_PRODUCT_FAMILY" =
+        "KD_FIRST_PF_ORDER_DATE"."PART_PRODUCT_FAMILY"))
+  LEFT OUTER JOIN "IFSAPP"."KD_FIRST_SCF_ORDER_DATE" "KD_FIRST_SCF_ORDER_DATE"
+    ON ("KD_SALES_DATA"."CUSTOMER_NO" =
+       "KD_FIRST_SCF_ORDER_DATE"."CUSTOMER_NO")
+   AND ("KD_SALES_DATA"."SECOND_COMMODITY" =
+       "KD_FIRST_SCF_ORDER_DATE"."SECOND_COMMODITY")
+ WHERE EXTRACT (YEAR FROM "KD_SALES_DATA"."INVOICEDATE") = ?
+ ORDER BY "KD_SALES_DATA"."REGION_CODE",
+          "KD_SALES_DATA"."SALESMAN_CODE",
+          "KD_SALES_DATA"."CUSTOMER_NO",
+          "KD_SALES_DATA"."PART_PRODUCT_FAMILY",
+          "KD_SALES_DATA"."PART_PRODUCT_CODE",
+          "KD_SALES_DATA"."INVOICEDATE",
+          "KD_SALES_DATA"."INVOICE_ID",
+          "KD_SALES_DATA"."ITEM_ID"]]></string><![CDATA[
+                      ]]></entry><![CDATA[
+                      ]]><entry><![CDATA[
+                        ]]><string><![CDATA[tableData]]></string><![CDATA[
+                        ]]><list><![CDATA[
+                          ]]><com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                            ]]><schema/><![CDATA[
+                            ]]><name><![CDATA[CUSTOMER_NO]]></name><![CDATA[
+                            ]]><type><![CDATA[VARCHAR]]></type><![CDATA[
+                            ]]><encoding><![CDATA[ISO-8859-1]]></encoding><![CDATA[
+                            ]]><size><![CDATA[255]]></size><![CDATA[
+                            ]]><nullable><![CDATA[true]]></nullable><![CDATA[
+                            ]]><tableName/><![CDATA[
+                            ]]><xpath><![CDATA[CUSTOMER_NO]]></xpath><![CDATA[
+                          ]]></com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                          ]]><com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                            ]]><schema/><![CDATA[
+                            ]]><name><![CDATA[INVOICE_ID]]></name><![CDATA[
+                            ]]><type><![CDATA[VARCHAR]]></type><![CDATA[
+                            ]]><encoding><![CDATA[ISO-8859-1]]></encoding><![CDATA[
+                            ]]><size><![CDATA[255]]></size><![CDATA[
+                            ]]><nullable><![CDATA[true]]></nullable><![CDATA[
+                            ]]><tableName/><![CDATA[
+                            ]]><xpath><![CDATA[INVOICE_ID]]></xpath><![CDATA[
+                          ]]></com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                          ]]><com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                            ]]><schema/><![CDATA[
+                            ]]><name><![CDATA[ITEM_ID]]></name><![CDATA[
+                            ]]><type><![CDATA[VARCHAR]]></type><![CDATA[
+                            ]]><encoding><![CDATA[ISO-8859-1]]></encoding><![CDATA[
+                            ]]><size><![CDATA[40]]></size><![CDATA[
+                            ]]><nullable><![CDATA[true]]></nullable><![CDATA[
+                            ]]><tableName/><![CDATA[
+                            ]]><xpath><![CDATA[ITEM_ID]]></xpath><![CDATA[
+                          ]]></com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                          ]]><com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                            ]]><schema/><![CDATA[
+                            ]]><name><![CDATA[INVOICEDATE]]></name><![CDATA[
+                            ]]><type><![CDATA[TIMESTAMP]]></type><![CDATA[
+                            ]]><encoding><![CDATA[ISO-8859-1]]></encoding><![CDATA[
+                            ]]><size><![CDATA[19]]></size><![CDATA[
+                            ]]><nullable><![CDATA[true]]></nullable><![CDATA[
+                            ]]><tableName/><![CDATA[
+                            ]]><xpath><![CDATA[INVOICEDATE]]></xpath><![CDATA[
+                          ]]></com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                          ]]><com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                            ]]><schema/><![CDATA[
+                            ]]><name><![CDATA[SALESMAN_CODE]]></name><![CDATA[
+                            ]]><type><![CDATA[VARCHAR]]></type><![CDATA[
+                            ]]><encoding><![CDATA[ISO-8859-1]]></encoding><![CDATA[
+                            ]]><size><![CDATA[20]]></size><![CDATA[
+                            ]]><nullable><![CDATA[true]]></nullable><![CDATA[
+                            ]]><tableName/><![CDATA[
+                            ]]><xpath><![CDATA[SALESMAN_CODE]]></xpath><![CDATA[
+                          ]]></com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                          ]]><com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                            ]]><schema/><![CDATA[
+                            ]]><name><![CDATA[REGION_CODE]]></name><![CDATA[
+                            ]]><type><![CDATA[VARCHAR]]></type><![CDATA[
+                            ]]><encoding><![CDATA[ISO-8859-1]]></encoding><![CDATA[
+                            ]]><size><![CDATA[10]]></size><![CDATA[
+                            ]]><nullable><![CDATA[true]]></nullable><![CDATA[
+                            ]]><tableName/><![CDATA[
+                            ]]><xpath><![CDATA[REGION_CODE]]></xpath><![CDATA[
+                          ]]></com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                          ]]><com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                            ]]><schema/><![CDATA[
+                            ]]><name><![CDATA[PART_PRODUCT_FAMILY]]></name><![CDATA[
+                            ]]><type><![CDATA[VARCHAR]]></type><![CDATA[
+                            ]]><encoding><![CDATA[ISO-8859-1]]></encoding><![CDATA[
+                            ]]><size><![CDATA[50]]></size><![CDATA[
+                            ]]><nullable><![CDATA[true]]></nullable><![CDATA[
+                            ]]><tableName/><![CDATA[
+                            ]]><xpath><![CDATA[PART_PRODUCT_FAMILY]]></xpath><![CDATA[
+                          ]]></com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                          ]]><com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                            ]]><schema/><![CDATA[
+                            ]]><name><![CDATA[PART_PRODUCT_CODE]]></name><![CDATA[
+                            ]]><type><![CDATA[VARCHAR]]></type><![CDATA[
+                            ]]><encoding><![CDATA[ISO-8859-1]]></encoding><![CDATA[
+                            ]]><size><![CDATA[50]]></size><![CDATA[
+                            ]]><nullable><![CDATA[true]]></nullable><![CDATA[
+                            ]]><tableName/><![CDATA[
+                            ]]><xpath><![CDATA[PART_PRODUCT_CODE]]></xpath><![CDATA[
+                          ]]></com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                          ]]><com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                            ]]><schema/><![CDATA[
+                            ]]><name><![CDATA[ALLAMOUNTS]]></name><![CDATA[
+                            ]]><type><![CDATA[DECIMAL]]></type><![CDATA[
+                            ]]><encoding><![CDATA[ISO-8859-1]]></encoding><![CDATA[
+                            ]]><size><![CDATA[38]]></size><![CDATA[
+                            ]]><nullable><![CDATA[true]]></nullable><![CDATA[
+                            ]]><tableName/><![CDATA[
+                            ]]><xpath><![CDATA[ALLAMOUNTS]]></xpath><![CDATA[
+                          ]]></com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                          ]]><com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                            ]]><schema/><![CDATA[
+                            ]]><name><![CDATA[INVOICED_QTY]]></name><![CDATA[
+                            ]]><type><![CDATA[DECIMAL]]></type><![CDATA[
+                            ]]><encoding><![CDATA[ISO-8859-1]]></encoding><![CDATA[
+                            ]]><size><![CDATA[38]]></size><![CDATA[
+                            ]]><nullable><![CDATA[true]]></nullable><![CDATA[
+                            ]]><tableName/><![CDATA[
+                            ]]><xpath><![CDATA[INVOICED_QTY]]></xpath><![CDATA[
+                          ]]></com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                          ]]><com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                            ]]><schema/><![CDATA[
+                            ]]><name><![CDATA[CORPORATE_FORM]]></name><![CDATA[
+                            ]]><type><![CDATA[VARCHAR]]></type><![CDATA[
+                            ]]><encoding><![CDATA[ISO-8859-1]]></encoding><![CDATA[
+                            ]]><size><![CDATA[8]]></size><![CDATA[
+                            ]]><nullable><![CDATA[true]]></nullable><![CDATA[
+                            ]]><tableName/><![CDATA[
+                            ]]><xpath><![CDATA[CORPORATE_FORM]]></xpath><![CDATA[
+                          ]]></com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                          ]]><com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                            ]]><schema/><![CDATA[
+                            ]]><name><![CDATA[CATALOG_NO]]></name><![CDATA[
+                            ]]><type><![CDATA[VARCHAR]]></type><![CDATA[
+                            ]]><encoding><![CDATA[ISO-8859-1]]></encoding><![CDATA[
+                            ]]><size><![CDATA[255]]></size><![CDATA[
+                            ]]><nullable><![CDATA[true]]></nullable><![CDATA[
+                            ]]><tableName/><![CDATA[
+                            ]]><xpath><![CDATA[CATALOG_NO]]></xpath><![CDATA[
+                          ]]></com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                          ]]><com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                            ]]><schema/><![CDATA[
+                            ]]><name><![CDATA[CUSTOMER_NAME]]></name><![CDATA[
+                            ]]><type><![CDATA[VARCHAR]]></type><![CDATA[
+                            ]]><encoding><![CDATA[ISO-8859-1]]></encoding><![CDATA[
+                            ]]><size><![CDATA[4000]]></size><![CDATA[
+                            ]]><nullable><![CDATA[true]]></nullable><![CDATA[
+                            ]]><tableName/><![CDATA[
+                            ]]><xpath><![CDATA[CUSTOMER_NAME]]></xpath><![CDATA[
+                          ]]></com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                          ]]><com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                            ]]><schema/><![CDATA[
+                            ]]><name><![CDATA[LIST_PRICE]]></name><![CDATA[
+                            ]]><type><![CDATA[DECIMAL]]></type><![CDATA[
+                            ]]><encoding><![CDATA[ISO-8859-1]]></encoding><![CDATA[
+                            ]]><size><![CDATA[38]]></size><![CDATA[
+                            ]]><nullable><![CDATA[true]]></nullable><![CDATA[
+                            ]]><tableName/><![CDATA[
+                            ]]><xpath><![CDATA[LIST_PRICE]]></xpath><![CDATA[
+                          ]]></com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                          ]]><com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                            ]]><schema/><![CDATA[
+                            ]]><name><![CDATA[CUST_GRP]]></name><![CDATA[
+                            ]]><type><![CDATA[VARCHAR]]></type><![CDATA[
+                            ]]><encoding><![CDATA[ISO-8859-1]]></encoding><![CDATA[
+                            ]]><size><![CDATA[10]]></size><![CDATA[
+                            ]]><nullable><![CDATA[true]]></nullable><![CDATA[
+                            ]]><tableName/><![CDATA[
+                            ]]><xpath><![CDATA[CUST_GRP]]></xpath><![CDATA[
+                          ]]></com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                          ]]><com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                            ]]><schema/><![CDATA[
+                            ]]><name><![CDATA[NAME]]></name><![CDATA[
+                            ]]><type><![CDATA[VARCHAR]]></type><![CDATA[
+                            ]]><encoding><![CDATA[ISO-8859-1]]></encoding><![CDATA[
+                            ]]><size><![CDATA[100]]></size><![CDATA[
+                            ]]><nullable><![CDATA[true]]></nullable><![CDATA[
+                            ]]><tableName/><![CDATA[
+                            ]]><xpath><![CDATA[NAME]]></xpath><![CDATA[
+                          ]]></com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                          ]]><com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                            ]]><schema/><![CDATA[
+                            ]]><name><![CDATA[TYPE_DESIGNATION]]></name><![CDATA[
+                            ]]><type><![CDATA[VARCHAR]]></type><![CDATA[
+                            ]]><encoding><![CDATA[ISO-8859-1]]></encoding><![CDATA[
+                            ]]><size><![CDATA[25]]></size><![CDATA[
+                            ]]><nullable><![CDATA[true]]></nullable><![CDATA[
+                            ]]><tableName/><![CDATA[
+                            ]]><xpath><![CDATA[TYPE_DESIGNATION]]></xpath><![CDATA[
+                          ]]></com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                          ]]><com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                            ]]><schema/><![CDATA[
+                            ]]><name><![CDATA[SITE]]></name><![CDATA[
+                            ]]><type><![CDATA[VARCHAR]]></type><![CDATA[
+                            ]]><encoding><![CDATA[ISO-8859-1]]></encoding><![CDATA[
+                            ]]><size><![CDATA[20]]></size><![CDATA[
+                            ]]><nullable><![CDATA[true]]></nullable><![CDATA[
+                            ]]><tableName/><![CDATA[
+                            ]]><xpath><![CDATA[SITE]]></xpath><![CDATA[
+                          ]]></com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                          ]]><com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                            ]]><schema/><![CDATA[
+                            ]]><name><![CDATA[MARKET_CODE]]></name><![CDATA[
+                            ]]><type><![CDATA[VARCHAR]]></type><![CDATA[
+                            ]]><encoding><![CDATA[ISO-8859-1]]></encoding><![CDATA[
+                            ]]><size><![CDATA[10]]></size><![CDATA[
+                            ]]><nullable><![CDATA[true]]></nullable><![CDATA[
+                            ]]><tableName/><![CDATA[
+                            ]]><xpath><![CDATA[MARKET_CODE]]></xpath><![CDATA[
+                          ]]></com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                          ]]><com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                            ]]><schema/><![CDATA[
+                            ]]><name><![CDATA[ASSOCIATION_NO]]></name><![CDATA[
+                            ]]><type><![CDATA[VARCHAR]]></type><![CDATA[
+                            ]]><encoding><![CDATA[ISO-8859-1]]></encoding><![CDATA[
+                            ]]><size><![CDATA[50]]></size><![CDATA[
+                            ]]><nullable><![CDATA[true]]></nullable><![CDATA[
+                            ]]><tableName/><![CDATA[
+                            ]]><xpath><![CDATA[ASSOCIATION_NO]]></xpath><![CDATA[
+                          ]]></com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                          ]]><com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                            ]]><schema/><![CDATA[
+                            ]]><name><![CDATA[RMA_NO]]></name><![CDATA[
+                            ]]><type><![CDATA[DECIMAL]]></type><![CDATA[
+                            ]]><encoding><![CDATA[ISO-8859-1]]></encoding><![CDATA[
+                            ]]><size><![CDATA[38]]></size><![CDATA[
+                            ]]><nullable><![CDATA[true]]></nullable><![CDATA[
+                            ]]><tableName/><![CDATA[
+                            ]]><xpath><![CDATA[RMA_NO]]></xpath><![CDATA[
+                          ]]></com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                          ]]><com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                            ]]><schema/><![CDATA[
+                            ]]><name><![CDATA[ORDER_NO]]></name><![CDATA[
+                            ]]><type><![CDATA[VARCHAR]]></type><![CDATA[
+                            ]]><encoding><![CDATA[ISO-8859-1]]></encoding><![CDATA[
+                            ]]><size><![CDATA[4000]]></size><![CDATA[
+                            ]]><nullable><![CDATA[true]]></nullable><![CDATA[
+                            ]]><tableName/><![CDATA[
+                            ]]><xpath><![CDATA[ORDER_NO]]></xpath><![CDATA[
+                          ]]></com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                          ]]><com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                            ]]><schema/><![CDATA[
+                            ]]><name><![CDATA[DELIVSTATE]]></name><![CDATA[
+                            ]]><type><![CDATA[VARCHAR]]></type><![CDATA[
+                            ]]><encoding><![CDATA[ISO-8859-1]]></encoding><![CDATA[
+                            ]]><size><![CDATA[35]]></size><![CDATA[
+                            ]]><nullable><![CDATA[true]]></nullable><![CDATA[
+                            ]]><tableName/><![CDATA[
+                            ]]><xpath><![CDATA[DELIVSTATE]]></xpath><![CDATA[
+                          ]]></com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                          ]]><com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                            ]]><schema/><![CDATA[
+                            ]]><name><![CDATA[DELIVZIP]]></name><![CDATA[
+                            ]]><type><![CDATA[VARCHAR]]></type><![CDATA[
+                            ]]><encoding><![CDATA[ISO-8859-1]]></encoding><![CDATA[
+                            ]]><size><![CDATA[35]]></size><![CDATA[
+                            ]]><nullable><![CDATA[true]]></nullable><![CDATA[
+                            ]]><tableName/><![CDATA[
+                            ]]><xpath><![CDATA[DELIVZIP]]></xpath><![CDATA[
+                          ]]></com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                          ]]><com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                            ]]><schema/><![CDATA[
+                            ]]><name><![CDATA[INVENTORYVALUEUS]]></name><![CDATA[
+                            ]]><type><![CDATA[DECIMAL]]></type><![CDATA[
+                            ]]><encoding><![CDATA[ISO-8859-1]]></encoding><![CDATA[
+                            ]]><size><![CDATA[38]]></size><![CDATA[
+                            ]]><nullable><![CDATA[true]]></nullable><![CDATA[
+                            ]]><tableName/><![CDATA[
+                            ]]><xpath><![CDATA[INVENTORYVALUEUS]]></xpath><![CDATA[
+                          ]]></com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                          ]]><com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                            ]]><schema/><![CDATA[
+                            ]]><name><![CDATA[SECOND_COMMODITY]]></name><![CDATA[
+                            ]]><type><![CDATA[VARCHAR]]></type><![CDATA[
+                            ]]><encoding><![CDATA[ISO-8859-1]]></encoding><![CDATA[
+                            ]]><size><![CDATA[7]]></size><![CDATA[
+                            ]]><nullable><![CDATA[true]]></nullable><![CDATA[
+                            ]]><tableName/><![CDATA[
+                            ]]><xpath><![CDATA[SECOND_COMMODITY]]></xpath><![CDATA[
+                          ]]></com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                          ]]><com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                            ]]><schema/><![CDATA[
+                            ]]><name><![CDATA[SOURCE]]></name><![CDATA[
+                            ]]><type><![CDATA[VARCHAR]]></type><![CDATA[
+                            ]]><encoding><![CDATA[ISO-8859-1]]></encoding><![CDATA[
+                            ]]><size><![CDATA[3]]></size><![CDATA[
+                            ]]><nullable><![CDATA[true]]></nullable><![CDATA[
+                            ]]><tableName/><![CDATA[
+                            ]]><xpath><![CDATA[SOURCE]]></xpath><![CDATA[
+                          ]]></com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                          ]]><com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                            ]]><schema/><![CDATA[
+                            ]]><name><![CDATA[TRUELOCALAMT]]></name><![CDATA[
+                            ]]><type><![CDATA[DECIMAL]]></type><![CDATA[
+                            ]]><encoding><![CDATA[ISO-8859-1]]></encoding><![CDATA[
+                            ]]><size><![CDATA[38]]></size><![CDATA[
+                            ]]><nullable><![CDATA[true]]></nullable><![CDATA[
+                            ]]><tableName/><![CDATA[
+                            ]]><xpath><![CDATA[TRUELOCALAMT]]></xpath><![CDATA[
+                          ]]></com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                          ]]><com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                            ]]><schema/><![CDATA[
+                            ]]><name><![CDATA[DELIVCOUNTRY]]></name><![CDATA[
+                            ]]><type><![CDATA[VARCHAR]]></type><![CDATA[
+                            ]]><encoding><![CDATA[ISO-8859-1]]></encoding><![CDATA[
+                            ]]><size><![CDATA[4000]]></size><![CDATA[
+                            ]]><nullable><![CDATA[true]]></nullable><![CDATA[
+                            ]]><tableName/><![CDATA[
+                            ]]><xpath><![CDATA[DELIVCOUNTRY]]></xpath><![CDATA[
+                          ]]></com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                          ]]><com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                            ]]><schema/><![CDATA[
+                            ]]><name><![CDATA[COMMISSION_RECEIVER]]></name><![CDATA[
+                            ]]><type><![CDATA[VARCHAR]]></type><![CDATA[
+                            ]]><encoding><![CDATA[ISO-8859-1]]></encoding><![CDATA[
+                            ]]><size><![CDATA[20]]></size><![CDATA[
+                            ]]><nullable><![CDATA[true]]></nullable><![CDATA[
+                            ]]><tableName/><![CDATA[
+                            ]]><xpath><![CDATA[COMMISSION_RECEIVER]]></xpath><![CDATA[
+                          ]]></com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                          ]]><com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                            ]]><schema/><![CDATA[
+                            ]]><name><![CDATA[CUSTNAME]]></name><![CDATA[
+                            ]]><type><![CDATA[VARCHAR]]></type><![CDATA[
+                            ]]><encoding><![CDATA[ISO-8859-1]]></encoding><![CDATA[
+                            ]]><size><![CDATA[100]]></size><![CDATA[
+                            ]]><nullable><![CDATA[true]]></nullable><![CDATA[
+                            ]]><tableName/><![CDATA[
+                            ]]><xpath><![CDATA[CUSTNAME]]></xpath><![CDATA[
+                          ]]></com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                          ]]><com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                            ]]><schema/><![CDATA[
+                            ]]><name><![CDATA[INVOICEQTR]]></name><![CDATA[
+                            ]]><type><![CDATA[VARCHAR]]></type><![CDATA[
+                            ]]><encoding><![CDATA[ISO-8859-1]]></encoding><![CDATA[
+                            ]]><size><![CDATA[4]]></size><![CDATA[
+                            ]]><nullable><![CDATA[true]]></nullable><![CDATA[
+                            ]]><tableName/><![CDATA[
+                            ]]><xpath><![CDATA[INVOICEQTR]]></xpath><![CDATA[
+                          ]]></com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                          ]]><com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                            ]]><schema/><![CDATA[
+                            ]]><name><![CDATA[CATALOG_DESC]]></name><![CDATA[
+                            ]]><type><![CDATA[VARCHAR]]></type><![CDATA[
+                            ]]><encoding><![CDATA[ISO-8859-1]]></encoding><![CDATA[
+                            ]]><size><![CDATA[35]]></size><![CDATA[
+                            ]]><nullable><![CDATA[true]]></nullable><![CDATA[
+                            ]]><tableName/><![CDATA[
+                            ]]><xpath><![CDATA[CATALOG_DESC]]></xpath><![CDATA[
+                          ]]></com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                          ]]><com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                            ]]><schema/><![CDATA[
+                            ]]><name><![CDATA[FIRSTORDERDATE]]></name><![CDATA[
+                            ]]><type><![CDATA[TIMESTAMP]]></type><![CDATA[
+                            ]]><encoding><![CDATA[ISO-8859-1]]></encoding><![CDATA[
+                            ]]><size><![CDATA[19]]></size><![CDATA[
+                            ]]><nullable><![CDATA[true]]></nullable><![CDATA[
+                            ]]><tableName/><![CDATA[
+                            ]]><xpath><![CDATA[FIRSTORDERDATE]]></xpath><![CDATA[
+                          ]]></com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                          ]]><com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                            ]]><schema/><![CDATA[
+                            ]]><name><![CDATA[FIRSTORDERDATESCG]]></name><![CDATA[
+                            ]]><type><![CDATA[TIMESTAMP]]></type><![CDATA[
+                            ]]><encoding><![CDATA[ISO-8859-1]]></encoding><![CDATA[
+                            ]]><size><![CDATA[19]]></size><![CDATA[
+                            ]]><nullable><![CDATA[true]]></nullable><![CDATA[
+                            ]]><tableName/><![CDATA[
+                            ]]><xpath><![CDATA[FIRSTORDERDATESCG]]></xpath><![CDATA[
+                          ]]></com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                        ]]></list><![CDATA[
+                      ]]></entry><![CDATA[
+                      ]]><entry><![CDATA[
+                        ]]><string><![CDATA[encoding]]></string><![CDATA[
+                        ]]><string><![CDATA[ISO-8859-1]]></string><![CDATA[
+                      ]]></entry><![CDATA[
+                    ]]></map><![CDATA[
+                  ]]></model><![CDATA[
+                  ]]><listeners/><![CDATA[
+                ]]></com.approuter.studio.connectors.database.tasks.DBSetupOutputsTask><![CDATA[
+              ]]></listeners><![CDATA[
+            ]]></com.approuter.studio.connectors.database.tasks.DBEnterQueryTask><![CDATA[
+            ]]><com.approuter.studio.connectors.database.tasks.DBSetupInputsTask reference="../com.approuter.studio.connectors.database.tasks.DBEnterQueryTask/listeners/com.approuter.studio.connectors.database.tasks.DBSetupInputsTask"/><![CDATA[
+            ]]><com.approuter.studio.connectors.database.tasks.DBSetupOutputsTask reference="../com.approuter.studio.connectors.database.tasks.DBEnterQueryTask/listeners/com.approuter.studio.connectors.database.tasks.DBSetupOutputsTask"/><![CDATA[
+            ]]><com.approuter.studio.connectors.task.ActivityRefTask><![CDATA[
+              ]]><key><![CDATA[retryTask]]></key><![CDATA[
+              ]]><children/><![CDATA[
+              ]]><model><![CDATA[
+                ]]><map><![CDATA[
+                  ]]><entry><![CDATA[
+                    ]]><string><![CDATA[selected]]></string><![CDATA[
+                    ]]><string><![CDATA[false]]></string><![CDATA[
+                  ]]></entry><![CDATA[
+                  ]]><entry><![CDATA[
+                    ]]><string><![CDATA[maxRetries]]></string><![CDATA[
+                    ]]><int><![CDATA[5]]></int><![CDATA[
+                  ]]></entry><![CDATA[
+                  ]]><entry><![CDATA[
+                    ]]><string><![CDATA[retryInterval]]></string><![CDATA[
+                    ]]><int><![CDATA[30]]></int><![CDATA[
+                  ]]></entry><![CDATA[
+                  ]]><entry><![CDATA[
+                    ]]><string><![CDATA[timeout]]></string><![CDATA[
+                    ]]><int><![CDATA[300]]></int><![CDATA[
+                  ]]></entry><![CDATA[
+                ]]></map><![CDATA[
+              ]]></model><![CDATA[
+              ]]><listeners/><![CDATA[
+            ]]></com.approuter.studio.connectors.task.ActivityRefTask><![CDATA[
+          ]]></children><![CDATA[
+          ]]><model><![CDATA[
+            ]]><map><![CDATA[
+              ]]><entry><![CDATA[
+                ]]><string><![CDATA[selected]]></string><![CDATA[
+                ]]><string><![CDATA[false]]></string><![CDATA[
+              ]]></entry><![CDATA[
+            ]]></map><![CDATA[
+          ]]></model><![CDATA[
+          ]]><listeners><![CDATA[
+            ]]><com.approuter.studio.connectors.database.tasks.DBQueryMapTask><![CDATA[
+              ]]><type><![CDATA[0]]></type><![CDATA[
+              ]]><inputParamName><![CDATA[parameters]]></inputParamName><![CDATA[
+              ]]><outputParamName><![CDATA[rows]]></outputParamName><![CDATA[
+              ]]><key><![CDATA[mapInputsTask]]></key><![CDATA[
+              ]]><children/><![CDATA[
+              ]]><model><![CDATA[
+                ]]><map><![CDATA[
+                  ]]><entry><![CDATA[
+                    ]]><string><![CDATA[schema]]></string><![CDATA[
+                    ]]><string><![CDATA[Schema_4_mapInputsTask_in_Execute_Query_5]]></string><![CDATA[
+                  ]]></entry><![CDATA[
+                  ]]><entry><![CDATA[
+                    ]]><string><![CDATA[selected]]></string><![CDATA[
+                    ]]><string><![CDATA[false]]></string><![CDATA[
+                  ]]></entry><![CDATA[
+                  ]]><entry><![CDATA[
+                    ]]><string><![CDATA[inputsRequired]]></string><![CDATA[
+                    ]]><boolean><![CDATA[true]]></boolean><![CDATA[
+                  ]]></entry><![CDATA[
+                ]]></map><![CDATA[
+              ]]></model><![CDATA[
+              ]]><listeners/><![CDATA[
+            ]]></com.approuter.studio.connectors.database.tasks.DBQueryMapTask><![CDATA[
+            ]]><com.approuter.studio.connectors.database.tasks.DBQueryMapTask><![CDATA[
+              ]]><type><![CDATA[1]]></type><![CDATA[
+              ]]><inputParamName><![CDATA[parameters]]></inputParamName><![CDATA[
+              ]]><outputParamName><![CDATA[rows]]></outputParamName><![CDATA[
+              ]]><key><![CDATA[mapOutputsTask]]></key><![CDATA[
+              ]]><children/><![CDATA[
+              ]]><model><![CDATA[
+                ]]><map><![CDATA[
+                  ]]><entry><![CDATA[
+                    ]]><string><![CDATA[schema]]></string><![CDATA[
+                    ]]><string><![CDATA[Schema_4_mapOutputsTask_in_Execute_Query_5]]></string><![CDATA[
+                  ]]></entry><![CDATA[
+                  ]]><entry><![CDATA[
+                    ]]><string><![CDATA[selected]]></string><![CDATA[
+                    ]]><string><![CDATA[false]]></string><![CDATA[
+                  ]]></entry><![CDATA[
+                  ]]><entry><![CDATA[
+                    ]]><string><![CDATA[inputsRequired]]></string><![CDATA[
+                    ]]><boolean><![CDATA[true]]></boolean><![CDATA[
+                  ]]></entry><![CDATA[
+                ]]></map><![CDATA[
+              ]]></model><![CDATA[
+              ]]><listeners/><![CDATA[
+            ]]></com.approuter.studio.connectors.database.tasks.DBQueryMapTask><![CDATA[
+          ]]></listeners><![CDATA[
+        ]]></com.approuter.studio.connectors.task.ActivityRefTask><![CDATA[
+      ]]></listeners><![CDATA[
+    ]]></com.approuter.studio.connectors.database.tasks.DBEndpointTask><![CDATA[
+    ]]><com.approuter.studio.connectors.task.ActivityRefTask reference="../com.approuter.studio.connectors.database.tasks.DBEndpointTask/listeners/com.approuter.studio.connectors.task.ActivityRefTask"/><![CDATA[
+    ]]><com.approuter.studio.connectors.database.tasks.DBQueryMapTask reference="../com.approuter.studio.connectors.database.tasks.DBEndpointTask/listeners/com.approuter.studio.connectors.task.ActivityRefTask/listeners/com.approuter.studio.connectors.database.tasks.DBQueryMapTask"/><![CDATA[
+    ]]><com.approuter.studio.connectors.database.tasks.DBQueryMapTask reference="../com.approuter.studio.connectors.database.tasks.DBEndpointTask/listeners/com.approuter.studio.connectors.task.ActivityRefTask/listeners/com.approuter.studio.connectors.database.tasks.DBQueryMapTask[2]"/><![CDATA[
+  ]]></tasks><![CDATA[
+  ]]><valid><![CDATA[false]]></valid><![CDATA[
+]]></com.approuter.studio.connectors.task.TaskList></tasksConfig></invoke><invoke activityId="8" activityName="" comments="" configurationId="data_serialize_id_1" description="Serialize Flat File" expanded="true" moduleName="http://www.approuter.com/module/data/" name="Write Flat File" partnerLink=""><inputMapSpecConfig><mapSpec context="orchestration" optionalParameterVisible="false" version="1.0" xmlns="http://www.approuter.com/schemas/2003/1/transformation/" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><specInfo><source canBeSubstitutedFromUI="true" displayName="rows" isParameter="false" location="Schema_4_mapOutputsTask_in_Execute_Query_5" locationType="2" logicalName="srcDoc1" optionalParameter="false" originalRootNodeName="rows" rootNodeName="rows" varName="rows"/><destination canBeSubstitutedFromUI="true" displayName="Xml" isParameter="true" location="appnet-guid://4B047FCDF4B065EF593599BED6B0C542" locationType="0" logicalName="dstDoc1" optionalParameter="false" originalRootNodeName="SalesDetailUS" rootNodeName="SalesDetailUS" varName="Xml"/><destination activityId="8" canBeSubstitutedFromUI="true" displayName="Encoding" isParameter="true" location="data-encoding-placeholder-param.xsd-8" locationType="2" logicalName="dstDoc2" messageType="Encoding" namespace="http://www.approuter.com/schemas/2003/1/castirontypes" optionalParameter="true" originalRootNodeName="Encoding" originalRootNodeNameNS="http://www.approuter.com/schemas/2003/1/castirontypes" rootNodeName="Encoding"/></specInfo><doMapping><rule defaultValue="CUSTOMER_NO" emitCData="false" guaranteed="true"><do guaranteed="true"><to docName="dstDoc1" path="/SalesDetailUS/header/customer_no"/></do></rule><rule defaultValue="INVOICE_ID" emitCData="false" guaranteed="true"><do guaranteed="true"><to docName="dstDoc1" path="/SalesDetailUS/header/invoice_id"/></do></rule><rule defaultValue="ITEM_ID" emitCData="false" guaranteed="true"><do guaranteed="true"><to docName="dstDoc1" path="/SalesDetailUS/header/item_id"/></do></rule><rule defaultValue="INVOICEDATE" emitCData="false" guaranteed="true"><do guaranteed="true"><to docName="dstDoc1" path="/SalesDetailUS/header/invoicedate"/></do></rule><rule defaultValue="SALESMAN_CODE" emitCData="false" guaranteed="true"><do guaranteed="true"><to docName="dstDoc1" path="/SalesDetailUS/header/salesman_code"/></do></rule><rule defaultValue="REGION_CODE" emitCData="false" guaranteed="true"><do guaranteed="true"><to docName="dstDoc1" path="/SalesDetailUS/header/region_code"/></do></rule><rule defaultValue="PART_PRODUCT_FAMILY" emitCData="false" guaranteed="true"><do guaranteed="true"><to docName="dstDoc1" path="/SalesDetailUS/header/part_product_family"/></do></rule><rule defaultValue="PART_PRODUCT_CODE" emitCData="false" guaranteed="true"><do guaranteed="true"><to docName="dstDoc1" path="/SalesDetailUS/header/part_product_code"/></do></rule><rule defaultValue="ALLAMOUNTS" emitCData="false" guaranteed="true"><do guaranteed="true"><to docName="dstDoc1" path="/SalesDetailUS/header/allamounts"/></do></rule><rule defaultValue="INVOICED_QTY" emitCData="false" guaranteed="true"><do guaranteed="true"><to docName="dstDoc1" path="/SalesDetailUS/header/invoiced_qty"/></do></rule><rule defaultValue="CORPORATE_FORM" emitCData="false" guaranteed="true"><do guaranteed="true"><to docName="dstDoc1" path="/SalesDetailUS/header/corporate_form"/></do></rule><rule defaultValue="CATALOG_NO" emitCData="false" guaranteed="true"><do guaranteed="true"><to docName="dstDoc1" path="/SalesDetailUS/header/catalog_no"/></do></rule><rule defaultValue="CUSTOMER_NAME" emitCData="false" guaranteed="true"><do guaranteed="true"><to docName="dstDoc1" path="/SalesDetailUS/header/customer_name"/></do></rule><rule defaultValue="LIST_PRICE" emitCData="false" guaranteed="true"><do guaranteed="true"><to docName="dstDoc1" path="/SalesDetailUS/header/list_price"/></do></rule><rule defaultValue="CUSTNAME" emitCData="false" guaranteed="true"><do guaranteed="true"><to docName="dstDoc1" path="/SalesDetailUS/header/name"/></do></rule><rule defaultValue="CUST_GROUP" emitCData="false" guaranteed="true"><do guaranteed="true"><to docName="dstDoc1" path="/SalesDetailUS/header/cust_grp"/></do></rule><rule defaultValue="TYPE_DESIGNATION" emitCData="false" guaranteed="true"><do guaranteed="true"><to docName="dstDoc1" path="/SalesDetailUS/header/type_designation"/></do></rule><rule defaultValue="SITE" emitCData="false" guaranteed="true"><do guaranteed="true"><to docName="dstDoc1" path="/SalesDetailUS/header/site"/></do></rule><rule defaultValue="MARKET_CODE" emitCData="false" guaranteed="true"><do guaranteed="true"><to docName="dstDoc1" path="/SalesDetailUS/header/market_code"/></do></rule><rule defaultValue="ASSOCIATION_NO" emitCData="false" guaranteed="true"><do guaranteed="true"><to docName="dstDoc1" path="/SalesDetailUS/header/association_no"/></do></rule><rule defaultValue="RMA_NO" emitCData="false" guaranteed="true"><do guaranteed="true"><to docName="dstDoc1" path="/SalesDetailUS/header/rma_no"/></do></rule><rule defaultValue="ORDER_NO" emitCData="false" guaranteed="true"><do guaranteed="true"><to docName="dstDoc1" path="/SalesDetailUS/header/order_no"/></do></rule><rule defaultValue="DELIVSTATE" emitCData="false" guaranteed="true"><do guaranteed="true"><to docName="dstDoc1" path="/SalesDetailUS/header/delivstate"/></do></rule><rule defaultValue="DELIVZIP" emitCData="false" guaranteed="true"><do guaranteed="true"><to docName="dstDoc1" path="/SalesDetailUS/header/delivzip"/></do></rule><rule defaultValue="INVENTORYVALUEUS" emitCData="false" guaranteed="true"><do guaranteed="true"><to docName="dstDoc1" path="/SalesDetailUS/header/inventoryvalueus"/></do></rule><rule defaultValue="SECOND_COMMODITY" emitCData="false" guaranteed="true"><do guaranteed="true"><to docName="dstDoc1" path="/SalesDetailUS/header/second_commodity"/></do></rule><rule defaultValue="SOURCE" emitCData="false" guaranteed="true"><do guaranteed="true"><to docName="dstDoc1" path="/SalesDetailUS/header/source"/></do></rule><rule defaultValue="TRUELOCALAMT" emitCData="false" guaranteed="true"><do guaranteed="true"><to docName="dstDoc1" path="/SalesDetailUS/header/truelocalamt"/></do></rule><rule defaultValue="DELIVCOUNTRY" emitCData="false" guaranteed="true"><do guaranteed="true"><to docName="dstDoc1" path="/SalesDetailUS/header/delivcountry"/></do></rule><rule defaultValue="COMMISSION_RECEIVER" emitCData="false" guaranteed="true"><do guaranteed="true"><to docName="dstDoc1" path="/SalesDetailUS/header/commission_receiver"/></do></rule><rule defaultValue="INVOICEQTR" emitCData="false" guaranteed="true"><do guaranteed="true"><to docName="dstDoc1" path="/SalesDetailUS/header/invoiceqtr"/></do></rule><rule defaultValue="CATALOG_DESC" emitCData="false" guaranteed="true"><do guaranteed="true"><to docName="dstDoc1" path="/SalesDetailUS/header/catalog_desc"/></do></rule><rule defaultValue="FIRSTORDERDATE" emitCData="false" guaranteed="true"><do guaranteed="true"><to docName="dstDoc1" path="/SalesDetailUS/header/firstorderdate"/></do></rule><rule defaultValue="FIRSTORDERDATESCG" emitCData="false" guaranteed="true"><do guaranteed="true"><to docName="dstDoc1" path="/SalesDetailUS/header/firstorderdatescg"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/ihmap:instances"/><to docName="dstDoc1" path="/SalesDetailUS/data/ihmap:instances"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/CUSTOMER_NO"/><to docName="dstDoc1" path="/SalesDetailUS/data/customer_no"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/INVOICE_ID"/><to docName="dstDoc1" path="/SalesDetailUS/data/invoice_id"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/ITEM_ID"/><to docName="dstDoc1" path="/SalesDetailUS/data/item_id"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/INVOICEDATE"/><to docName="dstDoc1" path="/SalesDetailUS/data/invoicedate"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/SALESMAN_CODE"/><to docName="dstDoc1" path="/SalesDetailUS/data/salesman_code"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/REGION_CODE"/><to docName="dstDoc1" path="/SalesDetailUS/data/region_code"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/PART_PRODUCT_FAMILY"/><to docName="dstDoc1" path="/SalesDetailUS/data/part_product_family"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/PART_PRODUCT_CODE"/><to docName="dstDoc1" path="/SalesDetailUS/data/part_product_code"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/ALLAMOUNTS"/><to docName="dstDoc1" path="/SalesDetailUS/data/allamounts"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/INVOICED_QTY"/><to docName="dstDoc1" path="/SalesDetailUS/data/invoiced_qty"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/CORPORATE_FORM"/><to docName="dstDoc1" path="/SalesDetailUS/data/corporate_form"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/CATALOG_NO"/><to docName="dstDoc1" path="/SalesDetailUS/data/catalog_no"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/CUSTOMER_NAME"/><to docName="dstDoc1" path="/SalesDetailUS/data/customer_name"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/LIST_PRICE"/><to docName="dstDoc1" path="/SalesDetailUS/data/list_price"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/CUST_GRP"/><to docName="dstDoc1" path="/SalesDetailUS/data/cust_grp"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/NAME"/><to docName="dstDoc1" path="/SalesDetailUS/data/name"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/TYPE_DESIGNATION"/><to docName="dstDoc1" path="/SalesDetailUS/data/type_designation"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/SITE"/><to docName="dstDoc1" path="/SalesDetailUS/data/site"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/MARKET_CODE"/><to docName="dstDoc1" path="/SalesDetailUS/data/market_code"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/ASSOCIATION_NO"/><to docName="dstDoc1" path="/SalesDetailUS/data/association_no"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/RMA_NO"/><to docName="dstDoc1" path="/SalesDetailUS/data/rma_no"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/ORDER_NO"/><to docName="dstDoc1" path="/SalesDetailUS/data/order_no"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/DELIVSTATE"/><to docName="dstDoc1" path="/SalesDetailUS/data/delivstate"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/DELIVZIP"/><to docName="dstDoc1" path="/SalesDetailUS/data/delivzip"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/INVENTORYVALUEUS"/><to docName="dstDoc1" path="/SalesDetailUS/data/inventoryvalueus"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/SECOND_COMMODITY"/><to docName="dstDoc1" path="/SalesDetailUS/data/second_commodity"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/SOURCE"/><to docName="dstDoc1" path="/SalesDetailUS/data/source"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/TRUELOCALAMT"/><to docName="dstDoc1" path="/SalesDetailUS/data/truelocalamt"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/DELIVCOUNTRY"/><to docName="dstDoc1" path="/SalesDetailUS/data/delivcountry"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/COMMISSION_RECEIVER"/><to docName="dstDoc1" path="/SalesDetailUS/data/commission_receiver"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/INVOICEQTR"/><to docName="dstDoc1" path="/SalesDetailUS/data/invoiceqtr"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/CATALOG_DESC"/><to docName="dstDoc1" path="/SalesDetailUS/data/catalog_desc"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/FIRSTORDERDATE"/><to docName="dstDoc1" path="/SalesDetailUS/data/firstorderdate"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/FIRSTORDERDATESCG"/><to docName="dstDoc1" path="/SalesDetailUS/data/firstorderdatescg"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/CUSTNAME"/><to docName="dstDoc1" path="/SalesDetailUS/data/custname"/></do></rule></doMapping></mapSpec></inputMapSpecConfig><outputMapSpecConfig><mapSpec context="orchestration" optionalParameterVisible="false" version="1.0" xmlns="http://www.approuter.com/schemas/2003/1/transformation/" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><specInfo><source activityId="8" canBeSubstitutedFromUI="true" displayName="Data" isParameter="true" location="data-param-binary.xsd-8" locationType="2" logicalName="srcDoc1" messageType="Data" namespace="http://www.approuter.com/schemas/2003/1/castirontypes" optionalParameter="false" originalRootNodeName="Data" originalRootNodeNameNS="http://www.approuter.com/schemas/2003/1/castirontypes" rootNodeName="Data" varName="Data"/><destination activityId="8" canBeSubstitutedFromUI="true" displayName="Data" isParameter="false" location="Data" locationType="2" logicalName="dstDoc1" messageType="Data" namespace="http://www.approuter.com/schemas/2003/1/castirontypes" optionalParameter="false" originalRootNodeName="Data" originalRootNodeNameNS="http://www.approuter.com/schemas/2003/1/castirontypes" rootNodeName="Data" varName="Data"/></specInfo><doMapping><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/Data"/><to docName="dstDoc1" path="/Data"/></do></rule></doMapping></mapSpec></outputMapSpecConfig><tasksConfig><com.approuter.studio.connectors.task.TaskList><![CDATA[
+  ]]><tasks><![CDATA[
+    ]]><com.approuter.studio.connectors.task.SchemaTask><![CDATA[
+      ]]><key><![CDATA[setupWorkflowTask]]></key><![CDATA[
+      ]]><children/><![CDATA[
+      ]]><model><![CDATA[
+        ]]><map><![CDATA[
+          ]]><entry><![CDATA[
+            ]]><string><![CDATA[guid]]></string><![CDATA[
+            ]]><string><![CDATA[appnet-guid://4B047FCDF4B065EF593599BED6B0C542]]></string><![CDATA[
+          ]]></entry><![CDATA[
+          ]]><entry><![CDATA[
+            ]]><string><![CDATA[selected]]></string><![CDATA[
+            ]]><string><![CDATA[false]]></string><![CDATA[
+          ]]></entry><![CDATA[
+          ]]><entry><![CDATA[
+            ]]><string><![CDATA[encoding]]></string><![CDATA[
+            ]]><string><![CDATA[UTF-8]]></string><![CDATA[
+          ]]></entry><![CDATA[
+          ]]><entry><![CDATA[
+            ]]><string><![CDATA[encoded]]></string><![CDATA[
+            ]]><boolean><![CDATA[true]]></boolean><![CDATA[
+          ]]></entry><![CDATA[
+        ]]></map><![CDATA[
+      ]]></model><![CDATA[
+      ]]><listeners><![CDATA[
+        ]]><com.approuter.studio.connectors.task.MapTask><![CDATA[
+          ]]><key><![CDATA[mapInputsTask]]></key><![CDATA[
+          ]]><children/><![CDATA[
+          ]]><model><![CDATA[
+            ]]><map><![CDATA[
+              ]]><entry><![CDATA[
+                ]]><string><![CDATA[guid]]></string><![CDATA[
+                ]]><string><![CDATA[appnet-guid://4B047FCDF4B065EF593599BED6B0C542]]></string><![CDATA[
+              ]]></entry><![CDATA[
+              ]]><entry><![CDATA[
+                ]]><string><![CDATA[selected]]></string><![CDATA[
+                ]]><string><![CDATA[true]]></string><![CDATA[
+              ]]></entry><![CDATA[
+            ]]></map><![CDATA[
+          ]]></model><![CDATA[
+          ]]><listeners/><![CDATA[
+        ]]></com.approuter.studio.connectors.task.MapTask><![CDATA[
+        ]]><com.approuter.studio.connectors.task.MapTask><![CDATA[
+          ]]><key><![CDATA[mapOutputsTask]]></key><![CDATA[
+          ]]><children/><![CDATA[
+          ]]><model><![CDATA[
+            ]]><map><![CDATA[
+              ]]><entry><![CDATA[
+                ]]><string><![CDATA[guid]]></string><![CDATA[
+                ]]><string><![CDATA[appnet-guid://4B047FCDF4B065EF593599BED6B0C542]]></string><![CDATA[
+              ]]></entry><![CDATA[
+              ]]><entry><![CDATA[
+                ]]><string><![CDATA[selected]]></string><![CDATA[
+                ]]><string><![CDATA[false]]></string><![CDATA[
+              ]]></entry><![CDATA[
+            ]]></map><![CDATA[
+          ]]></model><![CDATA[
+          ]]><listeners/><![CDATA[
+        ]]></com.approuter.studio.connectors.task.MapTask><![CDATA[
+      ]]></listeners><![CDATA[
+    ]]></com.approuter.studio.connectors.task.SchemaTask><![CDATA[
+    ]]><com.approuter.studio.connectors.task.MapTask reference="../com.approuter.studio.connectors.task.SchemaTask/listeners/com.approuter.studio.connectors.task.MapTask"/><![CDATA[
+    ]]><com.approuter.studio.connectors.task.MapTask reference="../com.approuter.studio.connectors.task.SchemaTask/listeners/com.approuter.studio.connectors.task.MapTask[2]"/><![CDATA[
+  ]]></tasks><![CDATA[
+  ]]><valid><![CDATA[false]]></valid><![CDATA[
+]]></com.approuter.studio.connectors.task.TaskList></tasksConfig></invoke><invoke activityId="65" activityName="" comments="" configurationId="archive" description="Archive Activity" expanded="true" moduleName="http://www.approuter.com/module/archive/" name="Archive" partnerLink=""><inputMapSpecConfig><mapSpec context="orchestration" optionalParameterVisible="false" version="1.0" xmlns="http://www.approuter.com/schemas/2003/1/transformation/" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><specInfo><source activityId="8" canBeSubstitutedFromUI="true" displayName="Data" isParameter="false" location="Data" locationType="2" logicalName="srcDoc1" messageType="Data" namespace="http://www.approuter.com/schemas/2003/1/castirontypes" optionalParameter="false" originalRootNodeName="Data" originalRootNodeNameNS="http://www.approuter.com/schemas/2003/1/castirontypes" rootNodeName="Data" varName="Data"/><source canBeSubstitutedFromUI="true" displayName="JobInfo" isParameter="false" location="orchestration_internal_variableJobInfo" locationType="2" logicalName="srcDoc2" namespace="http://www.approuter.com/schemas/2005/1/orchestration/jobinfo" optionalParameter="false" originalRootNodeName="JobInfo" originalRootNodeNameNS="http://www.approuter.com/schemas/2005/1/orchestration/jobinfo" rootNodeName="JobInfo" varName="JobInfo"/><source canBeSubstitutedFromUI="true" displayName="loopvalue_1" isParameter="false" location="Schema_4_mapOutputsTask_in_Execute_Query_24" locationType="2" logicalName="srcDoc3" optionalParameter="false" originalRootNodeName="rows" rootNodeName="row" varName="loopvalue_1" xpathToRootNode="/rows/row"/><destination activityId="65" canBeSubstitutedFromUI="true" displayName="archiveEntries" isParameter="true" location="archive-entries-parameter.xsd-65" locationType="2" logicalName="dstDoc1" messageType="archiveEntries" namespace="http://www.approuter.com/schemas/2004/1/module/archive/compress/" optionalParameter="false" originalRootNodeName="archiveEntries" originalRootNodeNameNS="http://www.approuter.com/schemas/2004/1/module/archive/compress/" rootNodeName="archiveEntries"/></specInfo><doMapping><rule emitCData="false" guaranteed="false"><do guaranteed="false"><from docName="srcDoc1" path="/Data"/><to docName="dstDoc1" path="/archiveEntries/entry/content/ihmap:exists"/></do></rule><rule emitCData="false" guaranteed="false"><do guaranteed="false"><from docName="srcDoc1" path="/Data"/><to docName="dstDoc1" path="/archiveEntries/entry/content"/></do></rule><rule defaultValue="0" emitCData="false" guaranteed="true"><do guaranteed="true"><to docName="dstDoc1" path="/archiveEntries/entry/isdirectory"/></do></rule><rule emitCData="false" guaranteed="true"><call guaranteed="true"><functoid function="Concatenate" gridX="138" gridY="121" id="1" resultType="xsd:string"><arg dataType="xsd:string" docName="srcDoc2"><path>/JobInfo/projectName</path></arg><arg dataType="xsd:decimal" docName="srcDoc3"><path>/row/YEAR</path></arg><arg dataType="xsd:string"><constant>.csv</constant></arg></functoid><link destFunctoid="1" destFunctoidArgIndex="0" id="0" srcDocName="srcDoc2" srcPath="/JobInfo/projectName"/><link destFunctoid="1" destFunctoidArgIndex="1" id="1" srcDocName="srcDoc3" srcPath="/row/YEAR"/><link destDocName="dstDoc1" destPath="/archiveEntries/entry/name" id="2" srcFunctoid="1"/></call></rule></doMapping></mapSpec></inputMapSpecConfig><outputMapSpecConfig><mapSpec context="orchestration" optionalParameterVisible="false" version="1.0" xmlns="http://www.approuter.com/schemas/2003/1/transformation/" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><specInfo><source activityId="65" canBeSubstitutedFromUI="true" displayName="archive" isParameter="true" location="archive-parameter.xsd-65" locationType="2" logicalName="srcDoc1" messageType="archive" namespace="http://www.approuter.com/schemas/2003/1/castirontypes" optionalParameter="false" originalRootNodeName="archive" originalRootNodeNameNS="http://www.approuter.com/schemas/2003/1/castirontypes" rootNodeName="archive"/><destination activityId="65" canBeSubstitutedFromUI="true" displayName="archive" isParameter="false" location="archive" locationType="2" logicalName="dstDoc1" messageType="archive" namespace="http://www.approuter.com/schemas/2003/1/castirontypes" optionalParameter="false" originalRootNodeName="archive" originalRootNodeNameNS="http://www.approuter.com/schemas/2003/1/castirontypes" rootNodeName="archive" varName="archive"/></specInfo><doMapping><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/archive"/><to docName="dstDoc1" path="/archive"/></do></rule></doMapping></mapSpec></outputMapSpecConfig><tasksConfig><com.approuter.studio.connectors.task.TaskList><![CDATA[
+  ]]><tasks><![CDATA[
+    ]]><com.approuter.studio.connectors.task.SummaryTask><![CDATA[
+      ]]><key><![CDATA[summaryTask]]></key><![CDATA[
+      ]]><children/><![CDATA[
+      ]]><model><![CDATA[
+        ]]><map><![CDATA[
+          ]]><entry><![CDATA[
+            ]]><string><![CDATA[selected]]></string><![CDATA[
+            ]]><string><![CDATA[false]]></string><![CDATA[
+          ]]></entry><![CDATA[
+        ]]></map><![CDATA[
+      ]]></model><![CDATA[
+      ]]><listeners/><![CDATA[
+    ]]></com.approuter.studio.connectors.task.SummaryTask><![CDATA[
+    ]]><com.approuter.studio.connectors.task.ActivityRefTask><![CDATA[
+      ]]><key><![CDATA[setupWorkflowTask]]></key><![CDATA[
+      ]]><children/><![CDATA[
+      ]]><model><![CDATA[
+        ]]><map><![CDATA[
+          ]]><entry><![CDATA[
+            ]]><string><![CDATA[selected]]></string><![CDATA[
+            ]]><string><![CDATA[false]]></string><![CDATA[
+          ]]></entry><![CDATA[
+          ]]><entry><![CDATA[
+            ]]><string><![CDATA[compression]]></string><![CDATA[
+            ]]><string><![CDATA[zip]]></string><![CDATA[
+          ]]></entry><![CDATA[
+          ]]><entry><![CDATA[
+            ]]><string><![CDATA[archiveFormat]]></string><![CDATA[
+            ]]><string><![CDATA[zip]]></string><![CDATA[
+          ]]></entry><![CDATA[
+        ]]></map><![CDATA[
+      ]]></model><![CDATA[
+      ]]><listeners/><![CDATA[
+    ]]></com.approuter.studio.connectors.task.ActivityRefTask><![CDATA[
+    ]]><com.approuter.studio.connectors.task.MapTask><![CDATA[
+      ]]><key><![CDATA[mapInputsTask]]></key><![CDATA[
+      ]]><children/><![CDATA[
+      ]]><model><![CDATA[
+        ]]><map><![CDATA[
+          ]]><entry><![CDATA[
+            ]]><string><![CDATA[selected]]></string><![CDATA[
+            ]]><string><![CDATA[true]]></string><![CDATA[
+          ]]></entry><![CDATA[
+        ]]></map><![CDATA[
+      ]]></model><![CDATA[
+      ]]><listeners/><![CDATA[
+    ]]></com.approuter.studio.connectors.task.MapTask><![CDATA[
+    ]]><com.approuter.studio.connectors.task.MapTask><![CDATA[
+      ]]><key><![CDATA[mapOutputsTask]]></key><![CDATA[
+      ]]><children/><![CDATA[
+      ]]><model><![CDATA[
+        ]]><map><![CDATA[
+          ]]><entry><![CDATA[
+            ]]><string><![CDATA[selected]]></string><![CDATA[
+            ]]><string><![CDATA[false]]></string><![CDATA[
+          ]]></entry><![CDATA[
+        ]]></map><![CDATA[
+      ]]></model><![CDATA[
+      ]]><listeners/><![CDATA[
+    ]]></com.approuter.studio.connectors.task.MapTask><![CDATA[
+  ]]></tasks><![CDATA[
+  ]]><valid><![CDATA[false]]></valid><![CDATA[
+]]></com.approuter.studio.connectors.task.TaskList></tasksConfig></invoke><invoke activityId="9" activityName="" comments="" configurationId="ftp_put_id" description="This activity saves a file to a directory in the selected FTP endpoint" expanded="true" moduleName="http://www.approuter.com/module/ftp/" name="Put File" partnerLink=""><inputMapSpecConfig><mapSpec context="orchestration" optionalParameterVisible="false" version="1.0" xmlns="http://www.approuter.com/schemas/2003/1/transformation/" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><specInfo><source activityId="8" canBeSubstitutedFromUI="true" displayName="Data" isParameter="false" location="Data" locationType="2" logicalName="srcDoc1" messageType="Data" namespace="http://www.approuter.com/schemas/2003/1/castirontypes" optionalParameter="false" originalRootNodeName="Data" originalRootNodeNameNS="http://www.approuter.com/schemas/2003/1/castirontypes" rootNodeName="Data" varName="Data"/><source canBeSubstitutedFromUI="true" displayName="JobInfo" isParameter="false" location="orchestration_internal_variableJobInfo" locationType="2" logicalName="srcDoc2" namespace="http://www.approuter.com/schemas/2005/1/orchestration/jobinfo" optionalParameter="false" originalRootNodeName="JobInfo" originalRootNodeNameNS="http://www.approuter.com/schemas/2005/1/orchestration/jobinfo" rootNodeName="JobInfo" varName="JobInfo"/><source canBeSubstitutedFromUI="true" displayName="loopvalue_1" isParameter="false" location="Schema_4_mapOutputsTask_in_Execute_Query_24" locationType="2" logicalName="srcDoc3" optionalParameter="false" originalRootNodeName="rows" rootNodeName="row" varName="loopvalue_1" xpathToRootNode="/rows/row"/><source activityId="65" canBeSubstitutedFromUI="true" displayName="archive" isParameter="false" location="archive" locationType="2" logicalName="srcDoc4" messageType="archive" namespace="http://www.approuter.com/schemas/2003/1/castirontypes" optionalParameter="false" originalRootNodeName="archive" originalRootNodeNameNS="http://www.approuter.com/schemas/2003/1/castirontypes" rootNodeName="archive" varName="archive"/><destination activityId="9" canBeSubstitutedFromUI="true" displayName="directory" isParameter="true" location="ftp-put-parameter-directory.xsd-9" locationType="2" logicalName="dstDoc1" messageType="directory" namespace="http://www.approuter.com/schemas/2003/1/castirontypes" optionalParameter="true" originalRootNodeName="directory" originalRootNodeNameNS="http://www.approuter.com/schemas/2003/1/castirontypes" rootNodeName="directory"/><destination activityId="9" canBeSubstitutedFromUI="true" displayName="filename" isParameter="true" location="ftp-put-parameter-filename.xsd-9" locationType="2" logicalName="dstDoc2" messageType="filename" namespace="http://www.approuter.com/schemas/2003/1/castirontypes" optionalParameter="false" originalRootNodeName="filename" originalRootNodeNameNS="http://www.approuter.com/schemas/2003/1/castirontypes" rootNodeName="filename"/><destination activityId="9" canBeSubstitutedFromUI="true" displayName="data" isParameter="true" location="ftp-put-parameter-binary.xsd-9" locationType="2" logicalName="dstDoc3" messageType="data" namespace="http://www.approuter.com/schemas/2003/1/castirontypes" optionalParameter="false" originalRootNodeName="data" originalRootNodeNameNS="http://www.approuter.com/schemas/2003/1/castirontypes" rootNodeName="data" varName="data"/><destination activityId="9" canBeSubstitutedFromUI="true" displayName="encoding" isParameter="true" location="ftp-put-parameter-encoding.xsd-9" locationType="2" logicalName="dstDoc4" messageType="encoding" namespace="http://www.approuter.com/schemas/2003/1/castirontypes" optionalParameter="true" originalRootNodeName="encoding" originalRootNodeNameNS="http://www.approuter.com/schemas/2003/1/castirontypes" rootNodeName="encoding"/><destination activityId="9" canBeSubstitutedFromUI="true" displayName="overwrite" isParameter="true" location="ftp-put-parameter-overwrite.xsd-9" locationType="2" logicalName="dstDoc5" messageType="overwrite" namespace="http://www.approuter.com/schemas/2003/1/castirontypes" optionalParameter="true" originalRootNodeName="overwrite" originalRootNodeNameNS="http://www.approuter.com/schemas/2003/1/castirontypes" rootNodeName="overwrite"/><destination activityId="9" canBeSubstitutedFromUI="true" displayName="connection" isParameter="true" location="FtpConnectionParameter.xsd-9" locationType="2" logicalName="dstDoc6" messageType="connection" namespace="http://www.approuter.com/schemas/2004/1/module/ftp/connectionparameter/" optionalParameter="true" originalRootNodeName="connection" originalRootNodeNameNS="http://www.approuter.com/schemas/2004/1/module/ftp/connectionparameter/" rootNodeName="connection"/></specInfo><doMapping><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc4" path="/archive"/><to docName="dstDoc3" path="/data"/></do></rule><rule emitCData="false" guaranteed="true"><call guaranteed="true"><functoid function="Concatenate" gridX="121" gridY="104" id="1" resultType="xsd:string"><arg dataType="xsd:string" docName="srcDoc2"><path>/JobInfo/projectName</path></arg><arg dataType="xsd:string"><constant>_</constant></arg><arg dataType="xsd:decimal" docName="srcDoc3"><path>/row/YEAR</path></arg><arg dataType="xsd:string"><constant>.zip</constant></arg></functoid><link destDocName="dstDoc2" destPath="/filename" id="0" srcFunctoid="1"/><link destFunctoid="1" destFunctoidArgIndex="0" id="1" srcDocName="srcDoc2" srcPath="/JobInfo/projectName"/><link destFunctoid="1" destFunctoidArgIndex="2" id="2" srcDocName="srcDoc3" srcPath="/row/YEAR"/></call></rule></doMapping></mapSpec></inputMapSpecConfig><tasksConfig><com.approuter.studio.connectors.task.TaskList><![CDATA[
+  ]]><tasks><![CDATA[
+    ]]><com.approuter.studio.connectors.task.SummaryTask><![CDATA[
+      ]]><key><![CDATA[summaryTask]]></key><![CDATA[
+      ]]><children/><![CDATA[
+      ]]><model><![CDATA[
+        ]]><map><![CDATA[
+          ]]><entry><![CDATA[
+            ]]><string><![CDATA[selected]]></string><![CDATA[
+            ]]><string><![CDATA[false]]></string><![CDATA[
+          ]]></entry><![CDATA[
+        ]]></map><![CDATA[
+      ]]></model><![CDATA[
+      ]]><listeners/><![CDATA[
+    ]]></com.approuter.studio.connectors.task.SummaryTask><![CDATA[
+    ]]><com.approuter.studio.connectors.ftp.tasks.FTPEndpointTask><![CDATA[
+      ]]><key><![CDATA[endpointTask]]></key><![CDATA[
+      ]]><children/><![CDATA[
+      ]]><model><![CDATA[
+        ]]><map><![CDATA[
+          ]]><entry><![CDATA[
+            ]]><string><![CDATA[selected]]></string><![CDATA[
+            ]]><string><![CDATA[false]]></string><![CDATA[
+          ]]></entry><![CDATA[
+          ]]><entry><![CDATA[
+            ]]><string><![CDATA[endpoint]]></string><![CDATA[
+            ]]><string><![CDATA[appnet-guid://AB3B9A432FAF27053E87C7873A306E0D]]></string><![CDATA[
+          ]]></entry><![CDATA[
+        ]]></map><![CDATA[
+      ]]></model><![CDATA[
+      ]]><listeners><![CDATA[
+        ]]><com.approuter.studio.connectors.ftp.tasks.FTPSetupWorkflowTask><![CDATA[
+          ]]><key><![CDATA[setupWorkflowTask]]></key><![CDATA[
+          ]]><children><![CDATA[
+            ]]><com.approuter.studio.connectors.task.ActivityRefTask><![CDATA[
+              ]]><key><![CDATA[pollingTask]]></key><![CDATA[
+              ]]><children/><![CDATA[
+              ]]><model><![CDATA[
+                ]]><map><![CDATA[
+                  ]]><entry><![CDATA[
+                    ]]><string><![CDATA[transferAscii]]></string><![CDATA[
+                    ]]><boolean><![CDATA[false]]></boolean><![CDATA[
+                  ]]></entry><![CDATA[
+                  ]]><entry><![CDATA[
+                    ]]><string><![CDATA[selected]]></string><![CDATA[
+                    ]]><string><![CDATA[false]]></string><![CDATA[
+                  ]]></entry><![CDATA[
+                ]]></map><![CDATA[
+              ]]></model><![CDATA[
+              ]]><listeners/><![CDATA[
+            ]]></com.approuter.studio.connectors.task.ActivityRefTask><![CDATA[
+            ]]><com.approuter.studio.connectors.task.ActivityRefTask><![CDATA[
+              ]]><key><![CDATA[retryTask]]></key><![CDATA[
+              ]]><children/><![CDATA[
+              ]]><model><![CDATA[
+                ]]><map><![CDATA[
+                  ]]><entry><![CDATA[
+                    ]]><string><![CDATA[maxRetries]]></string><![CDATA[
+                    ]]><int><![CDATA[5]]></int><![CDATA[
+                  ]]></entry><![CDATA[
+                  ]]><entry><![CDATA[
+                    ]]><string><![CDATA[selected]]></string><![CDATA[
+                    ]]><string><![CDATA[false]]></string><![CDATA[
+                  ]]></entry><![CDATA[
+                  ]]><entry><![CDATA[
+                    ]]><string><![CDATA[timeout]]></string><![CDATA[
+                    ]]><int><![CDATA[300]]></int><![CDATA[
+                  ]]></entry><![CDATA[
+                  ]]><entry><![CDATA[
+                    ]]><string><![CDATA[retryInterval]]></string><![CDATA[
+                    ]]><int><![CDATA[30]]></int><![CDATA[
+                  ]]></entry><![CDATA[
+                ]]></map><![CDATA[
+              ]]></model><![CDATA[
+              ]]><listeners/><![CDATA[
+            ]]></com.approuter.studio.connectors.task.ActivityRefTask><![CDATA[
+          ]]></children><![CDATA[
+          ]]><model><![CDATA[
+            ]]><map><![CDATA[
+              ]]><entry><![CDATA[
+                ]]><string><![CDATA[binary]]></string><![CDATA[
+                ]]><boolean><![CDATA[true]]></boolean><![CDATA[
+              ]]></entry><![CDATA[
+              ]]><entry><![CDATA[
+                ]]><string><![CDATA[selected]]></string><![CDATA[
+                ]]><string><![CDATA[false]]></string><![CDATA[
+              ]]></entry><![CDATA[
+              ]]><entry><![CDATA[
+                ]]><string><![CDATA[directory]]></string><![CDATA[
+                ]]><string><![CDATA[/]]></string><![CDATA[
+              ]]></entry><![CDATA[
+              ]]><entry><![CDATA[
+                ]]><string><![CDATA[overwrite]]></string><![CDATA[
+                ]]><string><![CDATA[y]]></string><![CDATA[
+              ]]></entry><![CDATA[
+              ]]><entry><![CDATA[
+                ]]><string><![CDATA[encoding]]></string><![CDATA[
+                ]]><string><![CDATA[ISO-8859-1]]></string><![CDATA[
+              ]]></entry><![CDATA[
+            ]]></map><![CDATA[
+          ]]></model><![CDATA[
+          ]]><listeners><![CDATA[
+            ]]><com.approuter.studio.connectors.task.MapTask><![CDATA[
+              ]]><key><![CDATA[mapInputsTask]]></key><![CDATA[
+              ]]><children/><![CDATA[
+              ]]><model><![CDATA[
+                ]]><map><![CDATA[
+                  ]]><entry><![CDATA[
+                    ]]><string><![CDATA[selected]]></string><![CDATA[
+                    ]]><string><![CDATA[true]]></string><![CDATA[
+                  ]]></entry><![CDATA[
+                ]]></map><![CDATA[
+              ]]></model><![CDATA[
+              ]]><listeners/><![CDATA[
+            ]]></com.approuter.studio.connectors.task.MapTask><![CDATA[
+          ]]></listeners><![CDATA[
+        ]]></com.approuter.studio.connectors.ftp.tasks.FTPSetupWorkflowTask><![CDATA[
+      ]]></listeners><![CDATA[
+    ]]></com.approuter.studio.connectors.ftp.tasks.FTPEndpointTask><![CDATA[
+    ]]><com.approuter.studio.connectors.ftp.tasks.FTPSetupWorkflowTask reference="../com.approuter.studio.connectors.ftp.tasks.FTPEndpointTask/listeners/com.approuter.studio.connectors.ftp.tasks.FTPSetupWorkflowTask"/><![CDATA[
+    ]]><com.approuter.studio.connectors.task.MapTask reference="../com.approuter.studio.connectors.ftp.tasks.FTPEndpointTask/listeners/com.approuter.studio.connectors.ftp.tasks.FTPSetupWorkflowTask/listeners/com.approuter.studio.connectors.task.MapTask"/><![CDATA[
+  ]]></tasks><![CDATA[
+  ]]><valid><![CDATA[false]]></valid><![CDATA[
+]]></com.approuter.studio.connectors.task.TaskList></tasksConfig></invoke></sequence></foreach><invoke activityId="13" activityName="" comments="" configurationId="email_smtp_id" description="This activity sends email via SMTP through the selected email endpoint" expanded="true" moduleName="http://www.approuter.com/module/email/" name="Send Email" partnerLink=""><inputMapSpecConfig><mapSpec context="orchestration" optionalParameterVisible="false" version="1.0" xmlns="http://www.approuter.com/schemas/2003/1/transformation/" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><specInfo><source canBeSubstitutedFromUI="true" displayName="JobInfo" isParameter="false" location="orchestration_internal_variableJobInfo" locationType="2" logicalName="srcDoc1" namespace="http://www.approuter.com/schemas/2005/1/orchestration/jobinfo" optionalParameter="false" originalRootNodeName="JobInfo" originalRootNodeNameNS="http://www.approuter.com/schemas/2005/1/orchestration/jobinfo" rootNodeName="JobInfo" varName="JobInfo"/><destination activityId="13" canBeSubstitutedFromUI="true" displayName="mailheader" isParameter="true" location="email-smtp-input-mailheader-parameter.xsd-13" locationType="2" logicalName="dstDoc1" messageType="mailheader" optionalParameter="true" originalRootNodeName="mailheader" rootNodeName="mailheader"/><destination activityId="13" canBeSubstitutedFromUI="true" displayName="body" isParameter="true" location="email-smtp-input-body-parameter.xsd-13" locationType="2" logicalName="dstDoc2" messageType="body" namespace="http://www.approuter.com/schemas/2003/1/castirontypes" optionalParameter="false" originalRootNodeName="body" originalRootNodeNameNS="http://www.approuter.com/schemas/2003/1/castirontypes" rootNodeName="body"/><destination activityId="13" canBeSubstitutedFromUI="true" displayName="emailConnection" isParameter="true" location="smtpConnectionParam.xsd-13" locationType="2" logicalName="dstDoc3" messageType="emailConnection" optionalParameter="true" originalRootNodeName="emailConnection" rootNodeName="emailConnection"/></specInfo><doMapping><rule emitCData="false" guaranteed="true"><call guaranteed="true"><functoid function="Concatenate" gridX="257" gridY="87" id="1" resultType="xsd:string"><arg dataType="xsd:string"><constant>The </constant></arg><arg dataType="xsd:string" docName="srcDoc1"><path>/JobInfo/projectName</path></arg><arg dataType="xsd:string"><constant> has completed.</constant></arg></functoid><link destFunctoid="1" destFunctoidArgIndex="1" id="1" srcDocName="srcDoc1" srcPath="/JobInfo/projectName"/><link destDocName="dstDoc2" destPath="/body" id="2" srcFunctoid="1"/></call></rule></doMapping></mapSpec></inputMapSpecConfig><tasksConfig><com.approuter.studio.connectors.task.TaskList><![CDATA[
+  ]]><tasks><![CDATA[
+    ]]><com.approuter.studio.connectors.task.SummaryTask><![CDATA[
+      ]]><key><![CDATA[summaryTask]]></key><![CDATA[
+      ]]><children/><![CDATA[
+      ]]><model><![CDATA[
+        ]]><map><![CDATA[
+          ]]><entry><![CDATA[
+            ]]><string><![CDATA[selected]]></string><![CDATA[
+            ]]><string><![CDATA[false]]></string><![CDATA[
+          ]]></entry><![CDATA[
+        ]]></map><![CDATA[
+      ]]></model><![CDATA[
+      ]]><listeners/><![CDATA[
+    ]]></com.approuter.studio.connectors.task.SummaryTask><![CDATA[
+    ]]><com.approuter.studio.connectors.email.tasks.EmailEndpointTask><![CDATA[
+      ]]><key><![CDATA[endpointTask]]></key><![CDATA[
+      ]]><children/><![CDATA[
+      ]]><model><![CDATA[
+        ]]><map><![CDATA[
+          ]]><entry><![CDATA[
+            ]]><string><![CDATA[selected]]></string><![CDATA[
+            ]]><string><![CDATA[false]]></string><![CDATA[
+          ]]></entry><![CDATA[
+          ]]><entry><![CDATA[
+            ]]><string><![CDATA[endpoint]]></string><![CDATA[
+            ]]><string><![CDATA[appnet-guid://72D416BE9F1CDF28020D3DB08245171D]]></string><![CDATA[
+          ]]></entry><![CDATA[
+        ]]></map><![CDATA[
+      ]]></model><![CDATA[
+      ]]><listeners><![CDATA[
+        ]]><com.approuter.studio.connectors.email.tasks.SendEmailTask><![CDATA[
+          ]]><key><![CDATA[setupWorkflowTask]]></key><![CDATA[
+          ]]><children><![CDATA[
+            ]]><com.approuter.studio.connectors.task.ActivityRefTask><![CDATA[
+              ]]><key><![CDATA[retryTask]]></key><![CDATA[
+              ]]><children/><![CDATA[
+              ]]><model><![CDATA[
+                ]]><map><![CDATA[
+                  ]]><entry><![CDATA[
+                    ]]><string><![CDATA[selected]]></string><![CDATA[
+                    ]]><string><![CDATA[false]]></string><![CDATA[
+                  ]]></entry><![CDATA[
+                  ]]><entry><![CDATA[
+                    ]]><string><![CDATA[maxRetries]]></string><![CDATA[
+                    ]]><int><![CDATA[5]]></int><![CDATA[
+                  ]]></entry><![CDATA[
+                  ]]><entry><![CDATA[
+                    ]]><string><![CDATA[retryInterval]]></string><![CDATA[
+                    ]]><int><![CDATA[30]]></int><![CDATA[
+                  ]]></entry><![CDATA[
+                  ]]><entry><![CDATA[
+                    ]]><string><![CDATA[timeout]]></string><![CDATA[
+                    ]]><int><![CDATA[300]]></int><![CDATA[
+                  ]]></entry><![CDATA[
+                ]]></map><![CDATA[
+              ]]></model><![CDATA[
+              ]]><listeners/><![CDATA[
+            ]]></com.approuter.studio.connectors.task.ActivityRefTask><![CDATA[
+          ]]></children><![CDATA[
+          ]]><model><![CDATA[
+            ]]><map><![CDATA[
+              ]]><entry><![CDATA[
+                ]]><string><![CDATA[to]]></string><![CDATA[
+                ]]><string><![CDATA[mnealon@keystonedental.com]]></string><![CDATA[
+              ]]></entry><![CDATA[
+              ]]><entry><![CDATA[
+                ]]><string><![CDATA[selected]]></string><![CDATA[
+                ]]><string><![CDATA[false]]></string><![CDATA[
+              ]]></entry><![CDATA[
+              ]]><entry><![CDATA[
+                ]]><string><![CDATA[subject]]></string><![CDATA[
+                ]]><string><![CDATA[Data Extract Complete]]></string><![CDATA[
+              ]]></entry><![CDATA[
+              ]]><entry><![CDATA[
+                ]]><string><![CDATA[bcc]]></string><![CDATA[
+                ]]><string/><![CDATA[
+              ]]></entry><![CDATA[
+              ]]><entry><![CDATA[
+                ]]><string><![CDATA[from]]></string><![CDATA[
+                ]]><string><![CDATA[castiron@keystonedental.com]]></string><![CDATA[
+              ]]></entry><![CDATA[
+              ]]><entry><![CDATA[
+                ]]><string><![CDATA[cc]]></string><![CDATA[
+                ]]><string/><![CDATA[
+              ]]></entry><![CDATA[
+            ]]></map><![CDATA[
+          ]]></model><![CDATA[
+          ]]><listeners><![CDATA[
+            ]]><com.approuter.studio.connectors.task.MapTask><![CDATA[
+              ]]><key><![CDATA[mapInputsTask]]></key><![CDATA[
+              ]]><children/><![CDATA[
+              ]]><model><![CDATA[
+                ]]><map><![CDATA[
+                  ]]><entry><![CDATA[
+                    ]]><string><![CDATA[selected]]></string><![CDATA[
+                    ]]><string><![CDATA[true]]></string><![CDATA[
+                  ]]></entry><![CDATA[
+                ]]></map><![CDATA[
+              ]]></model><![CDATA[
+              ]]><listeners/><![CDATA[
+            ]]></com.approuter.studio.connectors.task.MapTask><![CDATA[
+          ]]></listeners><![CDATA[
+        ]]></com.approuter.studio.connectors.email.tasks.SendEmailTask><![CDATA[
+      ]]></listeners><![CDATA[
+    ]]></com.approuter.studio.connectors.email.tasks.EmailEndpointTask><![CDATA[
+    ]]><com.approuter.studio.connectors.email.tasks.SendEmailTask reference="../com.approuter.studio.connectors.email.tasks.EmailEndpointTask/listeners/com.approuter.studio.connectors.email.tasks.SendEmailTask"/><![CDATA[
+    ]]><com.approuter.studio.connectors.task.MapTask reference="../com.approuter.studio.connectors.email.tasks.EmailEndpointTask/listeners/com.approuter.studio.connectors.email.tasks.SendEmailTask/listeners/com.approuter.studio.connectors.task.MapTask"/><![CDATA[
+  ]]></tasks><![CDATA[
+  ]]><valid><![CDATA[false]]></valid><![CDATA[
+]]></com.approuter.studio.connectors.task.TaskList></tasksConfig></invoke></sequence></process>

@@ -1,0 +1,734 @@
+<document name="SalesDetailUS" documentNamespace="" encoding="US ASCII" serializeCRLF="true" eosDelimited="true" xmlns="http://www.approuter.com/schemas/2003/2/connector/file/fsd/">
+  <types/>
+  <message name="SalesDetailUS" recordTemplate="" structure="delimited" childOrder="infix" delimitEmptyData="true" maxOccurs="1" minOccurs="1">
+    <childDelimiter>
+      <isNewline>true</isNewline>
+    </childDelimiter>
+    <repeatDelimiter>
+      <isNewline>true</isNewline>
+    </repeatDelimiter>
+    <children>
+      <order>
+        <record name="header" recordTemplate="" structure="delimited" childOrder="infix" delimitEmptyData="true" maxOccurs="1" minOccurs="1">
+          <childDelimiter>
+            <character type="ascii" value=","/>
+          </childDelimiter>
+          <children>
+            <order>
+              <field name="customer_no" fieldTemplate="" length="0" minOccurs="1" maxOccurs="1">
+                <escapeChar>
+                  <character type="ascii" value="&quot;"/>
+                </escapeChar>
+                <encapsulationChar>
+                  <character type="ascii" value="&quot;"/>
+                </encapsulationChar>
+              </field>
+            </order>
+            <order>
+              <field name="invoice_id" fieldTemplate="" length="0" minOccurs="1" maxOccurs="1">
+                <escapeChar>
+                  <character type="ascii" value="&quot;"/>
+                </escapeChar>
+                <encapsulationChar>
+                  <character type="ascii" value="&quot;"/>
+                </encapsulationChar>
+              </field>
+            </order>
+            <order>
+              <field name="item_id" fieldTemplate="" length="0" minOccurs="1" maxOccurs="1">
+                <escapeChar>
+                  <character type="ascii" value="&quot;"/>
+                </escapeChar>
+                <encapsulationChar>
+                  <character type="ascii" value="&quot;"/>
+                </encapsulationChar>
+              </field>
+            </order>
+            <order>
+              <field name="invoicedate" fieldTemplate="" length="0" minOccurs="1" maxOccurs="1">
+                <escapeChar>
+                  <character type="ascii" value="&quot;"/>
+                </escapeChar>
+                <encapsulationChar>
+                  <character type="ascii" value="&quot;"/>
+                </encapsulationChar>
+              </field>
+            </order>
+            <order>
+              <field name="salesman_code" fieldTemplate="" length="0" minOccurs="1" maxOccurs="1">
+                <escapeChar>
+                  <character type="ascii" value="&quot;"/>
+                </escapeChar>
+                <encapsulationChar>
+                  <character type="ascii" value="&quot;"/>
+                </encapsulationChar>
+              </field>
+            </order>
+            <order>
+              <field name="region_code" fieldTemplate="" length="0" minOccurs="1" maxOccurs="1">
+                <escapeChar>
+                  <character type="ascii" value="&quot;"/>
+                </escapeChar>
+                <encapsulationChar>
+                  <character type="ascii" value="&quot;"/>
+                </encapsulationChar>
+              </field>
+            </order>
+            <order>
+              <field name="part_product_family" fieldTemplate="" length="0" minOccurs="1" maxOccurs="1">
+                <escapeChar>
+                  <character type="ascii" value="&quot;"/>
+                </escapeChar>
+                <encapsulationChar>
+                  <character type="ascii" value="&quot;"/>
+                </encapsulationChar>
+              </field>
+            </order>
+            <order>
+              <field name="part_product_code" fieldTemplate="" length="0" minOccurs="1" maxOccurs="1">
+                <escapeChar>
+                  <character type="ascii" value="&quot;"/>
+                </escapeChar>
+                <encapsulationChar>
+                  <character type="ascii" value="&quot;"/>
+                </encapsulationChar>
+              </field>
+            </order>
+            <order>
+              <field name="allamounts" fieldTemplate="" length="0" minOccurs="1" maxOccurs="1">
+                <escapeChar>
+                  <character type="ascii" value="&quot;"/>
+                </escapeChar>
+                <encapsulationChar>
+                  <character type="ascii" value="&quot;"/>
+                </encapsulationChar>
+              </field>
+            </order>
+            <order>
+              <field name="invoiced_qty" fieldTemplate="" length="0" minOccurs="1" maxOccurs="1">
+                <escapeChar>
+                  <character type="ascii" value="&quot;"/>
+                </escapeChar>
+                <encapsulationChar>
+                  <character type="ascii" value="&quot;"/>
+                </encapsulationChar>
+              </field>
+            </order>
+            <order>
+              <field name="corporate_form" fieldTemplate="" length="0" minOccurs="1" maxOccurs="1">
+                <escapeChar>
+                  <character type="ascii" value="&quot;"/>
+                </escapeChar>
+                <encapsulationChar>
+                  <character type="ascii" value="&quot;"/>
+                </encapsulationChar>
+              </field>
+            </order>
+            <order>
+              <field name="catalog_no" fieldTemplate="" length="0" minOccurs="1" maxOccurs="1">
+                <escapeChar>
+                  <character type="ascii" value="&quot;"/>
+                </escapeChar>
+                <encapsulationChar>
+                  <character type="ascii" value="&quot;"/>
+                </encapsulationChar>
+              </field>
+            </order>
+            <order>
+              <field name="customer_name" fieldTemplate="" length="0" minOccurs="1" maxOccurs="1">
+                <escapeChar>
+                  <character type="ascii" value="&quot;"/>
+                </escapeChar>
+                <encapsulationChar>
+                  <character type="ascii" value="&quot;"/>
+                </encapsulationChar>
+              </field>
+            </order>
+            <order>
+              <field name="list_price" fieldTemplate="" length="0" minOccurs="1" maxOccurs="1">
+                <escapeChar>
+                  <character type="ascii" value="&quot;"/>
+                </escapeChar>
+                <encapsulationChar>
+                  <character type="ascii" value="&quot;"/>
+                </encapsulationChar>
+              </field>
+            </order>
+            <order>
+              <field name="cust_grp" fieldTemplate="" length="0" minOccurs="1" maxOccurs="1">
+                <escapeChar>
+                  <character type="ascii" value="&quot;"/>
+                </escapeChar>
+                <encapsulationChar>
+                  <character type="ascii" value="&quot;"/>
+                </encapsulationChar>
+              </field>
+            </order>
+            <order>
+              <field name="name" fieldTemplate="" length="0" minOccurs="1" maxOccurs="1">
+                <escapeChar>
+                  <character type="ascii" value="&quot;"/>
+                </escapeChar>
+                <encapsulationChar>
+                  <character type="ascii" value="&quot;"/>
+                </encapsulationChar>
+              </field>
+            </order>
+            <order>
+              <field name="type_designation" fieldTemplate="" length="0" minOccurs="1" maxOccurs="1">
+                <escapeChar>
+                  <character type="ascii" value="&quot;"/>
+                </escapeChar>
+                <encapsulationChar>
+                  <character type="ascii" value="&quot;"/>
+                </encapsulationChar>
+              </field>
+            </order>
+            <order>
+              <field name="site" fieldTemplate="" length="0" minOccurs="1" maxOccurs="1">
+                <escapeChar>
+                  <character type="ascii" value="&quot;"/>
+                </escapeChar>
+                <encapsulationChar>
+                  <character type="ascii" value="&quot;"/>
+                </encapsulationChar>
+              </field>
+            </order>
+            <order>
+              <field name="market_code" fieldTemplate="" length="0" minOccurs="1" maxOccurs="1">
+                <escapeChar>
+                  <character type="ascii" value="&quot;"/>
+                </escapeChar>
+                <encapsulationChar>
+                  <character type="ascii" value="&quot;"/>
+                </encapsulationChar>
+              </field>
+            </order>
+            <order>
+              <field name="association_no" fieldTemplate="" length="0" minOccurs="1" maxOccurs="1">
+                <escapeChar>
+                  <character type="ascii" value="&quot;"/>
+                </escapeChar>
+                <encapsulationChar>
+                  <character type="ascii" value="&quot;"/>
+                </encapsulationChar>
+              </field>
+            </order>
+            <order>
+              <field name="rma_no" fieldTemplate="" length="0" minOccurs="1" maxOccurs="1">
+                <escapeChar>
+                  <character type="ascii" value="&quot;"/>
+                </escapeChar>
+                <encapsulationChar>
+                  <character type="ascii" value="&quot;"/>
+                </encapsulationChar>
+              </field>
+            </order>
+            <order>
+              <field name="order_no" fieldTemplate="" length="0" minOccurs="1" maxOccurs="1">
+                <escapeChar>
+                  <character type="ascii" value="&quot;"/>
+                </escapeChar>
+                <encapsulationChar>
+                  <character type="ascii" value="&quot;"/>
+                </encapsulationChar>
+              </field>
+            </order>
+            <order>
+              <field name="delivstate" fieldTemplate="" length="0" minOccurs="1" maxOccurs="1">
+                <escapeChar>
+                  <character type="ascii" value="&quot;"/>
+                </escapeChar>
+                <encapsulationChar>
+                  <character type="ascii" value="&quot;"/>
+                </encapsulationChar>
+              </field>
+            </order>
+            <order>
+              <field name="delivzip" fieldTemplate="" length="0" minOccurs="1" maxOccurs="1">
+                <escapeChar>
+                  <character type="ascii" value="&quot;"/>
+                </escapeChar>
+                <encapsulationChar>
+                  <character type="ascii" value="&quot;"/>
+                </encapsulationChar>
+              </field>
+            </order>
+            <order>
+              <field name="inventoryvalueus" fieldTemplate="" length="0" minOccurs="1" maxOccurs="1">
+                <escapeChar>
+                  <character type="ascii" value="&quot;"/>
+                </escapeChar>
+                <encapsulationChar>
+                  <character type="ascii" value="&quot;"/>
+                </encapsulationChar>
+              </field>
+            </order>
+            <order>
+              <field name="second_commodity" fieldTemplate="" length="0" minOccurs="1" maxOccurs="1">
+                <escapeChar>
+                  <character type="ascii" value="&quot;"/>
+                </escapeChar>
+                <encapsulationChar>
+                  <character type="ascii" value="&quot;"/>
+                </encapsulationChar>
+              </field>
+            </order>
+            <order>
+              <field name="source" fieldTemplate="" length="0" minOccurs="1" maxOccurs="1">
+                <escapeChar>
+                  <character type="ascii" value="&quot;"/>
+                </escapeChar>
+                <encapsulationChar>
+                  <character type="ascii" value="&quot;"/>
+                </encapsulationChar>
+              </field>
+            </order>
+            <order>
+              <field name="truelocalamt" fieldTemplate="" length="0" minOccurs="1" maxOccurs="1">
+                <escapeChar>
+                  <character type="ascii" value="&quot;"/>
+                </escapeChar>
+                <encapsulationChar>
+                  <character type="ascii" value="&quot;"/>
+                </encapsulationChar>
+              </field>
+            </order>
+            <order>
+              <field name="delivcountry" fieldTemplate="" length="0" minOccurs="1" maxOccurs="1">
+                <escapeChar>
+                  <character type="ascii" value="&quot;"/>
+                </escapeChar>
+                <encapsulationChar>
+                  <character type="ascii" value="&quot;"/>
+                </encapsulationChar>
+              </field>
+            </order>
+            <order>
+              <field name="commission_receiver" fieldTemplate="" length="0" minOccurs="1" maxOccurs="1">
+                <escapeChar>
+                  <character type="ascii" value="&quot;"/>
+                </escapeChar>
+                <encapsulationChar>
+                  <character type="ascii" value="&quot;"/>
+                </encapsulationChar>
+              </field>
+            </order>
+            <order>
+              <field name="custname" fieldTemplate="" length="0" minOccurs="1" maxOccurs="1">
+                <escapeChar>
+                  <character type="ascii" value="&quot;"/>
+                </escapeChar>
+                <encapsulationChar>
+                  <character type="ascii" value="&quot;"/>
+                </encapsulationChar>
+              </field>
+            </order>
+            <order>
+              <field name="invoiceqtr" fieldTemplate="" length="0" minOccurs="1" maxOccurs="1">
+                <escapeChar>
+                  <character type="ascii" value="&quot;"/>
+                </escapeChar>
+                <encapsulationChar>
+                  <character type="ascii" value="&quot;"/>
+                </encapsulationChar>
+              </field>
+            </order>
+            <order>
+              <field name="catalog_desc" fieldTemplate="" length="0" minOccurs="1" maxOccurs="1">
+                <escapeChar>
+                  <character type="ascii" value="&quot;"/>
+                </escapeChar>
+                <encapsulationChar>
+                  <character type="ascii" value="&quot;"/>
+                </encapsulationChar>
+              </field>
+            </order>
+            <order>
+              <field name="firstorderdate" fieldTemplate="" length="0" minOccurs="1" maxOccurs="1">
+                <escapeChar>
+                  <character type="ascii" value="&quot;"/>
+                </escapeChar>
+                <encapsulationChar>
+                  <character type="ascii" value="&quot;"/>
+                </encapsulationChar>
+              </field>
+            </order>
+            <order>
+              <field name="firstorderdatescg" fieldTemplate="" length="0" minOccurs="1" maxOccurs="1">
+                <escapeChar>
+                  <character type="ascii" value="&quot;"/>
+                </escapeChar>
+                <encapsulationChar>
+                  <character type="ascii" value="&quot;"/>
+                </encapsulationChar>
+              </field>
+            </order>
+          </children>
+        </record>
+      </order>
+      <order>
+        <record name="data" recordTemplate="" structure="delimited" childOrder="infix" recordIdentifierOffset="1" delimitEmptyData="true" maxOccurs="unbounded" minOccurs="1">
+          <childDelimiter>
+            <character type="ascii" value=","/>
+          </childDelimiter>
+          <repeatDelimiter>
+            <isNewline>true</isNewline>
+          </repeatDelimiter>
+          <children>
+            <order>
+              <field name="customer_no" fieldTemplate="" length="0" minOccurs="1" maxOccurs="1">
+                <escapeChar>
+                  <character type="ascii" value="&quot;"/>
+                </escapeChar>
+                <encapsulationChar>
+                  <character type="ascii" value="&quot;"/>
+                </encapsulationChar>
+              </field>
+            </order>
+            <order>
+              <field name="invoice_id" fieldTemplate="" length="0" minOccurs="1" maxOccurs="1">
+                <escapeChar>
+                  <character type="ascii" value="&quot;"/>
+                </escapeChar>
+                <encapsulationChar>
+                  <character type="ascii" value="&quot;"/>
+                </encapsulationChar>
+              </field>
+            </order>
+            <order>
+              <field name="item_id" fieldTemplate="" length="0" minOccurs="1" maxOccurs="1">
+                <escapeChar>
+                  <character type="ascii" value="&quot;"/>
+                </escapeChar>
+                <encapsulationChar>
+                  <character type="ascii" value="&quot;"/>
+                </encapsulationChar>
+              </field>
+            </order>
+            <order>
+              <field name="invoicedate" fieldTemplate="" length="0" minOccurs="1" maxOccurs="1">
+                <escapeChar>
+                  <character type="ascii" value="&quot;"/>
+                </escapeChar>
+                <encapsulationChar>
+                  <character type="ascii" value="&quot;"/>
+                </encapsulationChar>
+              </field>
+            </order>
+            <order>
+              <field name="salesman_code" fieldTemplate="" length="0" minOccurs="1" maxOccurs="1">
+                <escapeChar>
+                  <character type="ascii" value="&quot;"/>
+                </escapeChar>
+                <encapsulationChar>
+                  <character type="ascii" value="&quot;"/>
+                </encapsulationChar>
+              </field>
+            </order>
+            <order>
+              <field name="region_code" fieldTemplate="" length="0" minOccurs="1" maxOccurs="1">
+                <escapeChar>
+                  <character type="ascii" value="&quot;"/>
+                </escapeChar>
+                <encapsulationChar>
+                  <character type="ascii" value="&quot;"/>
+                </encapsulationChar>
+              </field>
+            </order>
+            <order>
+              <field name="part_product_family" fieldTemplate="" length="0" minOccurs="1" maxOccurs="1">
+                <escapeChar>
+                  <character type="ascii" value="&quot;"/>
+                </escapeChar>
+                <encapsulationChar>
+                  <character type="ascii" value="&quot;"/>
+                </encapsulationChar>
+              </field>
+            </order>
+            <order>
+              <field name="part_product_code" fieldTemplate="" length="0" minOccurs="1" maxOccurs="1">
+                <escapeChar>
+                  <character type="ascii" value="&quot;"/>
+                </escapeChar>
+                <encapsulationChar>
+                  <character type="ascii" value="&quot;"/>
+                </encapsulationChar>
+              </field>
+            </order>
+            <order>
+              <field name="allamounts" fieldTemplate="" length="0" minOccurs="1" maxOccurs="1">
+                <escapeChar>
+                  <character type="ascii" value="&quot;"/>
+                </escapeChar>
+                <encapsulationChar>
+                  <character type="ascii" value="&quot;"/>
+                </encapsulationChar>
+              </field>
+            </order>
+            <order>
+              <field name="invoiced_qty" fieldTemplate="" length="0" minOccurs="1" maxOccurs="1">
+                <escapeChar>
+                  <character type="ascii" value="&quot;"/>
+                </escapeChar>
+                <encapsulationChar>
+                  <character type="ascii" value="&quot;"/>
+                </encapsulationChar>
+              </field>
+            </order>
+            <order>
+              <field name="corporate_form" fieldTemplate="" length="0" minOccurs="1" maxOccurs="1">
+                <escapeChar>
+                  <character type="ascii" value="&quot;"/>
+                </escapeChar>
+                <encapsulationChar>
+                  <character type="ascii" value="&quot;"/>
+                </encapsulationChar>
+              </field>
+            </order>
+            <order>
+              <field name="catalog_no" fieldTemplate="" length="0" minOccurs="1" maxOccurs="1">
+                <escapeChar>
+                  <character type="ascii" value="&quot;"/>
+                </escapeChar>
+                <encapsulationChar>
+                  <character type="ascii" value="&quot;"/>
+                </encapsulationChar>
+              </field>
+            </order>
+            <order>
+              <field name="customer_name" fieldTemplate="" length="0" minOccurs="1" maxOccurs="1">
+                <escapeChar>
+                  <character type="ascii" value="&quot;"/>
+                </escapeChar>
+                <encapsulationChar>
+                  <character type="ascii" value="&quot;"/>
+                </encapsulationChar>
+              </field>
+            </order>
+            <order>
+              <field name="list_price" fieldTemplate="" length="0" minOccurs="1" maxOccurs="1">
+                <escapeChar>
+                  <character type="ascii" value="&quot;"/>
+                </escapeChar>
+                <encapsulationChar>
+                  <character type="ascii" value="&quot;"/>
+                </encapsulationChar>
+              </field>
+            </order>
+            <order>
+              <field name="cust_grp" fieldTemplate="" length="0" minOccurs="1" maxOccurs="1">
+                <escapeChar>
+                  <character type="ascii" value="&quot;"/>
+                </escapeChar>
+                <encapsulationChar>
+                  <character type="ascii" value="&quot;"/>
+                </encapsulationChar>
+              </field>
+            </order>
+            <order>
+              <field name="name" fieldTemplate="" length="0" minOccurs="1" maxOccurs="1">
+                <escapeChar>
+                  <character type="ascii" value="&quot;"/>
+                </escapeChar>
+                <encapsulationChar>
+                  <character type="ascii" value="&quot;"/>
+                </encapsulationChar>
+              </field>
+            </order>
+            <order>
+              <field name="type_designation" fieldTemplate="" length="0" minOccurs="1" maxOccurs="1">
+                <escapeChar>
+                  <character type="ascii" value="&quot;"/>
+                </escapeChar>
+                <encapsulationChar>
+                  <character type="ascii" value="&quot;"/>
+                </encapsulationChar>
+              </field>
+            </order>
+            <order>
+              <field name="site" fieldTemplate="" length="0" minOccurs="1" maxOccurs="1">
+                <escapeChar>
+                  <character type="ascii" value="&quot;"/>
+                </escapeChar>
+                <encapsulationChar>
+                  <character type="ascii" value="&quot;"/>
+                </encapsulationChar>
+              </field>
+            </order>
+            <order>
+              <field name="market_code" fieldTemplate="" length="0" minOccurs="1" maxOccurs="1">
+                <escapeChar>
+                  <character type="ascii" value="&quot;"/>
+                </escapeChar>
+                <encapsulationChar>
+                  <character type="ascii" value="&quot;"/>
+                </encapsulationChar>
+              </field>
+            </order>
+            <order>
+              <field name="association_no" fieldTemplate="" length="0" minOccurs="1" maxOccurs="1">
+                <escapeChar>
+                  <character type="ascii" value="&quot;"/>
+                </escapeChar>
+                <encapsulationChar>
+                  <character type="ascii" value="&quot;"/>
+                </encapsulationChar>
+              </field>
+            </order>
+            <order>
+              <field name="rma_no" fieldTemplate="" length="0" minOccurs="1" maxOccurs="1">
+                <escapeChar>
+                  <character type="ascii" value="&quot;"/>
+                </escapeChar>
+                <encapsulationChar>
+                  <character type="ascii" value="&quot;"/>
+                </encapsulationChar>
+              </field>
+            </order>
+            <order>
+              <field name="order_no" fieldTemplate="" length="0" minOccurs="1" maxOccurs="1">
+                <escapeChar>
+                  <character type="ascii" value="&quot;"/>
+                </escapeChar>
+                <encapsulationChar>
+                  <character type="ascii" value="&quot;"/>
+                </encapsulationChar>
+              </field>
+            </order>
+            <order>
+              <field name="delivstate" fieldTemplate="" length="0" minOccurs="1" maxOccurs="1">
+                <escapeChar>
+                  <character type="ascii" value="&quot;"/>
+                </escapeChar>
+                <encapsulationChar>
+                  <character type="ascii" value="&quot;"/>
+                </encapsulationChar>
+              </field>
+            </order>
+            <order>
+              <field name="delivzip" fieldTemplate="" length="0" minOccurs="1" maxOccurs="1">
+                <escapeChar>
+                  <character type="ascii" value="&quot;"/>
+                </escapeChar>
+                <encapsulationChar>
+                  <character type="ascii" value="&quot;"/>
+                </encapsulationChar>
+              </field>
+            </order>
+            <order>
+              <field name="inventoryvalueus" fieldTemplate="" length="0" minOccurs="1" maxOccurs="1">
+                <escapeChar>
+                  <character type="ascii" value="&quot;"/>
+                </escapeChar>
+                <encapsulationChar>
+                  <character type="ascii" value="&quot;"/>
+                </encapsulationChar>
+              </field>
+            </order>
+            <order>
+              <field name="second_commodity" fieldTemplate="" length="0" minOccurs="1" maxOccurs="1">
+                <escapeChar>
+                  <character type="ascii" value="&quot;"/>
+                </escapeChar>
+                <encapsulationChar>
+                  <character type="ascii" value="&quot;"/>
+                </encapsulationChar>
+              </field>
+            </order>
+            <order>
+              <field name="source" fieldTemplate="" length="0" minOccurs="1" maxOccurs="1">
+                <escapeChar>
+                  <character type="ascii" value="&quot;"/>
+                </escapeChar>
+                <encapsulationChar>
+                  <character type="ascii" value="&quot;"/>
+                </encapsulationChar>
+              </field>
+            </order>
+            <order>
+              <field name="truelocalamt" fieldTemplate="" length="0" minOccurs="1" maxOccurs="1">
+                <escapeChar>
+                  <character type="ascii" value="&quot;"/>
+                </escapeChar>
+                <encapsulationChar>
+                  <character type="ascii" value="&quot;"/>
+                </encapsulationChar>
+              </field>
+            </order>
+            <order>
+              <field name="delivcountry" fieldTemplate="" length="0" minOccurs="1" maxOccurs="1">
+                <escapeChar>
+                  <character type="ascii" value="&quot;"/>
+                </escapeChar>
+                <encapsulationChar>
+                  <character type="ascii" value="&quot;"/>
+                </encapsulationChar>
+              </field>
+            </order>
+            <order>
+              <field name="commission_receiver" fieldTemplate="" length="0" minOccurs="1" maxOccurs="1">
+                <escapeChar>
+                  <character type="ascii" value="&quot;"/>
+                </escapeChar>
+                <encapsulationChar>
+                  <character type="ascii" value="&quot;"/>
+                </encapsulationChar>
+              </field>
+            </order>
+            <order>
+              <field name="custname" fieldTemplate="" length="0" minOccurs="1" maxOccurs="1">
+                <escapeChar>
+                  <character type="ascii" value="&quot;"/>
+                </escapeChar>
+                <encapsulationChar>
+                  <character type="ascii" value="&quot;"/>
+                </encapsulationChar>
+              </field>
+            </order>
+            <order>
+              <field name="invoiceqtr" fieldTemplate="" length="0" minOccurs="1" maxOccurs="1">
+                <escapeChar>
+                  <character type="ascii" value="&quot;"/>
+                </escapeChar>
+                <encapsulationChar>
+                  <character type="ascii" value="&quot;"/>
+                </encapsulationChar>
+              </field>
+            </order>
+            <order>
+              <field name="catalog_desc" fieldTemplate="" length="0" minOccurs="1" maxOccurs="1">
+                <escapeChar>
+                  <character type="ascii" value="&quot;"/>
+                </escapeChar>
+                <encapsulationChar>
+                  <character type="ascii" value="&quot;"/>
+                </encapsulationChar>
+              </field>
+            </order>
+            <order>
+              <field name="firstorderdate" fieldTemplate="" length="0" minOccurs="1" maxOccurs="1">
+                <escapeChar>
+                  <character type="ascii" value="&quot;"/>
+                </escapeChar>
+                <encapsulationChar>
+                  <character type="ascii" value="&quot;"/>
+                </encapsulationChar>
+              </field>
+            </order>
+            <order>
+              <field name="firstorderdatescg" fieldTemplate="" length="0" minOccurs="1" maxOccurs="1">
+                <escapeChar>
+                  <character type="ascii" value="&quot;"/>
+                </escapeChar>
+                <encapsulationChar>
+                  <character type="ascii" value="&quot;"/>
+                </encapsulationChar>
+              </field>
+            </order>
+          </children>
+        </record>
+      </order>
+    </children>
+  </message>
+</document>
