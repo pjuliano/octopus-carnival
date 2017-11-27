@@ -1,8 +1,8 @@
-#Mon Nov 27 14:04:57 EST 2017
+#Mon Nov 27 14:05:20 EST 2017
 version=6.1.0.15
 attempt-rename-on-remote-save=false
 prjver=1.0
-name=New_Invoice_Load
+name=IFS_Invoice_Load_To_SF
 studioVersionCreatedWith=6.1.0.15
 last-modified=2017-11-02T09\:01\:06Z
 description=WebSphere Cast Iron Studio Project
