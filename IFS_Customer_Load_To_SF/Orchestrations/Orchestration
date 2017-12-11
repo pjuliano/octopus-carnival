@@ -48,27 +48,6 @@
             ]]></com.approuter.studio.activities.scheduler.model.HourlyScheduleSlice><![CDATA[
           ]]></entry><![CDATA[
           ]]><entry><![CDATA[
-            ]]><string><![CDATA[com.approuter.studio.activities.scheduler.model.MinuteScheduleSlice]]></string><![CDATA[
-            ]]><com.approuter.studio.activities.scheduler.model.MinuteScheduleSlice><![CDATA[
-              ]]><ntminute><![CDATA[5]]></ntminute><![CDATA[
-              ]]><seconds><![CDATA[30]]></seconds><![CDATA[
-            ]]></com.approuter.studio.activities.scheduler.model.MinuteScheduleSlice><![CDATA[
-          ]]></entry><![CDATA[
-          ]]><entry><![CDATA[
-            ]]><string><![CDATA[com.approuter.studio.activities.scheduler.model.SecondsTwentyScheduleSlice]]></string><![CDATA[
-            ]]><com.approuter.studio.activities.scheduler.model.SecondsTwentyScheduleSlice><![CDATA[
-              ]]><interval><![CDATA[20]]></interval><![CDATA[
-            ]]></com.approuter.studio.activities.scheduler.model.SecondsTwentyScheduleSlice><![CDATA[
-          ]]></entry><![CDATA[
-          ]]><entry><![CDATA[
-            ]]><string><![CDATA[selected]]></string><![CDATA[
-            ]]><string><![CDATA[true]]></string><![CDATA[
-          ]]></entry><![CDATA[
-          ]]><entry><![CDATA[
-            ]]><string><![CDATA[selectedScheduleSlice]]></string><![CDATA[
-            ]]><string><![CDATA[com.approuter.studio.activities.scheduler.model.SecondsFiveScheduleSlice]]></string><![CDATA[
-          ]]></entry><![CDATA[
-          ]]><entry><![CDATA[
             ]]><string><![CDATA[com.approuter.studio.activities.scheduler.model.SecondsThirtyScheduleSlice]]></string><![CDATA[
             ]]><com.approuter.studio.activities.scheduler.model.SecondsThirtyScheduleSlice><![CDATA[
               ]]><interval><![CDATA[30]]></interval><![CDATA[
@@ -92,29 +71,16 @@
             ]]></com.approuter.studio.activities.scheduler.model.YearlyScheduleSlice><![CDATA[
           ]]></entry><![CDATA[
           ]]><entry><![CDATA[
-            ]]><string><![CDATA[com.approuter.studio.activities.scheduler.model.SecondsFiveScheduleSlice]]></string><![CDATA[
-            ]]><com.approuter.studio.activities.scheduler.model.SecondsFiveScheduleSlice><![CDATA[
-              ]]><interval><![CDATA[5]]></interval><![CDATA[
-            ]]></com.approuter.studio.activities.scheduler.model.SecondsFiveScheduleSlice><![CDATA[
-          ]]></entry><![CDATA[
-          ]]><entry><![CDATA[
-            ]]><string><![CDATA[com.approuter.studio.activities.scheduler.model.WeeklyScheduleSlice]]></string><![CDATA[
-            ]]><com.approuter.studio.activities.scheduler.model.WeeklyScheduleSlice><![CDATA[
-              ]]><nthWeek><![CDATA[1]]></nthWeek><![CDATA[
-              ]]><dayOfWeek><![CDATA[0]]></dayOfWeek><![CDATA[
-              ]]><nthDay><![CDATA[0]]></nthDay><![CDATA[
-              ]]><hour><![CDATA[0]]></hour><![CDATA[
-              ]]><nthHour><![CDATA[0]]></nthHour><![CDATA[
-              ]]><minute><![CDATA[0]]></minute><![CDATA[
-              ]]><ntminute><![CDATA[5]]></ntminute><![CDATA[
-              ]]><seconds><![CDATA[30]]></seconds><![CDATA[
-            ]]></com.approuter.studio.activities.scheduler.model.WeeklyScheduleSlice><![CDATA[
-          ]]></entry><![CDATA[
-          ]]><entry><![CDATA[
             ]]><string><![CDATA[com.approuter.studio.activities.scheduler.model.SecondsScheduleSlice]]></string><![CDATA[
             ]]><com.approuter.studio.activities.scheduler.model.SecondsScheduleSlice><![CDATA[
               ]]><interval><![CDATA[60]]></interval><![CDATA[
             ]]></com.approuter.studio.activities.scheduler.model.SecondsScheduleSlice><![CDATA[
+          ]]></entry><![CDATA[
+          ]]><entry><![CDATA[
+            ]]><string><![CDATA[com.approuter.studio.activities.scheduler.model.SecondsTenScheduleSlice]]></string><![CDATA[
+            ]]><com.approuter.studio.activities.scheduler.model.SecondsTenScheduleSlice><![CDATA[
+              ]]><interval><![CDATA[10]]></interval><![CDATA[
+            ]]></com.approuter.studio.activities.scheduler.model.SecondsTenScheduleSlice><![CDATA[
           ]]></entry><![CDATA[
           ]]><entry><![CDATA[
             ]]><string><![CDATA[com.approuter.studio.activities.scheduler.model.MontlyScheduleSlice]]></string><![CDATA[
@@ -132,10 +98,44 @@
             ]]></com.approuter.studio.activities.scheduler.model.MontlyScheduleSlice><![CDATA[
           ]]></entry><![CDATA[
           ]]><entry><![CDATA[
-            ]]><string><![CDATA[com.approuter.studio.activities.scheduler.model.SecondsTenScheduleSlice]]></string><![CDATA[
-            ]]><com.approuter.studio.activities.scheduler.model.SecondsTenScheduleSlice><![CDATA[
-              ]]><interval><![CDATA[10]]></interval><![CDATA[
-            ]]></com.approuter.studio.activities.scheduler.model.SecondsTenScheduleSlice><![CDATA[
+            ]]><string><![CDATA[com.approuter.studio.activities.scheduler.model.MinuteScheduleSlice]]></string><![CDATA[
+            ]]><com.approuter.studio.activities.scheduler.model.MinuteScheduleSlice><![CDATA[
+              ]]><ntminute><![CDATA[5]]></ntminute><![CDATA[
+              ]]><seconds><![CDATA[30]]></seconds><![CDATA[
+            ]]></com.approuter.studio.activities.scheduler.model.MinuteScheduleSlice><![CDATA[
+          ]]></entry><![CDATA[
+          ]]><entry><![CDATA[
+            ]]><string><![CDATA[com.approuter.studio.activities.scheduler.model.SecondsTwentyScheduleSlice]]></string><![CDATA[
+            ]]><com.approuter.studio.activities.scheduler.model.SecondsTwentyScheduleSlice><![CDATA[
+              ]]><interval><![CDATA[20]]></interval><![CDATA[
+            ]]></com.approuter.studio.activities.scheduler.model.SecondsTwentyScheduleSlice><![CDATA[
+          ]]></entry><![CDATA[
+          ]]><entry><![CDATA[
+            ]]><string><![CDATA[selected]]></string><![CDATA[
+            ]]><string><![CDATA[true]]></string><![CDATA[
+          ]]></entry><![CDATA[
+          ]]><entry><![CDATA[
+            ]]><string><![CDATA[selectedScheduleSlice]]></string><![CDATA[
+            ]]><string><![CDATA[com.approuter.studio.activities.scheduler.model.SecondsFiveScheduleSlice]]></string><![CDATA[
+          ]]></entry><![CDATA[
+          ]]><entry><![CDATA[
+            ]]><string><![CDATA[com.approuter.studio.activities.scheduler.model.SecondsFiveScheduleSlice]]></string><![CDATA[
+            ]]><com.approuter.studio.activities.scheduler.model.SecondsFiveScheduleSlice><![CDATA[
+              ]]><interval><![CDATA[5]]></interval><![CDATA[
+            ]]></com.approuter.studio.activities.scheduler.model.SecondsFiveScheduleSlice><![CDATA[
+          ]]></entry><![CDATA[
+          ]]><entry><![CDATA[
+            ]]><string><![CDATA[com.approuter.studio.activities.scheduler.model.WeeklyScheduleSlice]]></string><![CDATA[
+            ]]><com.approuter.studio.activities.scheduler.model.WeeklyScheduleSlice><![CDATA[
+              ]]><nthWeek><![CDATA[1]]></nthWeek><![CDATA[
+              ]]><dayOfWeek><![CDATA[0]]></dayOfWeek><![CDATA[
+              ]]><nthDay><![CDATA[0]]></nthDay><![CDATA[
+              ]]><hour><![CDATA[0]]></hour><![CDATA[
+              ]]><nthHour><![CDATA[0]]></nthHour><![CDATA[
+              ]]><minute><![CDATA[0]]></minute><![CDATA[
+              ]]><ntminute><![CDATA[5]]></ntminute><![CDATA[
+              ]]><seconds><![CDATA[30]]></seconds><![CDATA[
+            ]]></com.approuter.studio.activities.scheduler.model.WeeklyScheduleSlice><![CDATA[
           ]]></entry><![CDATA[
         ]]></map><![CDATA[
       ]]></model><![CDATA[
@@ -158,7 +158,7 @@
     ]]><com.approuter.studio.connectors.task.MapTask reference="../com.approuter.studio.connectors.task.ActivityRefTask/listeners/com.approuter.studio.connectors.task.MapTask"/><![CDATA[
   ]]></tasks><![CDATA[
   ]]><valid><![CDATA[false]]></valid><![CDATA[
-]]></com.approuter.studio.connectors.task.TaskList></tasksConfig></start><invoke activityId="5" activityName="" comments="" configurationId="db_parameterizedQuery_id" description="This activity gets rows of data from the selected database endpoint based on a given SQL select query." expanded="true" moduleName="http://www.approuter.com/module/database/" name="Execute Query" partnerLink=""><inputMapSpecConfig><mapSpec context="orchestration" optionalParameterVisible="false" version="1.0" xmlns="http://www.approuter.com/schemas/2003/1/transformation/" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><specInfo><destination canBeSubstitutedFromUI="true" displayName="parameters" isParameter="true" location="Schema_4_mapInputsTask_in_Execute_Query_5" locationType="2" logicalName="dstDoc1" optionalParameter="false" originalRootNodeName="parameters" rootNodeName="parameters" varName="parameters"/></specInfo><doMapping/></mapSpec></inputMapSpecConfig><outputMapSpecConfig><mapSpec context="orchestration" optionalParameterVisible="false" version="1.0" xmlns="http://www.approuter.com/schemas/2003/1/transformation/" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><specInfo><source canBeSubstitutedFromUI="true" displayName="rows" isParameter="true" location="Schema_4_mapOutputsTask_in_Execute_Query_5" locationType="2" logicalName="srcDoc1" optionalParameter="false" originalRootNodeName="rows" rootNodeName="rows" varName="rows"/><destination canBeSubstitutedFromUI="true" displayName="rows" isParameter="false" location="Schema_4_mapOutputsTask_in_Execute_Query_5" locationType="2" logicalName="dstDoc1" optionalParameter="false" originalRootNodeName="rows" rootNodeName="rows" varName="rows"/></specInfo><doMapping><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/ihmap:instances"/><to docName="dstDoc1" path="/rows/row/ihmap:instances"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/CUSTOMER_ID"/><to docName="dstDoc1" path="/rows/row/CUSTOMER_ID"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/NAME"/><to docName="dstDoc1" path="/rows/row/NAME"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/ADDRESS_ID"/><to docName="dstDoc1" path="/rows/row/ADDRESS_ID"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/ADDRESS_TYPE_CODE_DB"/><to docName="dstDoc1" path="/rows/row/ADDRESS_TYPE_CODE_DB"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/ADDRESS/ihmap:nillable"/><to docName="dstDoc1" path="/rows/row/ADDRESS/ihmap:nillable"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/ADDRESS"/><to docName="dstDoc1" path="/rows/row/ADDRESS"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/CITY/ihmap:nillable"/><to docName="dstDoc1" path="/rows/row/CITY/ihmap:nillable"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/CITY"/><to docName="dstDoc1" path="/rows/row/CITY"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/STATE/ihmap:nillable"/><to docName="dstDoc1" path="/rows/row/STATE/ihmap:nillable"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/STATE"/><to docName="dstDoc1" path="/rows/row/STATE"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/ZIP_CODE/ihmap:nillable"/><to docName="dstDoc1" path="/rows/row/ZIP_CODE/ihmap:nillable"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/ZIP_CODE"/><to docName="dstDoc1" path="/rows/row/ZIP_CODE"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/COUNTRY/ihmap:nillable"/><to docName="dstDoc1" path="/rows/row/COUNTRY/ihmap:nillable"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/COUNTRY"/><to docName="dstDoc1" path="/rows/row/COUNTRY"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/DELIV_ADDRESS_ID"/><to docName="dstDoc1" path="/rows/row/DELIV_ADDRESS_ID"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/DELIV_ADDRESS_TYPE_CODE"/><to docName="dstDoc1" path="/rows/row/DELIV_ADDRESS_TYPE_CODE"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/DELIVADDRESS/ihmap:nillable"/><to docName="dstDoc1" path="/rows/row/DELIVADDRESS/ihmap:nillable"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/DELIVADDRESS"/><to docName="dstDoc1" path="/rows/row/DELIVADDRESS"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/DELIVCITY/ihmap:nillable"/><to docName="dstDoc1" path="/rows/row/DELIVCITY/ihmap:nillable"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/DELIVCITY"/><to docName="dstDoc1" path="/rows/row/DELIVCITY"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/DELIVSTATE/ihmap:nillable"/><to docName="dstDoc1" path="/rows/row/DELIVSTATE/ihmap:nillable"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/DELIVSTATE"/><to docName="dstDoc1" path="/rows/row/DELIVSTATE"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/DELIVZIPCODE/ihmap:nillable"/><to docName="dstDoc1" path="/rows/row/DELIVZIPCODE/ihmap:nillable"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/DELIVZIPCODE"/><to docName="dstDoc1" path="/rows/row/DELIVZIPCODE"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/DELIVCOUNTRY/ihmap:nillable"/><to docName="dstDoc1" path="/rows/row/DELIVCOUNTRY/ihmap:nillable"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/DELIVCOUNTRY"/><to docName="dstDoc1" path="/rows/row/DELIVCOUNTRY"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/SALESMAN_CODE/ihmap:nillable"/><to docName="dstDoc1" path="/rows/row/SALESMAN_CODE/ihmap:nillable"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/SALESMAN_CODE"/><to docName="dstDoc1" path="/rows/row/SALESMAN_CODE"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/CORPORATE_FORM/ihmap:nillable"/><to docName="dstDoc1" path="/rows/row/CORPORATE_FORM/ihmap:nillable"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/CORPORATE_FORM"/><to docName="dstDoc1" path="/rows/row/CORPORATE_FORM"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/ASSOCIATION_NO/ihmap:nillable"/><to docName="dstDoc1" path="/rows/row/ASSOCIATION_NO/ihmap:nillable"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/ASSOCIATION_NO"/><to docName="dstDoc1" path="/rows/row/ASSOCIATION_NO"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/PRIMARY_CONTACT/ihmap:nillable"/><to docName="dstDoc1" path="/rows/row/PRIMARY_CONTACT/ihmap:nillable"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/PRIMARY_CONTACT"/><to docName="dstDoc1" path="/rows/row/PRIMARY_CONTACT"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/PAY_TERM_ID"/><to docName="dstDoc1" path="/rows/row/PAY_TERM_ID"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/CUST_GRP"/><to docName="dstDoc1" path="/rows/row/CUST_GRP"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/INACTIVE/ihmap:nillable"/><to docName="dstDoc1" path="/rows/row/INACTIVE/ihmap:nillable"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/INACTIVE"/><to docName="dstDoc1" path="/rows/row/INACTIVE"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/MARKET_CODE/ihmap:nillable"/><to docName="dstDoc1" path="/rows/row/MARKET_CODE/ihmap:nillable"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/MARKET_CODE"/><to docName="dstDoc1" path="/rows/row/MARKET_CODE"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/ORDER_ID/ihmap:nillable"/><to docName="dstDoc1" path="/rows/row/ORDER_ID/ihmap:nillable"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/ORDER_ID"/><to docName="dstDoc1" path="/rows/row/ORDER_ID"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/COMMISSION_RECEIVER/ihmap:nillable"/><to docName="dstDoc1" path="/rows/row/COMMISSION_RECEIVER/ihmap:nillable"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/COMMISSION_RECEIVER"/><to docName="dstDoc1" path="/rows/row/COMMISSION_RECEIVER"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/CREATION_DATE"/><to docName="dstDoc1" path="/rows/row/CREATION_DATE"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/VALID_TO/ihmap:nillable"/><to docName="dstDoc1" path="/rows/row/VALID_TO/ihmap:nillable"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/VALID_TO"/><to docName="dstDoc1" path="/rows/row/VALID_TO"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/REGION/ihmap:nillable"/><to docName="dstDoc1" path="/rows/row/REGION/ihmap:nillable"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/REGION"/><to docName="dstDoc1" path="/rows/row/REGION"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/CYSALES/ihmap:nillable"/><to docName="dstDoc1" path="/rows/row/CYSALES/ihmap:nillable"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/CYSALES"/><to docName="dstDoc1" path="/rows/row/CYSALES"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/CYIMPL/ihmap:nillable"/><to docName="dstDoc1" path="/rows/row/CYIMPL/ihmap:nillable"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/CYIMPL"/><to docName="dstDoc1" path="/rows/row/CYIMPL"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/CYBIO/ihmap:nillable"/><to docName="dstDoc1" path="/rows/row/CYBIO/ihmap:nillable"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/CYBIO"/><to docName="dstDoc1" path="/rows/row/CYBIO"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/LOADED_DISCOUNT/ihmap:nillable"/><to docName="dstDoc1" path="/rows/row/LOADED_DISCOUNT/ihmap:nillable"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/LOADED_DISCOUNT"/><to docName="dstDoc1" path="/rows/row/LOADED_DISCOUNT"/></do></rule></doMapping></mapSpec></outputMapSpecConfig><tasksConfig><com.approuter.studio.connectors.task.TaskList><![CDATA[
+]]></com.approuter.studio.connectors.task.TaskList></tasksConfig></start><invoke activityId="5" activityName="" comments="" configurationId="db_parameterizedQuery_id" description="This activity gets rows of data from the selected database endpoint based on a given SQL select query" expanded="true" moduleName="http://www.approuter.com/module/database/" name="Execute Query" partnerLink=""><inputMapSpecConfig><mapSpec context="orchestration" optionalParameterVisible="false" version="1.0" xmlns="http://www.approuter.com/schemas/2003/1/transformation/" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><specInfo><destination canBeSubstitutedFromUI="true" displayName="parameters" isParameter="true" location="Schema_4_mapInputsTask_in_Execute_Query_5" locationType="2" logicalName="dstDoc1" optionalParameter="false" originalRootNodeName="parameters" rootNodeName="parameters" varName="parameters"/></specInfo><doMapping/></mapSpec></inputMapSpecConfig><outputMapSpecConfig><mapSpec context="orchestration" optionalParameterVisible="false" version="1.0" xmlns="http://www.approuter.com/schemas/2003/1/transformation/" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><specInfo><source canBeSubstitutedFromUI="true" displayName="rows" isParameter="true" location="Schema_4_mapOutputsTask_in_Execute_Query_5" locationType="2" logicalName="srcDoc1" optionalParameter="false" originalRootNodeName="rows" rootNodeName="rows" varName="rows"/><destination canBeSubstitutedFromUI="true" displayName="rows" isParameter="false" location="Schema_4_mapOutputsTask_in_Execute_Query_5" locationType="2" logicalName="dstDoc1" optionalParameter="false" originalRootNodeName="rows" rootNodeName="rows" varName="rows"/></specInfo><doMapping><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/ihmap:instances"/><to docName="dstDoc1" path="/rows/row/ihmap:instances"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/CUSTOMER_ID"/><to docName="dstDoc1" path="/rows/row/CUSTOMER_ID"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/NAME"/><to docName="dstDoc1" path="/rows/row/NAME"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/ADDRESS_ID"/><to docName="dstDoc1" path="/rows/row/ADDRESS_ID"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/ADDRESS_TYPE_CODE_DB"/><to docName="dstDoc1" path="/rows/row/ADDRESS_TYPE_CODE_DB"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/ADDRESS/ihmap:nillable"/><to docName="dstDoc1" path="/rows/row/ADDRESS/ihmap:nillable"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/ADDRESS"/><to docName="dstDoc1" path="/rows/row/ADDRESS"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/CITY/ihmap:nillable"/><to docName="dstDoc1" path="/rows/row/CITY/ihmap:nillable"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/CITY"/><to docName="dstDoc1" path="/rows/row/CITY"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/STATE/ihmap:nillable"/><to docName="dstDoc1" path="/rows/row/STATE/ihmap:nillable"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/STATE"/><to docName="dstDoc1" path="/rows/row/STATE"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/ZIP_CODE/ihmap:nillable"/><to docName="dstDoc1" path="/rows/row/ZIP_CODE/ihmap:nillable"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/ZIP_CODE"/><to docName="dstDoc1" path="/rows/row/ZIP_CODE"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/COUNTRY/ihmap:nillable"/><to docName="dstDoc1" path="/rows/row/COUNTRY/ihmap:nillable"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/COUNTRY"/><to docName="dstDoc1" path="/rows/row/COUNTRY"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/DELIV_ADDRESS_ID"/><to docName="dstDoc1" path="/rows/row/DELIV_ADDRESS_ID"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/DELIV_ADDRESS_TYPE_CODE"/><to docName="dstDoc1" path="/rows/row/DELIV_ADDRESS_TYPE_CODE"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/DELIVADDRESS/ihmap:nillable"/><to docName="dstDoc1" path="/rows/row/DELIVADDRESS/ihmap:nillable"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/DELIVADDRESS"/><to docName="dstDoc1" path="/rows/row/DELIVADDRESS"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/DELIVCITY/ihmap:nillable"/><to docName="dstDoc1" path="/rows/row/DELIVCITY/ihmap:nillable"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/DELIVCITY"/><to docName="dstDoc1" path="/rows/row/DELIVCITY"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/DELIVSTATE/ihmap:nillable"/><to docName="dstDoc1" path="/rows/row/DELIVSTATE/ihmap:nillable"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/DELIVSTATE"/><to docName="dstDoc1" path="/rows/row/DELIVSTATE"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/DELIVZIPCODE/ihmap:nillable"/><to docName="dstDoc1" path="/rows/row/DELIVZIPCODE/ihmap:nillable"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/DELIVZIPCODE"/><to docName="dstDoc1" path="/rows/row/DELIVZIPCODE"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/DELIVCOUNTRY/ihmap:nillable"/><to docName="dstDoc1" path="/rows/row/DELIVCOUNTRY/ihmap:nillable"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/DELIVCOUNTRY"/><to docName="dstDoc1" path="/rows/row/DELIVCOUNTRY"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/SALESMAN_CODE/ihmap:nillable"/><to docName="dstDoc1" path="/rows/row/SALESMAN_CODE/ihmap:nillable"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/SALESMAN_CODE"/><to docName="dstDoc1" path="/rows/row/SALESMAN_CODE"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/CORPORATE_FORM/ihmap:nillable"/><to docName="dstDoc1" path="/rows/row/CORPORATE_FORM/ihmap:nillable"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/CORPORATE_FORM"/><to docName="dstDoc1" path="/rows/row/CORPORATE_FORM"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/ASSOCIATION_NO/ihmap:nillable"/><to docName="dstDoc1" path="/rows/row/ASSOCIATION_NO/ihmap:nillable"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/ASSOCIATION_NO"/><to docName="dstDoc1" path="/rows/row/ASSOCIATION_NO"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/PRIMARY_CONTACT/ihmap:nillable"/><to docName="dstDoc1" path="/rows/row/PRIMARY_CONTACT/ihmap:nillable"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/PRIMARY_CONTACT"/><to docName="dstDoc1" path="/rows/row/PRIMARY_CONTACT"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/PAY_TERM_ID"/><to docName="dstDoc1" path="/rows/row/PAY_TERM_ID"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/CUST_GRP"/><to docName="dstDoc1" path="/rows/row/CUST_GRP"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/INACTIVE/ihmap:nillable"/><to docName="dstDoc1" path="/rows/row/INACTIVE/ihmap:nillable"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/INACTIVE"/><to docName="dstDoc1" path="/rows/row/INACTIVE"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/MARKET_CODE/ihmap:nillable"/><to docName="dstDoc1" path="/rows/row/MARKET_CODE/ihmap:nillable"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/MARKET_CODE"/><to docName="dstDoc1" path="/rows/row/MARKET_CODE"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/ORDER_ID/ihmap:nillable"/><to docName="dstDoc1" path="/rows/row/ORDER_ID/ihmap:nillable"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/ORDER_ID"/><to docName="dstDoc1" path="/rows/row/ORDER_ID"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/COMMISSION_RECEIVER/ihmap:nillable"/><to docName="dstDoc1" path="/rows/row/COMMISSION_RECEIVER/ihmap:nillable"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/COMMISSION_RECEIVER"/><to docName="dstDoc1" path="/rows/row/COMMISSION_RECEIVER"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/CREATION_DATE"/><to docName="dstDoc1" path="/rows/row/CREATION_DATE"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/VALID_TO/ihmap:nillable"/><to docName="dstDoc1" path="/rows/row/VALID_TO/ihmap:nillable"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/VALID_TO"/><to docName="dstDoc1" path="/rows/row/VALID_TO"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/REGION/ihmap:nillable"/><to docName="dstDoc1" path="/rows/row/REGION/ihmap:nillable"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/REGION"/><to docName="dstDoc1" path="/rows/row/REGION"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/CYSALES/ihmap:nillable"/><to docName="dstDoc1" path="/rows/row/CYSALES/ihmap:nillable"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/CYSALES"/><to docName="dstDoc1" path="/rows/row/CYSALES"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/CYIMPL/ihmap:nillable"/><to docName="dstDoc1" path="/rows/row/CYIMPL/ihmap:nillable"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/CYIMPL"/><to docName="dstDoc1" path="/rows/row/CYIMPL"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/CYBIO/ihmap:nillable"/><to docName="dstDoc1" path="/rows/row/CYBIO/ihmap:nillable"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/CYBIO"/><to docName="dstDoc1" path="/rows/row/CYBIO"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/LOADED_DISCOUNT/ihmap:nillable"/><to docName="dstDoc1" path="/rows/row/LOADED_DISCOUNT/ihmap:nillable"/></do></rule><rule emitCData="false" guaranteed="true"><do guaranteed="true"><from docName="srcDoc1" path="/rows/row/LOADED_DISCOUNT"/><to docName="dstDoc1" path="/rows/row/LOADED_DISCOUNT"/></do></rule></doMapping></mapSpec></outputMapSpecConfig><tasksConfig><com.approuter.studio.connectors.task.TaskList><![CDATA[
   ]]><tasks><![CDATA[
     ]]><com.approuter.studio.connectors.task.SummaryTask><![CDATA[
       ]]><key><![CDATA[summaryTask]]></key><![CDATA[
@@ -200,6 +200,10 @@
                   ]]><entry><![CDATA[
                     ]]><string><![CDATA[validatePressed]]></string><![CDATA[
                     ]]><boolean><![CDATA[true]]></boolean><![CDATA[
+                  ]]></entry><![CDATA[
+                  ]]><entry><![CDATA[
+                    ]]><string><![CDATA[selected]]></string><![CDATA[
+                    ]]><string><![CDATA[true]]></string><![CDATA[
                   ]]></entry><![CDATA[
                   ]]><entry><![CDATA[
                     ]]><string><![CDATA[SQL]]></string><![CDATA[
@@ -316,16 +320,12 @@ Order By
   A.Customer_ID]]></string><![CDATA[
                   ]]></entry><![CDATA[
                   ]]><entry><![CDATA[
-                    ]]><string><![CDATA[selected]]></string><![CDATA[
-                    ]]><string><![CDATA[false]]></string><![CDATA[
+                    ]]><string><![CDATA[maxRows]]></string><![CDATA[
+                    ]]><string><![CDATA[0]]></string><![CDATA[
                   ]]></entry><![CDATA[
                   ]]><entry><![CDATA[
                     ]]><string><![CDATA[encoding]]></string><![CDATA[
                     ]]><string><![CDATA[ISO-8859-1]]></string><![CDATA[
-                  ]]></entry><![CDATA[
-                  ]]><entry><![CDATA[
-                    ]]><string><![CDATA[maxRows]]></string><![CDATA[
-                    ]]><string><![CDATA[0]]></string><![CDATA[
                   ]]></entry><![CDATA[
                   ]]><entry><![CDATA[
                     ]]><string><![CDATA[validQuery]]></string><![CDATA[
@@ -339,6 +339,10 @@ Order By
                   ]]><children/><![CDATA[
                   ]]><model><![CDATA[
                     ]]><map><![CDATA[
+                      ]]><entry><![CDATA[
+                        ]]><string><![CDATA[selected]]></string><![CDATA[
+                        ]]><string><![CDATA[false]]></string><![CDATA[
+                      ]]></entry><![CDATA[
                       ]]><entry><![CDATA[
                         ]]><string><![CDATA[SQL]]></string><![CDATA[
                         ]]><string><![CDATA[With Sales As (
@@ -452,10 +456,6 @@ Where
   E.Address_Type_Code_Db = 'DELIVERY'
 Order By
   A.Customer_ID]]></string><![CDATA[
-                      ]]></entry><![CDATA[
-                      ]]><entry><![CDATA[
-                        ]]><string><![CDATA[selected]]></string><![CDATA[
-                        ]]><string><![CDATA[false]]></string><![CDATA[
                       ]]></entry><![CDATA[
                       ]]><entry><![CDATA[
                         ]]><string><![CDATA[tableData]]></string><![CDATA[
@@ -475,6 +475,10 @@ Order By
                   ]]><model><![CDATA[
                     ]]><map><![CDATA[
                       ]]><entry><![CDATA[
+                        ]]><string><![CDATA[selected]]></string><![CDATA[
+                        ]]><string><![CDATA[false]]></string><![CDATA[
+                      ]]></entry><![CDATA[
+                      ]]><entry><![CDATA[
                         ]]><string><![CDATA[SQL]]></string><![CDATA[
                         ]]><string><![CDATA[With Sales As (
   Select
@@ -589,339 +593,335 @@ Order By
   A.Customer_ID]]></string><![CDATA[
                       ]]></entry><![CDATA[
                       ]]><entry><![CDATA[
-                        ]]><string><![CDATA[selected]]></string><![CDATA[
-                        ]]><string><![CDATA[false]]></string><![CDATA[
-                      ]]></entry><![CDATA[
-                      ]]><entry><![CDATA[
                         ]]><string><![CDATA[tableData]]></string><![CDATA[
                         ]]><list><![CDATA[
                           ]]><com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                            ]]><schema/><![CDATA[
                             ]]><name><![CDATA[CUSTOMER_ID]]></name><![CDATA[
                             ]]><type><![CDATA[VARCHAR]]></type><![CDATA[
                             ]]><encoding><![CDATA[ISO-8859-1]]></encoding><![CDATA[
                             ]]><size><![CDATA[80]]></size><![CDATA[
                             ]]><nullable><![CDATA[false]]></nullable><![CDATA[
-                            ]]><schema/><![CDATA[
                             ]]><tableName/><![CDATA[
                             ]]><xpath><![CDATA[CUSTOMER_ID]]></xpath><![CDATA[
                           ]]></com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
                           ]]><com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                            ]]><schema/><![CDATA[
                             ]]><name><![CDATA[NAME]]></name><![CDATA[
                             ]]><type><![CDATA[VARCHAR]]></type><![CDATA[
                             ]]><encoding><![CDATA[ISO-8859-1]]></encoding><![CDATA[
                             ]]><size><![CDATA[400]]></size><![CDATA[
                             ]]><nullable><![CDATA[false]]></nullable><![CDATA[
-                            ]]><schema/><![CDATA[
                             ]]><tableName/><![CDATA[
                             ]]><xpath><![CDATA[NAME]]></xpath><![CDATA[
                           ]]></com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
                           ]]><com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                            ]]><schema/><![CDATA[
                             ]]><name><![CDATA[ADDRESS_ID]]></name><![CDATA[
                             ]]><type><![CDATA[VARCHAR]]></type><![CDATA[
                             ]]><encoding><![CDATA[ISO-8859-1]]></encoding><![CDATA[
                             ]]><size><![CDATA[200]]></size><![CDATA[
                             ]]><nullable><![CDATA[false]]></nullable><![CDATA[
-                            ]]><schema/><![CDATA[
                             ]]><tableName/><![CDATA[
                             ]]><xpath><![CDATA[ADDRESS_ID]]></xpath><![CDATA[
                           ]]></com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
                           ]]><com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                            ]]><schema/><![CDATA[
                             ]]><name><![CDATA[ADDRESS_TYPE_CODE_DB]]></name><![CDATA[
                             ]]><type><![CDATA[VARCHAR]]></type><![CDATA[
                             ]]><encoding><![CDATA[ISO-8859-1]]></encoding><![CDATA[
                             ]]><size><![CDATA[80]]></size><![CDATA[
                             ]]><nullable><![CDATA[false]]></nullable><![CDATA[
-                            ]]><schema/><![CDATA[
                             ]]><tableName/><![CDATA[
                             ]]><xpath><![CDATA[ADDRESS_TYPE_CODE_DB]]></xpath><![CDATA[
                           ]]></com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
                           ]]><com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                            ]]><schema/><![CDATA[
                             ]]><name><![CDATA[ADDRESS]]></name><![CDATA[
                             ]]><type><![CDATA[VARCHAR]]></type><![CDATA[
                             ]]><encoding><![CDATA[ISO-8859-1]]></encoding><![CDATA[
                             ]]><size><![CDATA[281]]></size><![CDATA[
                             ]]><nullable><![CDATA[true]]></nullable><![CDATA[
-                            ]]><schema/><![CDATA[
                             ]]><tableName/><![CDATA[
                             ]]><xpath><![CDATA[ADDRESS]]></xpath><![CDATA[
                           ]]></com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
                           ]]><com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                            ]]><schema/><![CDATA[
                             ]]><name><![CDATA[CITY]]></name><![CDATA[
                             ]]><type><![CDATA[VARCHAR]]></type><![CDATA[
                             ]]><encoding><![CDATA[ISO-8859-1]]></encoding><![CDATA[
                             ]]><size><![CDATA[140]]></size><![CDATA[
                             ]]><nullable><![CDATA[true]]></nullable><![CDATA[
-                            ]]><schema/><![CDATA[
                             ]]><tableName/><![CDATA[
                             ]]><xpath><![CDATA[CITY]]></xpath><![CDATA[
                           ]]></com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
                           ]]><com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                            ]]><schema/><![CDATA[
                             ]]><name><![CDATA[STATE]]></name><![CDATA[
                             ]]><type><![CDATA[VARCHAR]]></type><![CDATA[
                             ]]><encoding><![CDATA[ISO-8859-1]]></encoding><![CDATA[
                             ]]><size><![CDATA[140]]></size><![CDATA[
                             ]]><nullable><![CDATA[true]]></nullable><![CDATA[
-                            ]]><schema/><![CDATA[
                             ]]><tableName/><![CDATA[
                             ]]><xpath><![CDATA[STATE]]></xpath><![CDATA[
                           ]]></com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
                           ]]><com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                            ]]><schema/><![CDATA[
                             ]]><name><![CDATA[ZIP_CODE]]></name><![CDATA[
                             ]]><type><![CDATA[VARCHAR]]></type><![CDATA[
                             ]]><encoding><![CDATA[ISO-8859-1]]></encoding><![CDATA[
                             ]]><size><![CDATA[140]]></size><![CDATA[
                             ]]><nullable><![CDATA[true]]></nullable><![CDATA[
-                            ]]><schema/><![CDATA[
                             ]]><tableName/><![CDATA[
                             ]]><xpath><![CDATA[ZIP_CODE]]></xpath><![CDATA[
                           ]]></com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
                           ]]><com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                            ]]><schema/><![CDATA[
                             ]]><name><![CDATA[COUNTRY]]></name><![CDATA[
                             ]]><type><![CDATA[VARCHAR]]></type><![CDATA[
                             ]]><encoding><![CDATA[ISO-8859-1]]></encoding><![CDATA[
                             ]]><size><![CDATA[4000]]></size><![CDATA[
                             ]]><nullable><![CDATA[true]]></nullable><![CDATA[
-                            ]]><schema/><![CDATA[
                             ]]><tableName/><![CDATA[
                             ]]><xpath><![CDATA[COUNTRY]]></xpath><![CDATA[
                           ]]></com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
                           ]]><com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                            ]]><schema/><![CDATA[
                             ]]><name><![CDATA[DELIV_ADDRESS_ID]]></name><![CDATA[
                             ]]><type><![CDATA[VARCHAR]]></type><![CDATA[
                             ]]><encoding><![CDATA[ISO-8859-1]]></encoding><![CDATA[
                             ]]><size><![CDATA[200]]></size><![CDATA[
                             ]]><nullable><![CDATA[false]]></nullable><![CDATA[
-                            ]]><schema/><![CDATA[
                             ]]><tableName/><![CDATA[
                             ]]><xpath><![CDATA[DELIV_ADDRESS_ID]]></xpath><![CDATA[
                           ]]></com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
                           ]]><com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                            ]]><schema/><![CDATA[
                             ]]><name><![CDATA[DELIV_ADDRESS_TYPE_CODE]]></name><![CDATA[
                             ]]><type><![CDATA[VARCHAR]]></type><![CDATA[
                             ]]><encoding><![CDATA[ISO-8859-1]]></encoding><![CDATA[
                             ]]><size><![CDATA[80]]></size><![CDATA[
                             ]]><nullable><![CDATA[false]]></nullable><![CDATA[
-                            ]]><schema/><![CDATA[
                             ]]><tableName/><![CDATA[
                             ]]><xpath><![CDATA[DELIV_ADDRESS_TYPE_CODE]]></xpath><![CDATA[
                           ]]></com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
                           ]]><com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                            ]]><schema/><![CDATA[
                             ]]><name><![CDATA[DELIVADDRESS]]></name><![CDATA[
                             ]]><type><![CDATA[VARCHAR]]></type><![CDATA[
                             ]]><encoding><![CDATA[ISO-8859-1]]></encoding><![CDATA[
                             ]]><size><![CDATA[281]]></size><![CDATA[
                             ]]><nullable><![CDATA[true]]></nullable><![CDATA[
-                            ]]><schema/><![CDATA[
                             ]]><tableName/><![CDATA[
                             ]]><xpath><![CDATA[DELIVADDRESS]]></xpath><![CDATA[
                           ]]></com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
                           ]]><com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                            ]]><schema/><![CDATA[
                             ]]><name><![CDATA[DELIVCITY]]></name><![CDATA[
                             ]]><type><![CDATA[VARCHAR]]></type><![CDATA[
                             ]]><encoding><![CDATA[ISO-8859-1]]></encoding><![CDATA[
                             ]]><size><![CDATA[140]]></size><![CDATA[
                             ]]><nullable><![CDATA[true]]></nullable><![CDATA[
-                            ]]><schema/><![CDATA[
                             ]]><tableName/><![CDATA[
                             ]]><xpath><![CDATA[DELIVCITY]]></xpath><![CDATA[
                           ]]></com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
                           ]]><com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                            ]]><schema/><![CDATA[
                             ]]><name><![CDATA[DELIVSTATE]]></name><![CDATA[
                             ]]><type><![CDATA[VARCHAR]]></type><![CDATA[
                             ]]><encoding><![CDATA[ISO-8859-1]]></encoding><![CDATA[
                             ]]><size><![CDATA[140]]></size><![CDATA[
                             ]]><nullable><![CDATA[true]]></nullable><![CDATA[
-                            ]]><schema/><![CDATA[
                             ]]><tableName/><![CDATA[
                             ]]><xpath><![CDATA[DELIVSTATE]]></xpath><![CDATA[
                           ]]></com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
                           ]]><com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                            ]]><schema/><![CDATA[
                             ]]><name><![CDATA[DELIVZIPCODE]]></name><![CDATA[
                             ]]><type><![CDATA[VARCHAR]]></type><![CDATA[
                             ]]><encoding><![CDATA[ISO-8859-1]]></encoding><![CDATA[
                             ]]><size><![CDATA[140]]></size><![CDATA[
                             ]]><nullable><![CDATA[true]]></nullable><![CDATA[
-                            ]]><schema/><![CDATA[
                             ]]><tableName/><![CDATA[
                             ]]><xpath><![CDATA[DELIVZIPCODE]]></xpath><![CDATA[
                           ]]></com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
                           ]]><com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                            ]]><schema/><![CDATA[
                             ]]><name><![CDATA[DELIVCOUNTRY]]></name><![CDATA[
                             ]]><type><![CDATA[VARCHAR]]></type><![CDATA[
                             ]]><encoding><![CDATA[ISO-8859-1]]></encoding><![CDATA[
                             ]]><size><![CDATA[4000]]></size><![CDATA[
                             ]]><nullable><![CDATA[true]]></nullable><![CDATA[
-                            ]]><schema/><![CDATA[
                             ]]><tableName/><![CDATA[
                             ]]><xpath><![CDATA[DELIVCOUNTRY]]></xpath><![CDATA[
                           ]]></com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
                           ]]><com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                            ]]><schema/><![CDATA[
                             ]]><name><![CDATA[SALESMAN_CODE]]></name><![CDATA[
                             ]]><type><![CDATA[VARCHAR]]></type><![CDATA[
                             ]]><encoding><![CDATA[ISO-8859-1]]></encoding><![CDATA[
                             ]]><size><![CDATA[80]]></size><![CDATA[
                             ]]><nullable><![CDATA[true]]></nullable><![CDATA[
-                            ]]><schema/><![CDATA[
                             ]]><tableName/><![CDATA[
                             ]]><xpath><![CDATA[SALESMAN_CODE]]></xpath><![CDATA[
                           ]]></com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
                           ]]><com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                            ]]><schema/><![CDATA[
                             ]]><name><![CDATA[CORPORATE_FORM]]></name><![CDATA[
                             ]]><type><![CDATA[VARCHAR]]></type><![CDATA[
                             ]]><encoding><![CDATA[ISO-8859-1]]></encoding><![CDATA[
                             ]]><size><![CDATA[32]]></size><![CDATA[
                             ]]><nullable><![CDATA[true]]></nullable><![CDATA[
-                            ]]><schema/><![CDATA[
                             ]]><tableName/><![CDATA[
                             ]]><xpath><![CDATA[CORPORATE_FORM]]></xpath><![CDATA[
                           ]]></com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
                           ]]><com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                            ]]><schema/><![CDATA[
                             ]]><name><![CDATA[ASSOCIATION_NO]]></name><![CDATA[
                             ]]><type><![CDATA[VARCHAR]]></type><![CDATA[
                             ]]><encoding><![CDATA[ISO-8859-1]]></encoding><![CDATA[
                             ]]><size><![CDATA[200]]></size><![CDATA[
                             ]]><nullable><![CDATA[true]]></nullable><![CDATA[
-                            ]]><schema/><![CDATA[
                             ]]><tableName/><![CDATA[
                             ]]><xpath><![CDATA[ASSOCIATION_NO]]></xpath><![CDATA[
                           ]]></com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
                           ]]><com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                            ]]><schema/><![CDATA[
                             ]]><name><![CDATA[PRIMARY_CONTACT]]></name><![CDATA[
                             ]]><type><![CDATA[VARCHAR]]></type><![CDATA[
                             ]]><encoding><![CDATA[ISO-8859-1]]></encoding><![CDATA[
                             ]]><size><![CDATA[140]]></size><![CDATA[
                             ]]><nullable><![CDATA[true]]></nullable><![CDATA[
-                            ]]><schema/><![CDATA[
                             ]]><tableName/><![CDATA[
                             ]]><xpath><![CDATA[PRIMARY_CONTACT]]></xpath><![CDATA[
                           ]]></com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
                           ]]><com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                            ]]><schema/><![CDATA[
                             ]]><name><![CDATA[PAY_TERM_ID]]></name><![CDATA[
                             ]]><type><![CDATA[VARCHAR]]></type><![CDATA[
                             ]]><encoding><![CDATA[ISO-8859-1]]></encoding><![CDATA[
                             ]]><size><![CDATA[80]]></size><![CDATA[
                             ]]><nullable><![CDATA[false]]></nullable><![CDATA[
-                            ]]><schema/><![CDATA[
                             ]]><tableName/><![CDATA[
                             ]]><xpath><![CDATA[PAY_TERM_ID]]></xpath><![CDATA[
                           ]]></com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
                           ]]><com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                            ]]><schema/><![CDATA[
                             ]]><name><![CDATA[CUST_GRP]]></name><![CDATA[
                             ]]><type><![CDATA[VARCHAR]]></type><![CDATA[
                             ]]><encoding><![CDATA[ISO-8859-1]]></encoding><![CDATA[
                             ]]><size><![CDATA[40]]></size><![CDATA[
                             ]]><nullable><![CDATA[false]]></nullable><![CDATA[
-                            ]]><schema/><![CDATA[
                             ]]><tableName/><![CDATA[
                             ]]><xpath><![CDATA[CUST_GRP]]></xpath><![CDATA[
                           ]]></com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
                           ]]><com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                            ]]><schema/><![CDATA[
                             ]]><name><![CDATA[INACTIVE]]></name><![CDATA[
                             ]]><type><![CDATA[VARCHAR]]></type><![CDATA[
                             ]]><encoding><![CDATA[ISO-8859-1]]></encoding><![CDATA[
                             ]]><size><![CDATA[5]]></size><![CDATA[
                             ]]><nullable><![CDATA[true]]></nullable><![CDATA[
-                            ]]><schema/><![CDATA[
                             ]]><tableName/><![CDATA[
                             ]]><xpath><![CDATA[INACTIVE]]></xpath><![CDATA[
                           ]]></com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
                           ]]><com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                            ]]><schema/><![CDATA[
                             ]]><name><![CDATA[MARKET_CODE]]></name><![CDATA[
                             ]]><type><![CDATA[VARCHAR]]></type><![CDATA[
                             ]]><encoding><![CDATA[ISO-8859-1]]></encoding><![CDATA[
                             ]]><size><![CDATA[40]]></size><![CDATA[
                             ]]><nullable><![CDATA[true]]></nullable><![CDATA[
-                            ]]><schema/><![CDATA[
                             ]]><tableName/><![CDATA[
                             ]]><xpath><![CDATA[MARKET_CODE]]></xpath><![CDATA[
                           ]]></com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
                           ]]><com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                            ]]><schema/><![CDATA[
                             ]]><name><![CDATA[ORDER_ID]]></name><![CDATA[
                             ]]><type><![CDATA[VARCHAR]]></type><![CDATA[
                             ]]><encoding><![CDATA[ISO-8859-1]]></encoding><![CDATA[
                             ]]><size><![CDATA[12]]></size><![CDATA[
                             ]]><nullable><![CDATA[true]]></nullable><![CDATA[
-                            ]]><schema/><![CDATA[
                             ]]><tableName/><![CDATA[
                             ]]><xpath><![CDATA[ORDER_ID]]></xpath><![CDATA[
                           ]]></com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
                           ]]><com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                            ]]><schema/><![CDATA[
                             ]]><name><![CDATA[COMMISSION_RECEIVER]]></name><![CDATA[
                             ]]><type><![CDATA[VARCHAR]]></type><![CDATA[
                             ]]><encoding><![CDATA[ISO-8859-1]]></encoding><![CDATA[
                             ]]><size><![CDATA[80]]></size><![CDATA[
                             ]]><nullable><![CDATA[true]]></nullable><![CDATA[
-                            ]]><schema/><![CDATA[
                             ]]><tableName/><![CDATA[
                             ]]><xpath><![CDATA[COMMISSION_RECEIVER]]></xpath><![CDATA[
                           ]]></com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
                           ]]><com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                            ]]><schema/><![CDATA[
                             ]]><name><![CDATA[CREATION_DATE]]></name><![CDATA[
                             ]]><type><![CDATA[TIMESTAMP]]></type><![CDATA[
                             ]]><encoding><![CDATA[ISO-8859-1]]></encoding><![CDATA[
                             ]]><size><![CDATA[19]]></size><![CDATA[
                             ]]><nullable><![CDATA[false]]></nullable><![CDATA[
-                            ]]><schema/><![CDATA[
                             ]]><tableName/><![CDATA[
                             ]]><xpath><![CDATA[CREATION_DATE]]></xpath><![CDATA[
                           ]]></com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
                           ]]><com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                            ]]><schema/><![CDATA[
                             ]]><name><![CDATA[VALID_TO]]></name><![CDATA[
                             ]]><type><![CDATA[TIMESTAMP]]></type><![CDATA[
                             ]]><encoding><![CDATA[ISO-8859-1]]></encoding><![CDATA[
                             ]]><size><![CDATA[19]]></size><![CDATA[
                             ]]><nullable><![CDATA[true]]></nullable><![CDATA[
-                            ]]><schema/><![CDATA[
                             ]]><tableName/><![CDATA[
                             ]]><xpath><![CDATA[VALID_TO]]></xpath><![CDATA[
                           ]]></com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
                           ]]><com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                            ]]><schema/><![CDATA[
                             ]]><name><![CDATA[REGION]]></name><![CDATA[
                             ]]><type><![CDATA[VARCHAR]]></type><![CDATA[
                             ]]><encoding><![CDATA[ISO-8859-1]]></encoding><![CDATA[
                             ]]><size><![CDATA[40]]></size><![CDATA[
                             ]]><nullable><![CDATA[true]]></nullable><![CDATA[
-                            ]]><schema/><![CDATA[
                             ]]><tableName/><![CDATA[
                             ]]><xpath><![CDATA[REGION]]></xpath><![CDATA[
                           ]]></com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
                           ]]><com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                            ]]><schema/><![CDATA[
                             ]]><name><![CDATA[CYSALES]]></name><![CDATA[
                             ]]><type><![CDATA[VARCHAR]]></type><![CDATA[
                             ]]><encoding><![CDATA[ISO-8859-1]]></encoding><![CDATA[
                             ]]><size><![CDATA[40]]></size><![CDATA[
                             ]]><nullable><![CDATA[true]]></nullable><![CDATA[
-                            ]]><schema/><![CDATA[
                             ]]><tableName/><![CDATA[
                             ]]><xpath><![CDATA[CYSALES]]></xpath><![CDATA[
                           ]]></com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
                           ]]><com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                            ]]><schema/><![CDATA[
                             ]]><name><![CDATA[CYIMPL]]></name><![CDATA[
                             ]]><type><![CDATA[VARCHAR]]></type><![CDATA[
                             ]]><encoding><![CDATA[ISO-8859-1]]></encoding><![CDATA[
                             ]]><size><![CDATA[40]]></size><![CDATA[
                             ]]><nullable><![CDATA[true]]></nullable><![CDATA[
-                            ]]><schema/><![CDATA[
                             ]]><tableName/><![CDATA[
                             ]]><xpath><![CDATA[CYIMPL]]></xpath><![CDATA[
                           ]]></com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
                           ]]><com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                            ]]><schema/><![CDATA[
                             ]]><name><![CDATA[CYBIO]]></name><![CDATA[
                             ]]><type><![CDATA[VARCHAR]]></type><![CDATA[
                             ]]><encoding><![CDATA[ISO-8859-1]]></encoding><![CDATA[
                             ]]><size><![CDATA[40]]></size><![CDATA[
                             ]]><nullable><![CDATA[true]]></nullable><![CDATA[
-                            ]]><schema/><![CDATA[
                             ]]><tableName/><![CDATA[
                             ]]><xpath><![CDATA[CYBIO]]></xpath><![CDATA[
                           ]]></com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
                           ]]><com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
+                            ]]><schema/><![CDATA[
                             ]]><name><![CDATA[LOADED_DISCOUNT]]></name><![CDATA[
                             ]]><type><![CDATA[VARCHAR]]></type><![CDATA[
                             ]]><encoding><![CDATA[ISO-8859-1]]></encoding><![CDATA[
                             ]]><size><![CDATA[82]]></size><![CDATA[
                             ]]><nullable><![CDATA[true]]></nullable><![CDATA[
-                            ]]><schema/><![CDATA[
                             ]]><tableName/><![CDATA[
                             ]]><xpath><![CDATA[LOADED_DISCOUNT]]></xpath><![CDATA[
                           ]]></com.approuter.studio.connectors.database.tables.SetupQueryTableData><![CDATA[
@@ -945,20 +945,20 @@ Order By
               ]]><model><![CDATA[
                 ]]><map><![CDATA[
                   ]]><entry><![CDATA[
-                    ]]><string><![CDATA[maxRetries]]></string><![CDATA[
-                    ]]><int><![CDATA[5]]></int><![CDATA[
-                  ]]></entry><![CDATA[
-                  ]]><entry><![CDATA[
                     ]]><string><![CDATA[selected]]></string><![CDATA[
                     ]]><string><![CDATA[false]]></string><![CDATA[
                   ]]></entry><![CDATA[
                   ]]><entry><![CDATA[
-                    ]]><string><![CDATA[timeout]]></string><![CDATA[
-                    ]]><int><![CDATA[300]]></int><![CDATA[
+                    ]]><string><![CDATA[maxRetries]]></string><![CDATA[
+                    ]]><int><![CDATA[5]]></int><![CDATA[
                   ]]></entry><![CDATA[
                   ]]><entry><![CDATA[
                     ]]><string><![CDATA[retryInterval]]></string><![CDATA[
                     ]]><int><![CDATA[30]]></int><![CDATA[
+                  ]]></entry><![CDATA[
+                  ]]><entry><![CDATA[
+                    ]]><string><![CDATA[timeout]]></string><![CDATA[
+                    ]]><int><![CDATA[300]]></int><![CDATA[
                   ]]></entry><![CDATA[
                 ]]></map><![CDATA[
               ]]></model><![CDATA[
@@ -1012,7 +1012,7 @@ Order By
                   ]]></entry><![CDATA[
                   ]]><entry><![CDATA[
                     ]]><string><![CDATA[selected]]></string><![CDATA[
-                    ]]><string><![CDATA[true]]></string><![CDATA[
+                    ]]><string><![CDATA[false]]></string><![CDATA[
                   ]]></entry><![CDATA[
                   ]]><entry><![CDATA[
                     ]]><string><![CDATA[inputsRequired]]></string><![CDATA[
