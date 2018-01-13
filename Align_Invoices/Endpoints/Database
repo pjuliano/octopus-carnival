@@ -27,7 +27,7 @@
       </entry>
       <entry>
         <string>password</string>
-        <string>6d7T2Ps8TuqN8wXimKW+ag==</string>
+        <string>8qU/sUCFmuTZ7v4KTpFCnQ==</string>
       </entry>
       <entry>
         <string>sslClientAuth</string>
@@ -39,7 +39,7 @@
       </entry>
       <entry>
         <string>databaseName</string>
-        <string>prod</string>
+        <string>PROD</string>
       </entry>
       <entry>
         <string>minConnections</string>
@@ -48,6 +48,10 @@
       <entry>
         <string>recycle</string>
         <int>1</int>
+      </entry>
+      <entry>
+        <string>encryptionMethod</string>
+        <string>noEncryption</string>
       </entry>
       <entry>
         <string>tableData</string>
@@ -60,15 +64,7 @@
         </list>
       </entry>
       <entry>
-        <string>encryptionMethod</string>
-        <string>noEncryption</string>
-      </entry>
-      <entry>
         <string>quotes</string>
-        <boolean>false</boolean>
-      </entry>
-      <entry>
-        <string>validateServerCert</string>
         <boolean>false</boolean>
       </entry>
       <entry>
@@ -76,28 +72,32 @@
         <string>"</string>
       </entry>
       <entry>
+        <string>validateServerCert</string>
+        <boolean>false</boolean>
+      </entry>
+      <entry>
         <string>encoding</string>
         <string>ISO-8859-1</string>
       </entry>
       <entry>
-        <string>initialPoolSize</string>
-        <int>1</int>
+        <string>hostName</string>
+        <string>proddb64</string>
       </entry>
       <entry>
         <string>userName</string>
         <string>ifsapp</string>
       </entry>
       <entry>
-        <string>hostName</string>
-        <string>kdoraclesvr01.keystonedental.local</string>
-      </entry>
-      <entry>
-        <string>timeout</string>
-        <int>300</int>
+        <string>initialPoolSize</string>
+        <int>1</int>
       </entry>
       <entry>
         <string>generic_jdbc_database</string>
         <com.approuter.studio.connectors.database.endpoints.GenericJDBCDriverProvider/>
+      </entry>
+      <entry>
+        <string>timeout</string>
+        <int>300</int>
       </entry>
     </map>
   </model>
