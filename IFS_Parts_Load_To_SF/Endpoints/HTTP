@@ -34,12 +34,12 @@
         <string>Factory Supplied Identity</string>
       </entry>
       <entry>
-        <string>http_ep_host</string>
-        <null/>
-      </entry>
-      <entry>
         <string>http_ep_annlogin</string>
         <boolean>true</boolean>
+      </entry>
+      <entry>
+        <string>http_ep_host</string>
+        <null/>
       </entry>
       <entry>
         <string>proxyPassword</string>
